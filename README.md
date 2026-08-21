@@ -162,6 +162,23 @@ request. They are stated here so nobody cites a number without them.
 - **Clusters overlap.** Topic flags are non-exclusive, so cluster counts sum
   above 109 and cluster comparisons are not comparisons of disjoint samples.
 
+### Open items in the frozen corpus
+
+Found by `make verify`, which reports them on every build and fails if a new
+one appears. They are left in place rather than corrected, because the frozen
+corpus is the baseline the thesis reports; corrections are filed through
+[`data/corrections.csv`](data/corrections.csv).
+
+| Entry | Issue |
+|---|---|
+| `P66`, `P105` | An unresolved coder note survives in the geographic field (`verify exact list`, `[VERIFY] exact sample years`). |
+| `P80` | Geographic scope is coded `US` while the note opens "Global firms operating near (newly) protected biodiversity areas". |
+| `P81`, `P82` | Carry an identical geographic note; P82 is the mangroves paper and the note appears to have been copied from P81. |
+| `P80`, `P91` | Coded `D:OPEN`, but the Google Sheets and Drive locations they point to ask for a sign-in. |
+| `P41` | The access note says ZTRAX is discontinued; Zillow's page states it remains available through ICPSR. |
+| `P76` | The JNCC link resolves to *SSSI Guidelines, Chapter 1a: Coastlands*, which may not be the intended resource. |
+| `P104` | The code link is file-level (`file.xhtml?fileId=…`) rather than dataset-level, and will break if the deposit is re-uploaded. |
+
 ## Maintenance
 
 Links decay, and a catalogue of dead links is worse than none. The repository

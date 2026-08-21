@@ -206,8 +206,9 @@ coverage window spans everything the study observes; `verify.py` asserts that
 this is still the only such cell, so a second one cannot slip in unnoticed.
 
 Two cautions. `Global` frequently means a global sample dominated by
-developed-market firms, so it does not indicate emerging-market coverage — no
-paper in the corpus is coded emerging-market. And the lag is measured to the
+developed-market firms, so it does not indicate emerging-market coverage: the
+scheme has no emerging-market category, and only two entries study one
+substantively (`P74`, China; `P66`, a six-market network including China). And the lag is measured to the
 last year of data, not to the last year the data was current: a 2026 paper
 using data to 2020 is four years behind at publication and further behind by
 the time it is read.

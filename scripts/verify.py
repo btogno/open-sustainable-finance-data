@@ -187,7 +187,41 @@ def main():
           sorted(x["url"] for x in inv
                  if x["link_type"] != "paper_link" and x["verdict"] == "DEAD"), [])
 
-    print("\n8. README agrees with the build")
+    print("\n8. Data-quality warnings (reported, never auto-corrected)")
+    warn = []
+    for r in raw:
+        blob = " ".join(r.values())
+        if re.search(r"\[?VERIFY\]?|TBD|TODO", blob, re.I):
+            warn.append(f"{r['PAPER ID']}: unresolved coder note in the frozen corpus")
+    scope_note = [
+        (r["PAPER ID"], r["Data Geographic Scope"].strip(), r["Geographic Notes"].strip())
+        for r in raw if r["Geographic Notes"].strip()
+    ]
+    for pid, scope, note in scope_note:
+        # Only flag notes that open by describing a global sample. "US (and
+        # global)" and "US/global equities" are deliberate codings of a
+        # primarily US sample and are not errors.
+        if scope == "US" and note.strip().lower().startswith("global"):
+            warn.append(f"{pid}: scope coded US but the note opens by describing a global sample")
+    seen = {}
+    for pid, _scope, note in scope_note:
+        if len(note) > 60:
+            seen.setdefault(note, []).append(pid)
+    for note, pids in seen.items():
+        if len(pids) > 1:
+            warn.append(f"{'/'.join(pids)}: identical long geographic note — possible copy-paste")
+    known = {
+        "P66: unresolved coder note in the frozen corpus",
+        "P105: unresolved coder note in the frozen corpus",
+        "P80: scope coded US but the note opens by describing a global sample",
+        "P81/P82: identical long geographic note — possible copy-paste",
+    }
+    for w in sorted(warn):
+        print(f"  [{'known' if w in known else 'NEW'}] {w}")
+    check("no unrecorded data-quality warning", sorted(set(warn) - known), [])
+    print("  known warnings are listed in README under 'Known limitations'.")
+
+    print("\n9. README agrees with the build")
     for label, needle in (
         ("corpus size", f"| Papers coded | **{len(raw)}**"),
         ("fully open", f"| Fully open (data **and** code) | **{fully_open}**"),
