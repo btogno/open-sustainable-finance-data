@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+title: "Open Sustainable Finance Data: a catalogue of the datasets behind 109 empirical sustainable finance papers"
+message: "If you use this catalogue, please cite it using these metadata."
+type: dataset
+authors:
+  - given-names: Bastien
+    family-names: Tognolini
+    email: bastien.tognolini@uzh.ch
+    affiliation: "University of Zurich, Department of Banking and Finance"
+version: 1.0.0
+date-released: 2026-08-21
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+keywords:
+  - sustainable finance
+  - open data
+  - reproducibility
+  - replication
+  - research data management
+  - ESG
+  - climate finance
+  - biodiversity finance
+  - systematic literature review
+abstract: >-
+  A catalogue of the datasets used by 109 empirical sustainable finance papers
+  published in the Journal of Finance, Journal of Financial Economics, Review of
+  Financial Studies and Review of Finance through April 2026. Each paper is
+  hand-coded on topic, method, raw data source, temporal coverage, geographic
+  scope of the data and unit of observation, and scored on two openness
+  dimensions — data availability and replication code availability. Unlike a
+  conventional open-data index the corpus is not conditioned on openness:
+  papers releasing nothing are included, so that the openness rate of the field
+  is measurable rather than assumed. Access links carry recorded verification
+  verdicts and a check date.
+
+# --- Optional: replace the placeholders below once the repository is public ---
+#
+# repository-code: "https://github.com/<user>/open-sustainable-finance-data"
+# url: "https://github.com/<user>/open-sustainable-finance-data"
+#
+# --- Minting a DOI (about five minutes, and worth doing before you cite it) ---
+#
+# 1. Push this repository to GitHub as a public repository.
+# 2. Sign in at https://zenodo.org with the GitHub account, then open
+#    Account -> GitHub and flip the switch next to this repository ON.
+# 3. On GitHub, create a release tagged v1.0.0. Zenodo archives the tag and
+#    mints a DOI within a minute or two.
+# 4. Zenodo issues two DOIs: a *concept* DOI that always resolves to the newest
+#    version, and a *version* DOI fixed to v1.0.0. Cite the version DOI in the
+#    thesis — a reader following it must land on the numbers the thesis reports.
+# 5. Add both back here:
+#
+#      doi: 10.5281/zenodo.XXXXXXX          # version DOI for v1.0.0
+#      identifiers:
+#        - type: doi
+#          value: 10.5281/zenodo.YYYYYYY    # concept DOI, all versions
+#          description: "Concept DOI resolving to the latest version"
+#
+# 6. Re-run `make build` and commit. GitHub renders a "Cite this repository"
+#    button from this file.

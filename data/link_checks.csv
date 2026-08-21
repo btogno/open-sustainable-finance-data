@@ -1,0 +1,82 @@
+url,verdict,http_status,note,checked_on,method
+https://adviserinfo.sec.gov/,LIVE,200,,2026-08-21,web
+https://cemhs.asu.edu/sheldus,LIVE,200,SHELDUS 24 landing page; access is by subscription/licence,2026-08-21,web
+https://climatecommunication.yale.edu/visualizations-data/ycom-us/,LIVE,200,Yale Climate Opinion Maps 2025,2026-08-21,web
+https://coast.noaa.gov/digitalcoast/tools/slr.html,LIVE,200,,2026-08-21,web
+https://coast.noaa.gov/slr/,LIVE,200,NOAA Sea Level Rise Viewer,2026-08-21,web
+https://data.mendeley.com/datasets/5pzr9t645v/2,BLOCKED,403,Mendeley bot protection; verify in a browser,2026-08-21,web
+https://data.mendeley.com/datasets/5vhyvhfmh3/1,LIVE,200,"""The Benchmark Greenium""",2026-08-21,web
+https://data.mendeley.com/datasets/79fm698pyx/1,LIVE,200,,2026-08-21,web
+https://data.mendeley.com/datasets/7pbjvjsbvb/2,LIVE,200,,2026-08-21,web
+https://data.mendeley.com/datasets/b5f9rp823c/2,LIVE,200,,2026-08-21,web
+https://data.mendeley.com/datasets/d5gxv5tc8b/2,LIVE,200,,2026-08-21,web
+https://data.mendeley.com/datasets/dnskbdnmsz/1,LIVE,200,"""Dissecting Green Returns -- Replication Package""",2026-08-21,web
+https://data.mendeley.com/datasets/gzp97wdddc/1,BLOCKED,403,Mendeley bot protection; verify in a browser,2026-08-21,web
+https://data.mendeley.com/datasets/hpgmk6ctwh/2,BLOCKED,403,Mendeley bot protection; verify in a browser,2026-08-21,web
+https://data.mendeley.com/datasets/vpp2jysgyh/2,LIVE,200,,2026-08-21,web
+https://data.mendeley.com/datasets/y3g8bx3vb4/1,LIVE,200,"""Pricing of Sustainability-Linked Bonds""",2026-08-21,web
+https://data.mendeley.com/datasets/y5p3vdzzwr/1,LIVE,200,"""Green Tilts -- Replication Package""",2026-08-21,web
+https://data.mendeley.com/datasets/zhrnypkcyb/2,BLOCKED,403,Mendeley bot protection; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/1W1NPW,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5LX4LD,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/9DROKJ,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/9NWRW8,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ABVAYZ,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/FTPRYX,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MBBSGV,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PNHXF6,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/RR86M2,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UTMICU,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W5HTWA,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
+https://dataverse.harvard.edu/file.xhtml?fileId=7622069&version=1.0,BLOCKED,,"Harvard Dataverse refuses automated access; also a file-level rather than dataset-level link, which is more fragile",2026-08-21,web
+https://docs.google.com/spreadsheets/d/1Lz3FSaHMt36nuq82qmg9DWtWYxslPMYH/edit?pli=1&gid=1092822974#gid=1092822974,RESTRICTED,200,Google Sheet resolves but prompts for sign-in; not openly downloadable,2026-08-21,web
+https://drive.google.com/file/d/1pCHmcebmOwrVCFim78ALhB51c3h1qt2T/view?pli=1,RESTRICTED,200,Google Drive file resolves but prompts for sign-in; not openly downloadable,2026-08-21,web
+https://emma.msrb.org/,ERROR,200,"Returned ""An Error Has Occurred""; may be transient or bot protection",2026-08-21,web
+https://epc.opendatacommunities.org/,REDIRECT,302,Now redirects to https://get-energy-performance-data.communities.gov.uk/ which serves bulk EPC CSV downloads,2026-08-21,web
+https://ghgdata.epa.gov/flight/?viewType=map,LIVE,200,EPA FLIGHT,2026-08-21,web
+https://github.com/tengtedliu/financial_value_of_nature_mangrove,LIVE,200,Public repository,2026-08-21,web
+https://gspp.berkeley.edu/berkeley-carbon-trading-project/offsets-database,LIVE,200,Voluntary Registry Offsets Database,2026-08-21,web
+https://jncc.gov.uk/resources/36b59d93-8487-471d-9428-bc3d7dff0423,LIVE,200,"Resolves to ""SSSI Guidelines. Chapter 1a: Coastlands"" — confirm this is the intended resource",2026-08-21,web
+https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13219&file=jofi13219-sup-0002-ReplicationCode.zip,BLOCKED,,Wiley refuses automated access to supplement downloads; verify in a browser,2026-08-21,web
+https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13272&file=jofi13272-sup-0002-ReplicationCode.zip,BLOCKED,,Wiley refuses automated access to supplement downloads; verify in a browser,2026-08-21,web
+https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13402&file=jofi13402-sup-0002-ReplicationCode.zip,BLOCKED,,Wiley refuses automated access to supplement downloads; verify in a browser,2026-08-21,web
+https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13412&file=jofi13412-sup-0002-ReplicationCode.zip,BLOCKED,,Wiley refuses automated access to supplement downloads; verify in a browser,2026-08-21,web
+https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13416&file=jofi13416-sup-0002-ReplicationCode.zip,BLOCKED,,Wiley refuses automated access to supplement downloads; verify in a browser,2026-08-21,web
+https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13498&file=jofi13498-sup-0002-ReplicationCode.zip,BLOCKED,,Wiley refuses automated access to supplement downloads; verify in a browser,2026-08-21,web
+https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13499&file=jofi13499-sup-0002-ReplicationCode.zip,BLOCKED,,Wiley refuses automated access to supplement downloads; verify in a browser,2026-08-21,web
+https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.70004&file=jofi70004-sup-0002-ReplicationCode.zip,BLOCKED,,Wiley refuses automated access to supplement downloads; verify in a browser,2026-08-21,web
+https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.70008&file=jofi70008-sup-0001-ReplicationCode.zip,BLOCKED,,Wiley refuses automated access to supplement downloads; verify in a browser,2026-08-21,web
+https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.70029&file=jofi70029-sup-0002-Replication-Code.zip,BLOCKED,,Wiley refuses automated access to supplement downloads; verify in a browser,2026-08-21,web
+https://osf.io/fd6jq/overview,BLOCKED,200,OSF serves a JavaScript shell to automated clients and its API refuses them; verify in a browser,2026-08-21,web
+https://registry.goldstandard.org/,BLOCKED,200,Requires JavaScript; cannot be verified automatically,2026-08-21,web
+https://registry.verra.org/,LIVE,200,,2026-08-21,web
+https://researchbox.org/5014,LIVE,200,ResearchBox #5014; single 4.8 GB archive,2026-08-21,web
+https://sedac.ciesin.columbia.edu/,LIVE,200,,2026-08-21,web
+https://trends.google.com/,LIVE,200,,2026-08-21,web
+https://wonder.cdc.gov/nasa-nldas.html,LIVE,200,CDC WONDER NLDAS request form,2026-08-21,web
+https://www.biodiversityrisk.org/download/,LIVE,200,Offers multiple biodiversity datasets for download,2026-08-21,web
+https://www.chatclimate.ai/climatebert,LIVE,200,,2026-08-21,web
+https://www.consumerfinance.gov/data-research/hmda/,LIVE,200,,2026-08-21,web
+https://www.encorenature.org/en,LIVE,200,ENCORE,2026-08-21,web
+https://www.epa.gov/ghgreporting,LIVE,200,,2026-08-21,web
+https://www.epa.gov/toxics-release-inventory-tri-program,LIVE,200,,2026-08-21,web
+https://www.fec.gov/data/,LIVE,200,,2026-08-21,web
+https://www.federalreserve.gov/data.htm,LIVE,200,,2026-08-21,web
+https://www.fema.gov/flood-maps/national-flood-hazard-layer,BLOCKED,403,FEMA refuses automated access; verify in a browser,2026-08-21,web
+https://www.fema.gov/flood-maps/tools-resources/risk-map,BLOCKED,403,FEMA refuses automated access; verify in a browser,2026-08-21,web
+https://www.fema.gov/openfema,LIVE,200,,2026-08-21,web
+https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2,BLOCKED,403,FEMA refuses automated access; verify in a browser,2026-08-21,web
+https://www.gov.uk/government/collections/price-paid-data,LIVE,200,,2026-08-21,web
+https://www.l2-data.com/,ERROR,,Server error on fetch; commercial voter-file vendor,2026-08-21,web
+https://www.ncei.noaa.gov/products/land-based-station/integrated-surface-database,LIVE,200,,2026-08-21,web
+https://www.nhc.noaa.gov/data/,LIVE,200,NHC Data Archive,2026-08-21,web
+https://www.nlrb.gov/reports/agency-performance/election-reports,LIVE,200,,2026-08-21,web
+https://www.noaa.gov/tools-and-resources/weather-and-climate-resources#Climate,LIVE,200,,2026-08-21,web
+https://www.osha.gov/data,LIVE,200,,2026-08-21,web
+https://www.sec.gov/edgar,LIVE,200,,2026-08-21,web
+https://www.sec.gov/edgar/search/,LIVE,200,,2026-08-21,web
+https://www.sec.gov/edgar/search/#,LIVE,200,,2026-08-21,web
+https://www.unpri.org/signatories,LIVE,200,,2026-08-21,web
+https://www.unpri.org/sustainability-issues/research,LIVE,200,,2026-08-21,web
+https://www.zillow.com/research/ztrax/,LIVE,200,"Page states ZTRAX remains available via ICPSR; the corpus note ""now discontinued"" may need revisiting",2026-08-21,web
+https://zenodo.org/records/13282899,LIVE,200,"""Replication Package for: The Risk and Return of Impact Investing Funds"" — one 38.2 MB archive containing code, raw data, pseudo data and documentation",2026-08-21,web

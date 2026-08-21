@@ -1,0 +1,181 @@
+{
+  "n": 109,
+  "built_on": "2026-08-21",
+  "journals": {
+    "Journal of Finance": 14,
+    "Journal of Financial Economics": 42,
+    "Review of Finance": 31,
+    "Review of Financial Studies": 22
+  },
+  "years": {
+    "2017": 5,
+    "2019": 3,
+    "2023": 7,
+    "2025": 19,
+    "2026": 20,
+    "2011": 2,
+    "2012": 1,
+    "2013": 1,
+    "2014": 1,
+    "2015": 1,
+    "2016": 1,
+    "2020": 7,
+    "2021": 11,
+    "2022": 15,
+    "2024": 15
+  },
+  "data_levels": {
+    "N": 52,
+    "Y": 9,
+    "Partial": 7,
+    "Raw Data": 36,
+    "On Demand": 5
+  },
+  "code_levels": {
+    "N": 69,
+    "Y": 37,
+    "Partial": 2,
+    "On Demand": 1
+  },
+  "geo": {
+    "Global": 42,
+    "US": 57,
+    "Other / Regional": 1,
+    "Asia-Pacific": 2,
+    "Europe": 7
+  },
+  "unit": {
+    "Firm-Year": 44,
+    "Document-Level": 3,
+    "Portfolio-Level": 17,
+    "Other": 28,
+    "Asset-Level": 14,
+    "(unrecorded)": 1,
+    "Country-Year": 2
+  },
+  "tiers": {
+    "Tier 1": 6,
+    "Tier 2": 6,
+    "Tier 3": 4
+  },
+  "data_mean": 0.3073394495412844,
+  "code_mean": 0.35091743119266056,
+  "open_mean": 0.3291284403669725,
+  "fully_open": 6,
+  "fully_closed": 34,
+  "score_hist": {
+    "0.0": 34,
+    "1.0": 6,
+    "0.5": 21,
+    "0.875": 6,
+    "0.75": 8,
+    "0.625": 1,
+    "0.25": 27,
+    "0.125": 6
+  },
+  "code_y_not_open": 31,
+  "data_y_not_open": 3,
+  "unrunnable_code": 17,
+  "licensing": {
+    "licensed only": {
+      "n": 61,
+      "data": 0.1598360655737705,
+      "code": 0.38114754098360654,
+      "open": 0.27049180327868855,
+      "fully_open": 2
+    },
+    "licensed and public": {
+      "n": 31,
+      "data": 0.5,
+      "code": 0.3225806451612903,
+      "open": 0.4112903225806452,
+      "fully_open": 1
+    },
+    "public only": {
+      "n": 11,
+      "data": 0.5454545454545454,
+      "code": 0.2727272727272727,
+      "open": 0.4090909090909091,
+      "fully_open": 1
+    },
+    "neither": {
+      "n": 6,
+      "data": 0.375,
+      "code": 0.3333333333333333,
+      "open": 0.3541666666666667,
+      "fully_open": 2
+    }
+  },
+  "any_licensed": 92,
+  "clusters": {
+    "Biodiversity & Nature": {
+      "n": 14,
+      "data": 0.4642857142857143,
+      "code": 0.21428571428571427,
+      "open": 0.3392857142857143,
+      "fully_open": 2,
+      "median_lag": 3.0,
+      "median_end": 2023.0
+    },
+    "Climate Physical Risk": {
+      "n": 28,
+      "data": 0.4375,
+      "code": 0.35714285714285715,
+      "open": 0.39732142857142855,
+      "fully_open": 1,
+      "median_lag": 4.0,
+      "median_end": 2018.0
+    },
+    "Climate Transition Risk & Corporate Emissions": {
+      "n": 42,
+      "data": 0.35119047619047616,
+      "code": 0.36904761904761907,
+      "open": 0.3601190476190476,
+      "fully_open": 2,
+      "median_lag": 4.0,
+      "median_end": 2020.0
+    },
+    "Green Bonds & Sustainable Debt": {
+      "n": 13,
+      "data": 0.25,
+      "code": 0.6923076923076923,
+      "open": 0.47115384615384615,
+      "fully_open": 0,
+      "median_lag": 4,
+      "median_end": 2021
+    },
+    "Social & Governance": {
+      "n": 40,
+      "data": 0.24375,
+      "code": 0.24375,
+      "open": 0.24375,
+      "fully_open": 3,
+      "median_lag": 5.0,
+      "median_end": 2017.5
+    },
+    "ESG Disclosure & Ratings": {
+      "n": 38,
+      "data": 0.20394736842105263,
+      "code": 0.3157894736842105,
+      "open": 0.2598684210526316,
+      "fully_open": 1,
+      "median_lag": 4.0,
+      "median_end": 2019.0
+    }
+  },
+  "lag_median": 4,
+  "lag_mean": 4.440366972477064,
+  "lag_max": 14,
+  "past_2023": 5,
+  "window_median": 13,
+  "links_total": 218,
+  "links_verdicts": {
+    "NOT CHECKED": 109,
+    "BLOCKED": 40,
+    "LIVE": 64,
+    "ERROR": 2,
+    "REDIRECT": 1,
+    "RESTRICTED": 2
+  },
+  "links_checked_on": "2026-08-21"
+}
