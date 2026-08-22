@@ -25,12 +25,7 @@ there is lost the next time the workbook is reimported. Correct the workbook.
 
 `data/SustFin_Corpus_FINAL.csv` as tagged `v1.0.0` is the baseline the thesis's
 numbers are computed from. A reader following the citation must find the corpus
-the thesis describes, not a later and better one.
-
-Before the thesis is submitted and the DOI minted, correcting the workbook and
-reimporting is the right move — a known coding error should not be carried into
-submission for the sake of a rule. **After that point the baseline is closed**,
-and:
+the thesis describes.
 
 - **New papers do not go into it.** They go into `data/extensions/` (see below).
 - **Corrections do not go into it silently either.** They go through the
@@ -55,9 +50,9 @@ rejected out of hand, but they need an explanation in the PR description.
 
 1. **In scope?** The catalogue covers *empirical* sustainable finance research.
    Theory papers with no dataset have nothing to catalogue.
-2. **Every field coded?** Blanks are worse than a defensible judgement call, and
+2. **Every field coded?** Blanks are not authorized, and
    `derive.py` will fail loudly on an unrecognised availability level.
-3. **Availability coded as published, not as hoped.** `Y` means the constructed
+3. **Availability coded as published.** `Y` means the constructed
    analysis panel is released. If the paper names public sources but releases
    nothing, that is `Raw Data`, not `Y` — this is the most common coding error
    and the one that would quietly inflate every headline figure.
@@ -127,20 +122,18 @@ the link.
   every entry involves at least one commercially licensed input, and mirroring
   the open ones would create a maintenance burden and a licensing hazard for no
   gain over linking to the authoritative deposit.
-- **Working papers**, for now. The corpus is peer-reviewed publications in four
-  journals. Unrefereed working papers are a different population with a
+- **Working papers**, for now. The corpus is peer-reviewed publications in the four
+  leading journals in the field of finance. Unrefereed working papers are a different population with a
   different self-selection problem, and mixing them silently would make the
   openness rate uninterpretable. If they are added it will be as a separately
   labelled corpus.
-- **Quality judgements about the papers.** The tiers rank what is *retrievable*,
-  not what is good.
+- **Quality judgements about the papers.** The tiers rank what is *retrievable*, No checks about the quality of the datasets were performed.
 
 ## Style
 
 Python in `scripts/` is standard-library only — `import_corpus.py` and its
 `openpyxl` dependency are the single exception, and it is not needed to build
-or verify the repository. The code is meant to be read by an economist, not
-admired by an engineer. Keep it dependency-free, keep every
+or verify the repository. The code is meant to be read by an economist, and easily understood. Keep it dependency-free, keep every
 scoring key and classification declared in exactly one place, and keep the
 comment that explains *why* a judgement was made next to the judgement.
 
