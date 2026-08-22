@@ -86,9 +86,11 @@ Add a row to `data/corrections.csv` with these columns:
 | `reported_by` | Your name or handle. |
 | `date` | ISO date. |
 
-The build reads corrections and reports them; it does not apply them to the
-frozen file. A future v2.0.0 will fold accumulated corrections into a new
-baseline and say so in the release notes.
+`make verify` reads this file, checks that each row names a real paper and a
+real field and cites evidence, and prints every filed correction. It does not
+apply them to the frozen corpus — a correction is a claim on the record, not an
+edit. A future v2.0.0 will fold accumulated corrections into a new baseline and
+say so in the release notes.
 
 If you have found a **dead link** rather than a coding error, that is not a
 correction — update `data/link_checks.csv` instead, with a new `checked_on`
@@ -113,7 +115,11 @@ comparison. Two things to keep in mind before reporting rot:
   paper used.
 
 Update `data/link_checks.csv` with what you find, keeping one row per unique
-URL, and put the new date in `checked_on`.
+URL, and put the new date in `checked_on`. Set `method` to `manual` when you
+established it yourself: a manual verdict records a judgement a script cannot
+make, and should not be overwritten by a later probe without someone looking
+again. Thirty-one of the current verdicts exist only because a person opened
+the link.
 
 ## What does not belong here
 

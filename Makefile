@@ -43,7 +43,7 @@ check-links-offline:
 clean:
 	rm -f data/sustfin_datasets.csv data/sustfin_datasets.json data/stats.json
 	rm -f data/link_inventory.csv
-	rm -f docs/CATALOGUE.md docs/CITATIONS.md docs/STATS.md
+	rm -f docs/CATALOGUE.md docs/CITATIONS.md docs/STATS.md docs/LINK_CHECKS.md
 
 ## help: list targets
 help:

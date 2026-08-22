@@ -232,7 +232,27 @@ def main():
           sorted(known - set(warn)), [])
     print("  known warnings are accepted codings, explained in docs/CODEBOOK.md.")
 
-    print("\n9. README agrees with the build")
+    print("\n9. Filed corrections")
+    cpath = os.path.join(ROOT, "data", "corrections.csv")
+    corrections = list(csv.DictReader(open(cpath, encoding="utf-8"))) if os.path.exists(cpath) else []
+    check("every correction names a paper in the corpus",
+          sorted({c["paper_id"] for c in corrections} - set(ids_raw)), [])
+    check("every correction cites evidence",
+          [c["paper_id"] for c in corrections if not c.get("evidence", "").strip()], [])
+    fields = set(raw[0].keys())
+    check("every correction names a real field",
+          sorted({c["field"] for c in corrections if c["field"] not in fields}), [])
+    if corrections:
+        print(f"  {len(corrections)} correction(s) filed against the frozen corpus, "
+              "not applied to it:")
+        for c in corrections:
+            print(f"    {c['paper_id']} · {c['field']}: "
+                  f"{c['frozen_value']!r} -> {c['corrected_value']!r} "
+                  f"({c['reported_by']}, {c['date']})")
+    else:
+        print("  none filed.")
+
+    print("\n10. README agrees with the build")
     for label, needle in (
         ("corpus size", f"| Papers coded | **{len(raw)}**"),
         ("fully open", f"| Fully open (data **and** code) | **{fully_open}**"),

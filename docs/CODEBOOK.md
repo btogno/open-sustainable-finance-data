@@ -296,9 +296,17 @@ The `method` column of `data/link_checks.csv` records how each verdict was
 reached — `web` for an automated probe, `manual` for a human opening the link
 in a browser. A `manual` verdict overrides an automated one and should not be
 overwritten by a later `make check-links` run without someone looking again.
-The baseline's one correction so far is `P80`, probed as sign-in-walled on
-21 August 2026 and confirmed by hand to be publicly viewable on 22 August:
-the probe was reading Google's bot handling, not the file's sharing settings.
+Thirty-five of the 81 access links carry a `manual` verdict. Thirty-one are on
+hosts that refuse robots — twelve Harvard Dataverse deposits, ten Wiley
+supplement downloads, four Mendeley datasets, three FEMA pages, OSF and Gold
+Standard — and were confirmed by opening them. The other four were probed
+wrongly and corrected: `P80`'s and `P91`'s files were read as sign-in-walled
+when the probe was seeing Google's bot handling rather than their sharing
+settings, and the notes on `P41`'s and `P76`'s links asked for a confirmation
+that has since been given.
+
+A re-probe cannot reproduce any of those verdicts, and will report `BLOCKED`
+again. That is the expected result, not decay.
 
 ---
 

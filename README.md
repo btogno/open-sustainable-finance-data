@@ -39,7 +39,7 @@ every build.
 
 | Path | What it is |
 |---|---|
-| [`docs/CATALOGUE.md`](docs/CATALOGUE.md) | **The catalogue.** All 109 papers, one row each, sorted by openness, with topic and availability badges, coverage window, geographic scope and checked access links. Indexed by cluster at the foot. |
+| [`docs/CATALOGUE.md`](docs/CATALOGUE.md) | **The catalogue.** All 109 papers, one row each, sorted by openness: topic and method codes, raw inputs with their licensing exposure, coverage window, geographic scope, availability badges and access links. Indexed by cluster at the foot. |
 | [`docs/CITATIONS.md`](docs/CITATIONS.md) | Full verbatim citation for every paper ID. |
 | [`docs/CODEBOOK.md`](docs/CODEBOOK.md) | Every field defined; the two scoring keys; the source-licensing classification; the topic-to-cluster mapping. Read this before citing any number. |
 | [`docs/STATS.md`](docs/STATS.md) | All descriptive statistics, generated. |
@@ -112,9 +112,12 @@ A panel is released but the analysis code is not, so the result can be re-estima
 | **P91** | Climate news index / hedge portfolios / textual analysis | `TRN` `DIS` | 1984–2018 | US | `D:OPEN` | `C:—` | [data](https://drive.google.com/file/d/1pCHmcebmOwrVCFim78ALhB51c3h1qt2T/view?pli=1) |
 <!-- TIERS:END -->
 
-The composition of Tier 1 is itself a finding: two of the six are 2026
-biodiversity papers, three post-date the 2023 journal replication mandates, and
-none come from the ESG ratings literature.
+The composition of Tier 1 is itself a finding. Two of the six are 2026
+biodiversity papers and four of the six were published after the 2023 journal
+replication mandates, so the reproducible core of this literature is very new.
+And not one carries the ESG ratings flag: the only Tier 1 paper in that cluster,
+`P45`, is coded on disclosure. The field's most-studied object contributes
+nothing a reader can rerun.
 
 ## How openness is scored
 
@@ -152,12 +155,16 @@ request. They are stated here so nobody cites a number without them.
 - **Availability is coded as published, not as tested.** A paper coded `D:OPEN`
   released something; whether that something reproduces the paper's tables was
   not verified, and nothing here attempts that.
-- **An automated probe cannot judge every host.** Consumer file-sharing
-  services — Google Drive and Sheets among them — serve a sign-in banner to
-  every automated client whatever the file's real sharing settings. Links on
-  those hosts are therefore recorded `BLOCKED` and settled by hand: `P80`'s
-  sheet was confirmed publicly viewable in a browser on 22 August 2026, and
-  `P91`'s Drive file has not yet been checked that way.
+- **An automated probe cannot judge every host.** Harvard Dataverse, Wiley,
+  Mendeley, FEMA and OSF refuse automated requests outright, and consumer
+  file-sharing services serve a sign-in banner to every automated client
+  whatever a file's real permissions. Thirty-one of the 81 unique access links
+  could only be settled by opening them in a browser, and four more were read
+  wrongly by the probe and corrected the same way — thirty-five manual verdicts
+  in all, recorded as such in
+  [`data/link_checks.csv`](data/link_checks.csv). That nearly two-fifths of this
+  literature's deposited material resists automated verification is a fact about
+  the infrastructure, not about the instrument.
 - **The source-licensing classification is the author's judgement.** It is
   declared in one place, `LICENSED` and `PUBLIC` in
   [`scripts/derive.py`](scripts/derive.py), and changing it and rerunning the
@@ -181,10 +188,12 @@ make check-links     # re-probe every URL and diff against the recorded baseline
 [`data/link_inventory.csv`](data/link_inventory.csv), so what has changed since
 the baseline is a column comparison rather than an investigation.
 
-Two caveats worth knowing before reading the verdicts. `BLOCKED` means the host
-refuses automated requests — Harvard Dataverse, Wiley, FEMA and OSF all do —
-and is not evidence of rot; those need a browser. And a `200` proves a page
-exists, not that the file behind it is still the one the paper used.
+Two caveats worth knowing before reading the verdicts. A re-probe will report
+`BLOCKED` for every link on a host that refuses robots — Harvard Dataverse,
+Wiley, Mendeley, FEMA and OSF all do — and that is not evidence of rot; those
+carry a `manual` verdict established in a browser, which a fresh probe cannot
+reproduce and should not overwrite. And a `200` proves a page exists, not that
+the file behind it is still the one the paper used.
 
 Rebuilding everything else:
 
