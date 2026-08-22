@@ -149,7 +149,7 @@ request. They are stated here as a transparence mesure.
 - **One coder.** The corpus was coded by a single reader with no second-coder
   agreement statistic. Borderline calls between `Partial` and `Raw Data`, in
   particular, are judgement.
-- **Four journals.** A statement about the top of the field, not the field.
+- **Four journals.** A statement about the top of the field and the most influential papers in Finance, not the entire field.
 
 - **Availability is coded as published, not as tested.** A paper coded `D:OPEN`
   released something; whether that something reproduces the paper's tables was
