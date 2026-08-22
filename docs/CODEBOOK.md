@@ -261,12 +261,6 @@ paper × link, and carries a second pair of columns for a fresh probe so decay
 since the baseline is a column comparison. [LINK_CHECKS.md](LINK_CHECKS.md) is
 the readable rendering of the same thing.
 
-The catalogue itself shows access links unadorned. Verification state is kept
-out of that column deliberately: a mark against a link reads as a judgement on
-the paper, when it is usually a fact about the checker — most `BLOCKED`
-verdicts mean a host refuses robots, not that anything is wrong with the
-deposit.
-
 | Verdict | Meaning |
 |---|---|
 | `LIVE` | Resolved and served the expected resource when checked. |
