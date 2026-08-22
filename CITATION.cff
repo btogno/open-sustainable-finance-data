@@ -32,29 +32,3 @@ abstract: >-
   papers releasing nothing are included, so that the openness rate of the field
   is measurable rather than assumed. Access links carry recorded verification
   verdicts and a check date.
-
-# --- Optional: replace the placeholders below once the repository is public ---
-#
-# repository-code: "https://github.com/<user>/open-sustainable-finance-data"
-# url: "https://github.com/<user>/open-sustainable-finance-data"
-#
-# --- Minting a DOI (about five minutes, and worth doing before you cite it) ---
-#
-# 1. Push this repository to GitHub as a public repository.
-# 2. Sign in at https://zenodo.org with the GitHub account, then open
-#    Account -> GitHub and flip the switch next to this repository ON.
-# 3. On GitHub, create a release tagged v1.0.0. Zenodo archives the tag and
-#    mints a DOI within a minute or two.
-# 4. Zenodo issues two DOIs: a *concept* DOI that always resolves to the newest
-#    version, and a *version* DOI fixed to v1.0.0. Cite the version DOI in the
-#    thesis — a reader following it must land on the numbers the thesis reports.
-# 5. Add both back here:
-#
-#      doi: 10.5281/zenodo.XXXXXXX          # version DOI for v1.0.0
-#      identifiers:
-#        - type: doi
-#          value: 10.5281/zenodo.YYYYYYY    # concept DOI, all versions
-#          description: "Concept DOI resolving to the latest version"
-#
-# 6. Re-run `make build` and commit. GitHub renders a "Cite this repository"
-#    button from this file.
