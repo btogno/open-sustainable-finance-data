@@ -9,7 +9,7 @@ each study used, whether any of it can be obtained, and under what terms.
 ![corpus](https://img.shields.io/badge/corpus-109%20papers-informational) ![journals](https://img.shields.io/badge/journals-4-informational) ![fully open](https://img.shields.io/badge/fully%20open-6%20%285.5%25%29-critical) ![mean openness](https://img.shields.io/badge/mean%20openness-0.33-yellow) ![links checked](https://img.shields.io/badge/links%20checked-2026--08--22-lightgrey) ![data licence](https://img.shields.io/badge/data%20licence-CC%20BY%204.0-blue) ![code licence](https://img.shields.io/badge/code%20licence-MIT-blue)
 <!-- BADGES:END -->
 
-Most catalogues of open data list only the open things. This one lists the
+Most catalogues of open data list only the open articles. This one lists the
 closed ones too, because the question it was built to answer is *what share of
 the field is reproducible*, and that share is not measurable against a sample
 selected on being open. Every paper in the frozen corpus appears below, with a
