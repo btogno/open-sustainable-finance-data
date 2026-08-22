@@ -210,8 +210,8 @@ def main():
     for note, pids in seen.items():
         if len(pids) > 1:
             warn.append(f"{'/'.join(pids)}: identical long geographic note — possible copy-paste")
-    # Warnings that have been reviewed and either accepted or explained in the
-    # README. Anything not in this set fails the build, so a new coding problem
+    # Warnings reviewed and accepted. Anything not in this set fails the
+    # build, so a new coding problem cannot appear silently. Anything not in this set fails the build, so a new coding problem
     # cannot appear silently. Resolved on 2026-08-22 and deliberately removed
     # from this set: P66 and P105 (coder notes cleared), P81/P82 (P82 had been
     # coded from P81's paper and was fully recoded).
@@ -230,7 +230,7 @@ def main():
     check("no unrecorded data-quality warning", sorted(set(warn) - known), [])
     check("no stale entry left in the known-warnings set",
           sorted(known - set(warn)), [])
-    print("  known warnings are listed in README under 'Open items in the frozen corpus'.")
+    print("  known warnings are accepted codings, explained in docs/CODEBOOK.md.")
 
     print("\n9. README agrees with the build")
     for label, needle in (

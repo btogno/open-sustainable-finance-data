@@ -28,7 +28,7 @@ scored openness level and, where one exists, a link that has been checked.
 | Touch at least one licensed input | **92** (84.4 %) |
 | Mean data score, licensed-only vs public-only | **0.16** vs **0.55** |
 | Median lag, last data year to publication | **4 years** |
-| Access links resolving when last checked | **65** verified live, 41 not automatically verifiable (2026-08-22) |
+| Access links resolving when last checked | **106** of 109, 1 redirecting, 2 erroring (2026-08-22) |
 <!-- STATS:END -->
 
 Full breakdowns — by cluster, by licensing exposure, by journal and by year —
@@ -43,6 +43,7 @@ every build.
 | [`docs/CITATIONS.md`](docs/CITATIONS.md) | Full verbatim citation for every paper ID. |
 | [`docs/CODEBOOK.md`](docs/CODEBOOK.md) | Every field defined; the two scoring keys; the source-licensing classification; the topic-to-cluster mapping. Read this before citing any number. |
 | [`docs/STATS.md`](docs/STATS.md) | All descriptive statistics, generated. |
+| [`docs/LINK_CHECKS.md`](docs/LINK_CHECKS.md) | Every data and code link, with its verdict, whether a script or a person established it, and when. |
 | [`data/Taxonomy_Coding_Sheet_FINAL.xlsx`](data/Taxonomy_Coding_Sheet_FINAL.xlsx) | **The coding workbook.** Where the hand-coding lives and where corrections are made. |
 | [`data/SustFin_Corpus_FINAL.csv`](data/SustFin_Corpus_FINAL.csv) | **The frozen corpus.** Generated from the workbook's *Full Coding* sheet by `make import`; never hand-edited, never touched by the build. |
 | [`data/sustfin_datasets.csv`](data/sustfin_datasets.csv) · [`.json`](data/sustfin_datasets.json) | The frozen fields plus every derived field (scores, clusters, licensing class, coverage window, lag, tier). Start here for analysis. |
@@ -165,23 +166,6 @@ request. They are stated here so nobody cites a number without them.
   0.75/1 map is a convenience, not a measurement.
 - **Clusters overlap.** Topic flags are non-exclusive, so cluster counts sum
   above 109 and cluster comparisons are not comparisons of disjoint samples.
-
-### Open items in the frozen corpus
-
-Found by `make verify`, which reports them on every build and fails if a new
-one appears. Coding corrections are made in the workbook and reimported with
-`make import`; link-level findings are settled in
-[`data/link_checks.csv`](data/link_checks.csv).
-
-| Entry | Issue | Status |
-|---|---|---|
-| `P82` | The whole row had been coded from the wrong paper — method, sources, unit of observation and geographic note all belonged to `P81`. | **Resolved** in the 22 August reimport: now satellite and econometrics on mangrove, hazard and property data, asset-level, Florida. |
-| `P66`, `P105` | Unresolved coder notes survived in the geographic field (`verify exact list`, `[VERIFY] exact sample years`). | **Resolved** in the 22 August reimport. |
-| `P80` | Geographic scope is coded `US` while the note opens "Global firms operating near (newly) protected biodiversity areas". | **Resolved, coding correct.** The firms are multinational; the protected areas are all in the United States. Scope follows the phenomenon, not the firms — the rule is now stated in [CODEBOOK.md §6](docs/CODEBOOK.md). The check still fires and is accepted rather than suppressed, so the same pattern in a new entry is surfaced. |
-| `P91` | Coded `D:OPEN`; its Google Drive link cannot be verified automatically and has not yet been checked in a browser. (`P80`, the same case, was checked and is genuinely public.) | Open. |
-| `P41` | The access note says ZTRAX is discontinued; Zillow's page states it remains available through ICPSR. | Open. |
-| `P76` | The JNCC link resolves to *SSSI Guidelines, Chapter 1a: Coastlands*, which may not be the intended resource. | Open. |
-| `P104` | The code link is file-level (`file.xhtml?fileId=…`) rather than dataset-level, and will break if the deposit is re-uploaded. | Open. |
 
 ## Maintenance
 

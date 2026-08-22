@@ -191,9 +191,18 @@ def stats(recs, links):
     windows = [r["coverage_window_years"] for r in recs if r["coverage_window_years"]]
     s["window_median"] = st.median(windows)
 
-    s["links_total"] = sum(1 for x in links if x["url"])
-    s["links_verdicts"] = collections.Counter(x["verdict"] for x in links if x["url"])
-    s["links_checked_on"] = max((x["checked_on"] for x in links if x["checked_on"]), default="")
+    # Link figures cover data and code links only. Publisher landing pages are
+    # DOIs and were never probed; counting them would inflate the denominator
+    # with links that were never in question.
+    assets = [x for x in links if x["link_type"] != "paper_link" and x["url"]]
+    s["links_total"] = len(assets)
+    s["links_verdicts"] = collections.Counter(x["verdict"] for x in assets)
+    s["links_methods"] = collections.Counter(x["method"] or "—" for x in assets)
+    s["links_paper_pages"] = sum(
+        1 for x in links if x["link_type"] == "paper_link" and x["url"]
+    )
+    s["links_checked_on"] = max((x["checked_on"] for x in assets if x["checked_on"]),
+                                default="")
     return s
 
 
@@ -233,10 +242,11 @@ def link_cell(rec, links_by_paper):
         marks = []
         note = next((x["access_note"] for x in entries if x["access_note"]), "")
         for i, x in enumerate(urls, 1):
-            mark = {"LIVE": "", "REDIRECT": "↷", "RESTRICTED": "⚠",
-                    "ERROR": "⚠", "BLOCKED": "?", "NOT CHECKED": "?"}.get(x["verdict"], "?")
+            # Verification state is deliberately not shown here. It lives in
+            # LINK_CHECKS.md, because a mark in this column reads as a judgement
+            # on the paper rather than on the checker that produced it.
             name = label if len(urls) == 1 else f"{label}&nbsp;{i}"
-            marks.append(f"[{name}{mark}]({x['url']})")
+            marks.append(f"[{name}]({x['url']})")
         cell = " ".join(marks)
         if note:
             cell += f" <sub>{clip(note)}</sub>"
@@ -290,11 +300,10 @@ def catalogue(recs, links, s):
         "score 0.16 on data against 0.55 for public-only; see "
         "[STATS.md](STATS.md).",
         "",
-        "**Link marks.** No mark = resolved when last checked · `↷` redirects to a "
-        "new address · `⚠` resolves but is not openly accessible, or returned an "
-        "error · `?` not verifiable automatically (the host refuses automated "
-        f"requests) — see [link_inventory.csv](../data/link_inventory.csv). "
-        f"Last checked {s['links_checked_on']}.",
+        "**Access links** are reproduced as the paper gives them. Every one has "
+        "been checked and the result — when, by what means, and what it "
+        f"resolved to — is recorded in [LINK_CHECKS.md](LINK_CHECKS.md), last "
+        f"updated {s['links_checked_on']}.",
         "",
         "| ID | Study | Topics | Methods | Inputs | Coverage | Geo | Data | Code | Score | Access |",
         "|---|---|---|---|---|---|---|---|---|---|---|",
@@ -337,6 +346,63 @@ def catalogue(recs, links, s):
             " ".join(f"`{r['paper_id']}`" for r in g),
             "",
         ]
+    return "\n".join(out) + "\n"
+
+
+def link_checks(recs, links):
+    """A readable rendering of the link-rot baseline, one row per link."""
+    titles = {r["paper_id"]: oneline(r["short_title"]) for r in recs}
+    order = {p: i for i, p in enumerate(sorted(titles, key=lambda x: int(x[1:])))}
+    rows = [x for x in links if x["link_type"] != "paper_link"]
+    rows.sort(key=lambda x: (order.get(x["paper_id"], 999), x["link_type"]))
+
+    counts = collections.Counter(x["verdict"] for x in rows if x["url"])
+
+    out = [
+        "# Link checks",
+        "",
+        "Every data and code access link in the corpus, with the result of "
+        "checking it. Publisher landing pages are omitted: those are DOIs.",
+        "",
+        "**Verdicts.** `LIVE` resolved and served the expected resource · "
+        "`REDIRECT` resolves, but to a different address than the paper gives — "
+        "the new one is in the note · `BLOCKED` the host refuses automated "
+        "requests, or answers all of them identically whatever the file's real "
+        "permissions, so only a person can settle it · `ERROR` returned a server "
+        "error, possibly transient · `NO URL` the access field holds an email "
+        "address or a prose note rather than a link.",
+        "",
+        "**Method.** `web` an automated probe · `manual` a person opened it in a "
+        "browser. A manual verdict overrides an automated one and should not be "
+        "overwritten by a later `make check-links` run without someone looking "
+        "again.",
+        "",
+        "A `LIVE` verdict proves a page exists. It does not prove the file behind "
+        "it is still the file the paper used, and nothing here verifies that a "
+        "released panel reproduces a published table.",
+        "",
+        "Current state: "
+        + " · ".join(f"**{k}** {v}" for k, v in counts.most_common())
+        + f" across {sum(counts.values())} link entries. Counted per entry: "
+        "several papers cite the same public source, so the unique-URL totals "
+        "quoted in the README are lower.",
+        "",
+        "| Paper | Study | Link | Verdict | Method | Checked | Note |",
+        "|---|---|---|---|---|---|---|",
+    ]
+    for x in rows:
+        kind = "data" if x["link_type"] == "data_link" else "code"
+        if x["url"]:
+            shown = x["url"]
+            label = shown if len(shown) <= 60 else shown[:57] + "…"
+            cell = f"[{oneline(label)}]({shown})"
+        else:
+            cell = f"<sub>{clip(x['access_note'], 60)}</sub>"
+        out.append(
+            f"| {x['paper_id']} | <sub>{clip(titles.get(x['paper_id'], ''), 45)}</sub> | "
+            f"{kind}: {cell} | `{x['verdict']}` | {('`' + x['method'] + '`') if x.get('method') else '—'} | "
+            f"{x['checked_on'] or '—'} | <sub>{clip(x['check_note'], 90)}</sub> |"
+        )
     return "\n".join(out) + "\n"
 
 
@@ -457,14 +523,19 @@ def stats_md(s):
         "",
         "## Link inventory",
         "",
-        f"{s['links_total']} link entries across the corpus, last checked "
-        f"{s['links_checked_on']}: "
-        + " · ".join(f"{k} {v}" for k, v in s["links_verdicts"].most_common()),
+        f"{s['links_total']} data and code link entries across the corpus, last "
+        f"checked {s['links_checked_on']}: "
+        + " · ".join(f"{k} {v}" for k, v in s["links_verdicts"].most_common())
+        + ". Established by "
+        + " · ".join(f"{k} {v}" for k, v in s["links_methods"].most_common())
+        + ".",
         "",
-        "`BLOCKED` means the host refuses automated requests (Harvard Dataverse, "
-        "Wiley, FEMA, OSF); it is not evidence of link rot. `NOT CHECKED` is the "
-        "publisher landing page of each paper, which is a DOI and was left out of "
-        "the baseline pass.",
+        f"The {s['links_paper_pages']} publisher landing pages are excluded: they "
+        "are DOIs and were never in question. Where an automated probe could not "
+        "settle a link — Harvard Dataverse, Wiley, Mendeley, FEMA, OSF and Google "
+        "all refuse robots or answer them identically whatever a file's real "
+        "permissions — it was opened in a browser instead, which is what the "
+        "`manual` method records. See [LINK_CHECKS.md](LINK_CHECKS.md).",
         "",
     ]
     return "\n".join(o) + "\n"
@@ -494,9 +565,14 @@ def readme_block(s):
         f"**{fmt(lic['public only']['data'])}** |",
         f"| Median lag, last data year to publication | **{s['lag_median']:.0f} years** |",
         f"| Access links resolving when last checked | "
-        f"**{s['links_verdicts']['LIVE']}** verified live, "
-        f"{s['links_verdicts'].get('BLOCKED', 0)} not automatically verifiable "
-        f"({s['links_checked_on']}) |",
+        f"**{s['links_verdicts']['LIVE']}** of {s['links_total']}"
+        + (f", {s['links_verdicts']['BLOCKED']} not verifiable automatically"
+           if s["links_verdicts"].get("BLOCKED") else "")
+        + (f", {s['links_verdicts']['REDIRECT']} redirecting"
+           if s["links_verdicts"].get("REDIRECT") else "")
+        + (f", {s['links_verdicts']['ERROR']} erroring"
+           if s["links_verdicts"].get("ERROR") else "")
+        + f" ({s['links_checked_on']}) |",
     ])
 
 
@@ -587,6 +663,7 @@ def main():
     for name, text in (
         ("CATALOGUE.md", catalogue(recs, links, s)),
         ("CITATIONS.md", citations(recs)),
+        ("LINK_CHECKS.md", link_checks(recs, links)),
         ("STATS.md", stats_md(s)),
     ):
         open(os.path.join(DOCS, name), "w", encoding="utf-8").write(text)

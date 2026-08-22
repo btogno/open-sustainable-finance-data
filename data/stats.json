@@ -230,15 +230,15 @@
       "EXP": 1
     },
     "Climate Physical Risk": {
-      "NLP": 4,
       "ECON": 26,
+      "NLP": 4,
       "SAT": 12,
       "OTH": 1,
       "SURV": 1
     },
     "Climate Transition Risk & Corporate Emissions": {
-      "NLP": 7,
       "ECON": 39,
+      "NLP": 7,
       "OTH": 5,
       "SURV": 3,
       "SAT": 2,
@@ -246,8 +246,8 @@
       "FILE": 1
     },
     "Green Bonds & Sustainable Debt": {
-      "OTH": 2,
       "ECON": 12,
+      "OTH": 2,
       "SAT": 2,
       "EXP": 1,
       "SURV": 1
@@ -276,13 +276,16 @@
   "lag_max": 14,
   "past_2023": 5,
   "window_median": 13,
-  "links_total": 218,
+  "links_total": 109,
   "links_verdicts": {
-    "NOT CHECKED": 109,
-    "BLOCKED": 41,
-    "LIVE": 65,
+    "LIVE": 106,
     "ERROR": 2,
     "REDIRECT": 1
   },
+  "links_methods": {
+    "manual": 44,
+    "web": 65
+  },
+  "links_paper_pages": 109,
   "links_checked_on": "2026-08-22"
 }

@@ -77,7 +77,7 @@ Counted on an **any-mention** basis across the primary and secondary method fiel
 
 ## Link inventory
 
-218 link entries across the corpus, last checked 2026-08-22: NOT CHECKED 109 · LIVE 65 · BLOCKED 41 · ERROR 2 · REDIRECT 1
+109 data and code link entries across the corpus, last checked 2026-08-22: LIVE 106 · ERROR 2 · REDIRECT 1. Established by web 65 · manual 44.
 
-`BLOCKED` means the host refuses automated requests (Harvard Dataverse, Wiley, FEMA, OSF); it is not evidence of link rot. `NOT CHECKED` is the publisher landing page of each paper, which is a DOI and was left out of the baseline pass.
+The 109 publisher landing pages are excluded: they are DOIs and were never in question. Where an automated probe could not settle a link — Harvard Dataverse, Wiley, Mendeley, FEMA, OSF and Google all refuse robots or answer them identically whatever a file's real permissions — it was opened in a browser instead, which is what the `manual` method records. See [LINK_CHECKS.md](LINK_CHECKS.md).
 

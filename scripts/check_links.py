@@ -139,10 +139,10 @@ def main(probe_live=True):
         w = csv.writer(fh)
         w.writerow(["paper_id", "link_type", "url", "access_note",
                     "verdict", "http_status", "check_note", "checked_on",
-                    "reprobe_status", "reprobe_verdict", "reprobe_on"])
+                    "method", "reprobe_status", "reprobe_verdict", "reprobe_on"])
         for pid, field, url, note in items:
             if not url:
-                w.writerow([pid, field, "", note, "NO URL", "", "", "", "", "", ""])
+                w.writerow([pid, field, "", note, "NO URL", "", "", "", "", "", "", ""])
                 continue
             rec = recorded.get(url, {})
             code, _eff = fresh.get(url, ("", ""))
@@ -152,6 +152,7 @@ def main(probe_live=True):
                 rec.get("http_status", ""),
                 rec.get("note", ""),
                 rec.get("checked_on", ""),
+                rec.get("method", ""),
                 code,
                 verdict(url, code) if code else "",
                 today if probe_live else "",
