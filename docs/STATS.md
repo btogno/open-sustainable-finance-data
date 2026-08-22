@@ -1,13 +1,13 @@
 # Statistics
 
-Recomputed from the frozen corpus on 2026-08-21. Every figure the README or the thesis cites is derived here, so the two cannot drift apart.
+Recomputed from the frozen corpus on 2026-08-22. Every figure the README or the thesis cites is derived here, so the two cannot drift apart.
 
 ## Corpus
 
 - **n = 109** papers, four journals, publication years 2011–2026.
 - Journals: Journal of Financial Economics 42 · Review of Finance 31 · Review of Financial Studies 22 · Journal of Finance 14
 - Geographic scope of the data: US 57 · Global 42 · Europe 7 · Asia-Pacific 2 · Other / Regional 1
-- Unit of observation: Firm-Year 44 · Other 28 · Portfolio-Level 17 · Asset-Level 14 · Document-Level 3 · Country-Year 2 · (unrecorded) 1
+- Unit of observation: Firm-Year 43 · Other 28 · Portfolio-Level 17 · Asset-Level 15 · Document-Level 3 · Country-Year 2 · (unrecorded) 1
 
 ## Openness
 
@@ -42,6 +42,33 @@ Ordered along the openness gradient. Non-exclusive, so counts sum above 109.
 | Social & Governance | 40 | 0.24 | 0.24 | 0.24 | 3 | 5 | 2018 |
 | ESG Disclosure & Ratings | 38 | 0.20 | 0.32 | 0.26 | 1 | 4 | 2019 |
 
+## Methods
+
+Counted on an **any-mention** basis across the primary and secondary method fields. The gap between the two columns is the result that matters: a method can be widely used without being anyone's headline technique.
+
+| Method | Any mention | Primary only | Mean openness | Mean data |
+|---|---|---|---|---|
+| Standard econometrics on accounting and market data | 99 | 84 | 0.33 | 0.30 |
+| Satellite and remote sensing | 14 | 3 | 0.43 | 0.50 |
+| NLP / textual analysis | 10 | 8 | 0.56 | 0.57 |
+| Survey instrument | 9 | 4 | 0.25 | 0.33 |
+| Experiment | 6 | 3 | 0.19 | 0.21 |
+| Regulatory filing parsing | 4 | 0 | 0.47 | 0.44 |
+| Machine learning (non-NLP) | 1 | 0 | 0.00 | 0.00 |
+| Meta-analysis / systematic review | 1 | 0 | 0.00 | 0.00 |
+| Other | 10 | 7 | 0.20 | 0.10 |
+
+### Methods by cluster
+
+| Cluster | n | Standard econometrics | Other methods, any mention |
+|---|---|---|---|
+| Biodiversity & Nature | 14 | 10 (71 %) | NLP 3 · Survey instrument 2 · Satellite and remote sensing 2 · Other 1 · Machine learning (non-NLP) 1 · Experiment 1 |
+| Climate Physical Risk | 28 | 26 (93 %) | Satellite and remote sensing 12 · NLP 4 · Other 1 · Survey instrument 1 |
+| Climate Transition Risk & Corporate Emissions | 42 | 39 (93 %) | NLP 7 · Other 5 · Survey instrument 3 · Satellite and remote sensing 2 · Experiment 1 · Regulatory filing parsing 1 |
+| Green Bonds & Sustainable Debt | 13 | 12 (92 %) | Other 2 · Satellite and remote sensing 2 · Experiment 1 · Survey instrument 1 |
+| Social & Governance | 40 | 35 (88 %) | Experiment 4 · Survey instrument 4 · Satellite and remote sensing 4 · Regulatory filing parsing 2 · Other 2 · NLP 1 |
+| ESG Disclosure & Ratings | 38 | 34 (89 %) | Experiment 5 · Survey instrument 4 · Other 4 · NLP 2 · Regulatory filing parsing 2 · Meta-analysis 1 |
+
 ## Currency of the evidence
 
 - Median lag from last year of data to publication: **4 years** (mean 4.4, maximum 14).
@@ -50,7 +77,7 @@ Ordered along the openness gradient. Non-exclusive, so counts sum above 109.
 
 ## Link inventory
 
-218 link entries across the corpus, last checked 2026-08-21: NOT CHECKED 109 · LIVE 64 · BLOCKED 40 · ERROR 2 · RESTRICTED 2 · REDIRECT 1
+218 link entries across the corpus, last checked 2026-08-22: NOT CHECKED 109 · LIVE 65 · BLOCKED 41 · ERROR 2 · REDIRECT 1
 
 `BLOCKED` means the host refuses automated requests (Harvard Dataverse, Wiley, FEMA, OSF); it is not evidence of link rot. `NOT CHECKED` is the publisher landing page of each paper, which is a DOI and was left out of the baseline pass.
 

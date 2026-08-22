@@ -8,8 +8,12 @@ Two files carry the data. `data/SustFin_Corpus_FINAL.csv` is the **frozen
 corpus** — hand-coded, never modified by the build.
 `data/sustfin_datasets.csv` is the **derived table** — the frozen fields plus
 everything computed from them by `scripts/derive.py`. Analysis should use the
-derived table; corrections belong in the frozen corpus (see
-[CONTRIBUTING.md](../CONTRIBUTING.md)).
+derived table.
+
+The frozen corpus is itself generated, from the *Full Coding* sheet of
+`Taxonomy_Coding_Sheet_FINAL.xlsx` via `make import`. The workbook is where
+coding corrections are made; the CSV is never hand-edited, because a hand edit
+is lost at the next import. See [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ---
 
@@ -176,8 +180,10 @@ descriptive.
 `method_primary` and `method_secondary` are coded separately, and the catalogue
 reports methods on an **any-mention** basis across both fields. This matters:
 counting primary methods alone understates satellite and remote sensing (2
-papers primary, 13 any-mention), regulatory filing parsing (0 primary, 4
-any-mention) and market data (18 primary, 57 any-mention).
+papers primary, 14 any-mention), regulatory filing parsing (0 primary, 4
+any-mention) and market data (18 primary, 57 any-mention). The full table,
+including each method's mean openness, is generated into
+[STATS.md](STATS.md) and should be cited from there rather than from here.
 
 Codes: `ECON` standard econometrics on accounting and market data · `NLP`
 textual analysis · `SAT` satellite and remote sensing · `SURV` survey
@@ -199,8 +205,32 @@ machine learning other than NLP · `META` meta-analysis or systematic review ·
 | `geographic_notes` | Free text where the scope needs qualification. |
 | `unit_of_observation` | `Firm-Year`, `Portfolio-Level`, `Asset-Level`, `Document-Level`, `Country-Year`, `Other`. |
 
+### Whose geography is coded
+
+Many studies observe firms in one place and a phenomenon in another: a
+multinational sample exposed to a hazard, a policy or a protected area that
+exists in a single country. **The scope follows the geography of the
+phenomenon under study, not the domicile of the entities observed.** The
+question the field answers is *where does the evidence come from*, and evidence
+about a US regulatory boundary is US evidence however widely dispersed the
+firms that trip over it.
+
+`P80` is the worked example, and the reason this paragraph exists. It studies
+multinational firms operating near newly protected biodiversity areas, and the
+protected areas are all in the United States — so the note describes global
+firms while the scope is coded `US`. Both are correct and they are not in
+conflict. `verify.py` still raises this pairing as a warning, because a scope
+that disagrees with its own note is usually an error; it is listed as a known
+and accepted warning rather than suppressed, so the same pattern in a new entry
+is still surfaced for a human to judge.
+
+The corollary matters for §4.9(d): the US share of the corpus is a statement
+about where the studied phenomena are, not about which firms were studied, and
+it should be described that way.
+
 One cell in the frozen corpus needs a rule. `P61` records two separate
-cross-sections rather than a continuous range, coded `2014; 2017`. The build
+cross-sections rather than a continuous range, coded as two years in one cell.
+The build
 takes the earliest listed year as the start and the latest as the end, so the
 coverage window spans everything the study observes; `verify.py` asserts that
 this is still the only such cell, so a second one cannot slip in unnoticed.
@@ -245,8 +275,8 @@ since the baseline is a column comparison.
 |---|---|
 | `LIVE` | Resolved and served the expected resource when checked. |
 | `REDIRECT` | Resolves, but to a different address than the one the paper gives. The new address is in the note. |
-| `RESTRICTED` | Resolves but is not openly accessible — typically a Google Drive or Sheets location asking for sign-in. |
-| `BLOCKED` | The host refuses automated requests. **Not evidence of rot**; Harvard Dataverse, Wiley, FEMA, OSF and Mendeley all do this. Needs a browser. |
+| `RESTRICTED` | Resolves, but access is genuinely conditional — a registration wall or an explicit permission request, established by hand rather than inferred from a status code. |
+| `BLOCKED` | The host refuses automated requests, or answers every one of them identically whatever the file's real permissions. **Not evidence of rot**; Harvard Dataverse, Wiley, FEMA, OSF, Mendeley, Google Drive and Google Sheets all do this. Needs a browser. |
 | `ERROR` | Returned a server error. May be transient. |
 | `NOT CHECKED` | Not probed in the baseline pass. All such entries are publisher landing pages, which are DOIs. |
 | `NO URL` | The access field holds an email address or a prose note rather than a link. |
@@ -255,11 +285,25 @@ A `LIVE` verdict proves a page exists. It does not prove the file behind it is
 still the file the paper used, and nothing in this repository verifies that a
 released panel reproduces a published table.
 
+The `method` column of `data/link_checks.csv` records how each verdict was
+reached — `web` for an automated probe, `manual` for a human opening the link
+in a browser. A `manual` verdict overrides an automated one and should not be
+overwritten by a later `make check-links` run without someone looking again.
+The baseline's one correction so far is `P80`, probed as sign-in-walled on
+21 August 2026 and confirmed by hand to be publicly viewable on 22 August:
+the probe was reading Google's bot handling, not the file's sharing settings.
+
 ---
 
 ## 9. Derived fields at a glance
 
 Computed by `scripts/derive.py` and present only in the derived table:
-`topic_codes`, `clusters`, `method_codes`, `licensing_exposure`, `data_score`,
-`code_score`, `openness_score`, `openness_tier`, `curation_tier`, `coverage`,
+`topic_codes`, `clusters`, `method_codes`, `source_codes`,
+`licensing_exposure`, `licensing_code`, `data_score`, `code_score`,
+`openness_score`, `openness_tier`, `curation_tier`, `coverage`,
 `coverage_window_years`, `lag_years`.
+
+`source_codes` and `licensing_code` exist so that a paper's inputs and its
+licensing exposure fit in a table cell. The codes are declared in `SOURCE_CODE`
+and `LICENSING_CODE` in `scripts/derive.py`; the classification that produces
+them is §4 above.

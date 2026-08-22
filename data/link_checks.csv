@@ -29,8 +29,8 @@ https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/RR86M2,
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UTMICU,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W5HTWA,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,web
 https://dataverse.harvard.edu/file.xhtml?fileId=7622069&version=1.0,BLOCKED,,"Harvard Dataverse refuses automated access; also a file-level rather than dataset-level link, which is more fragile",2026-08-21,web
-https://docs.google.com/spreadsheets/d/1Lz3FSaHMt36nuq82qmg9DWtWYxslPMYH/edit?pli=1&gid=1092822974#gid=1092822974,RESTRICTED,200,Google Sheet resolves but prompts for sign-in; not openly downloadable,2026-08-21,web
-https://drive.google.com/file/d/1pCHmcebmOwrVCFim78ALhB51c3h1qt2T/view?pli=1,RESTRICTED,200,Google Drive file resolves but prompts for sign-in; not openly downloadable,2026-08-21,web
+https://docs.google.com/spreadsheets/d/1Lz3FSaHMt36nuq82qmg9DWtWYxslPMYH/edit?pli=1&gid=1092822974#gid=1092822974,LIVE,200,"Publicly viewable without sign-in, confirmed manually in a browser. Automated clients are served a sign-in banner, which is a property of Google's bot handling and not of the file's sharing settings",2026-08-22,manual
+https://drive.google.com/file/d/1pCHmcebmOwrVCFim78ALhB51c3h1qt2T/view?pli=1,BLOCKED,200,Google Drive serves a sign-in banner to automated clients regardless of sharing settings; needs a manual check in a browser,2026-08-21,web
 https://emma.msrb.org/,ERROR,200,"Returned ""An Error Has Occurred""; may be transient or bot protection",2026-08-21,web
 https://epc.opendatacommunities.org/,REDIRECT,302,Now redirects to https://get-energy-performance-data.communities.gov.uk/ which serves bulk EPC CSV downloads,2026-08-21,web
 https://ghgdata.epa.gov/flight/?viewType=map,LIVE,200,EPA FLIGHT,2026-08-21,web

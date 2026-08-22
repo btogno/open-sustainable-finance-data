@@ -39,6 +39,17 @@ PUBLISHER_HINTS = (
     "elsevier.com", "ssrn.com", "doi.org", "aeaweb.org",
 )
 
+# Hosts that serve a sign-in banner to every automated client, whatever the
+# file's actual sharing settings. An automated probe cannot tell a genuinely
+# restricted file from a publicly shared one here, so these are never labelled
+# RESTRICTED on the strength of a probe — they are BLOCKED until a human looks.
+# P80's sheet was mislabelled RESTRICTED on 2026-08-21 for exactly this reason
+# and is in fact publicly viewable.
+MANUAL_ONLY_HOSTS = (
+    "docs.google.com", "drive.google.com", "sheets.google.com",
+    "onedrive.live.com", "sharepoint.com", "dropbox.com",
+)
+
 
 def clean(u):
     return u.rstrip(".,;:)]}'\"")
@@ -84,6 +95,8 @@ def probe(url):
 
 
 def verdict(url, code):
+    if any(h in url for h in MANUAL_ONLY_HOSTS):
+        return "BLOCKED"
     if code in ("200", "206", "301", "302", "303", "307", "308"):
         return "LIVE"
     if code in ("401", "403"):

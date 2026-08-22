@@ -16,6 +16,7 @@ import csv
 import datetime as dt
 import json
 import os
+import re
 import statistics as st
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -44,6 +45,32 @@ CODE_BADGE = {
     "Partial": "`C:PART`",
     "On Demand": "`C:REQ`",
     "N": "`C:—`",
+}
+
+METHOD_NAME = {
+    "ECON": "Standard econometrics on accounting and market data",
+    "SAT": "Satellite and remote sensing",
+    "NLP": "NLP / textual analysis",
+    "SURV": "Survey instrument",
+    "EXP": "Experiment",
+    "FILE": "Regulatory filing parsing",
+    "ML": "Machine learning (non-NLP)",
+    "META": "Meta-analysis / systematic review",
+    "OTH": "Other",
+}
+
+METHOD_ORDER = ["ECON", "SAT", "NLP", "SURV", "EXP", "FILE", "ML", "META", "OTH"]
+
+PRIMARY_TO_CODE = {
+    "Standard Econometrics Accounting / Market Data": "ECON",
+    "NLP / Textual Analysis": "NLP",
+    "Satellite & Remote Sensing": "SAT",
+    "Survey Instrument": "SURV",
+    "Experiment": "EXP",
+    "Regulatory Filing Parsing": "FILE",
+    "Machine Learning (non-NLP)": "ML",
+    "Meta-Analysis / Systematic Review": "META",
+    "Other": "OTH",
 }
 
 TIER_BADGE = {
@@ -131,6 +158,33 @@ def stats(recs, links):
                                      if r["dataset_end_year"]]),
         }
 
+    # Methods are counted on an any-mention basis across the primary and
+    # secondary fields; the primary column is reported alongside, because the
+    # gap between the two is the adoption result.
+    primary = collections.Counter(
+        PRIMARY_TO_CODE.get(r["method_primary"], "OTH") for r in recs
+    )
+    s["methods"] = {}
+    for code in METHOD_ORDER:
+        g = [r for r in recs if code in r["method_codes"]]
+        if not g:
+            continue
+        s["methods"][code] = {
+            "n": len(g),
+            "primary": primary.get(code, 0),
+            "open": mean([r["openness_score"] for r in g]),
+            "data": mean([r["data_score"] for r in g]),
+        }
+
+    s["cluster_methods"] = {}
+    for c in CLUSTER_ORDER:
+        g = [r for r in recs if c in r["clusters"]]
+        mc = collections.Counter()
+        for r in g:
+            for m in set(r["method_codes"]):
+                mc[m] += 1
+        s["cluster_methods"][c] = mc
+
     lags = [r["lag_years"] for r in recs if r["lag_years"] is not None]
     s["lag_median"], s["lag_mean"], s["lag_max"] = st.median(lags), mean(lags), max(lags)
     s["past_2023"] = sum(1 for r in recs if (r["dataset_end_year"] or 0) > 2023)
@@ -147,6 +201,23 @@ def stats(recs, links):
 # renderers
 # ---------------------------------------------------------------------------
 
+def clip(s, n=70):
+    """One-line a note and trim it to n characters on a word boundary."""
+    s = oneline(s)
+    return s if len(s) <= n else s[: n - 1].rsplit(" ", 1)[0] + "…"
+
+
+def oneline(s):
+    """Flatten a cell for a markdown table.
+
+    The coding workbook uses real line breaks inside cells for legibility — in
+    citations, in the free-text access notes, and in the one cell that lists two
+    sample years. A raw newline terminates a markdown table row, so every value
+    rendered into a table passes through here first.
+    """
+    return re.sub(r"\s+", " ", str(s or "").replace("|", "\\|")).strip()
+
+
 def link_cell(rec, links_by_paper):
     """Render the access links for one paper, with their verified status."""
     parts = []
@@ -157,8 +228,7 @@ def link_cell(rec, links_by_paper):
         if not urls:
             note = next((x["access_note"] for x in entries if x["access_note"]), "")
             if note:
-                txt = note if len(note) <= 70 else note[:69].rsplit(" ", 1)[0] + "…"
-                parts.append(f"{label}: <sub>{txt}</sub>")
+                parts.append(f"{label}: <sub>{clip(note)}</sub>")
             continue
         marks = []
         note = next((x["access_note"] for x in entries if x["access_note"]), "")
@@ -169,8 +239,7 @@ def link_cell(rec, links_by_paper):
             marks.append(f"[{name}{mark}]({x['url']})")
         cell = " ".join(marks)
         if note:
-            txt = note if len(note) <= 70 else note[:69].rsplit(" ", 1)[0] + "…"
-            cell += f" <sub>{txt}</sub>"
+            cell += f" <sub>{clip(note)}</sub>"
         parts.append(cell)
     return "<br>".join(parts) if parts else "—"
 
@@ -194,13 +263,32 @@ def catalogue(recs, links, s):
         "[CITATIONS.md](CITATIONS.md); field definitions and scoring keys are in "
         "[CODEBOOK.md](CODEBOOK.md).",
         "",
-        "**Badges.** `T1`–`T3` curation tier · `D:` data availability "
-        "(`OPEN` released · `PART` partial · `RAW` public raw sources named, "
-        "nothing released · `REQ` on request · `—` none) · `C:` replication code, "
-        "same scale. Topic codes: `BIO` biodiversity · `PHY` physical risk · "
-        "`TRN` transition risk · `EMI` corporate emissions · `GRB` green bonds · "
-        "`DIS` ESG disclosure · `RAT` ESG ratings · `SOC` social · `GOV` governance · "
-        "`OTH` other.",
+"**Availability.** `D:` data — `OPEN` constructed panel released · `PART` "
+        "partly released · `RAW` public raw sources named, nothing released · "
+        "`REQ` on request · `—` none. `C:` replication code, same scale. The "
+        "score is the mean of the two; `T1`–`T3` marks the curation tier.",
+        "",
+        "**Topics.** `BIO` biodiversity · `PHY` physical risk · `TRN` transition "
+        "risk · `EMI` corporate emissions · `GRB` green bonds · `DIS` ESG "
+        "disclosure · `RAT` ESG ratings · `SOC` social · `GOV` governance · "
+        "`OTH` other. Non-exclusive.",
+        "",
+        "**Methods**, counted across the primary and secondary fields: `ECON` "
+        "standard econometrics · `NLP` textual analysis · `SAT` satellite and "
+        "remote sensing · `SURV` survey · `EXP` experiment · `FILE` regulatory "
+        "filing parsing · `ML` machine learning · `META` meta-analysis · `OTH` "
+        "other.",
+        "",
+        "**Inputs.** The raw data sources: `PROP` proprietary database · `MKT` "
+        "market data · `OFF` official statistics · `SEC` SEC filings · `WX` "
+        "weather and hazard · `SATI` satellite imagery · `CALL` earnings calls · "
+        "`NEWS` news and media · `CDP` CDP reports · `SURV` survey · `SOCM` "
+        "social media · `OTH` other. The leading badge is the paper's licensing "
+        "exposure — `L:LIC` licensed inputs only · `L:MIX` licensed and public · "
+        "`L:PUB` public only · `L:—` neither. This is the variable behind the "
+        "corpus-wide result that papers built exclusively on licensed inputs "
+        "score 0.16 on data against 0.55 for public-only; see "
+        "[STATS.md](STATS.md).",
         "",
         "**Link marks.** No mark = resolved when last checked · `↷` redirects to a "
         "new address · `⚠` resolves but is not openly accessible, or returned an "
@@ -208,18 +296,28 @@ def catalogue(recs, links, s):
         f"requests) — see [link_inventory.csv](../data/link_inventory.csv). "
         f"Last checked {s['links_checked_on']}.",
         "",
-        "| ID | Study | Topics | Coverage | Geo | Data | Code | Score | Tier | Access |",
-        "|---|---|---|---|---|---|---|---|---|---|",
+        "| ID | Study | Topics | Methods | Inputs | Coverage | Geo | Data | Code | Score | Access |",
+        "|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for r in order:
-        study = f"[{r['short_title']}]({r['paper_link']})" if r["paper_link"] else r["short_title"]
+        title = oneline(r["short_title"])
+        study = f"[{title}]({r['paper_link']})" if r["paper_link"] else title
         study = f"{study}<br><sub>{r['journal']} {r['publication_year']}</sub>"
         topics = " ".join(f"`{t}`" for t in r["topic_codes"])
+        methods = " ".join(f"`{m}`" for m in r["method_codes"]) or "—"
+        inputs = " ".join(
+            [f"**`L:{r['licensing_code']}`**"]
+            + [f"`{c}`" for c in r["source_codes"]]
+        )
+        score = fmt(r["openness_score"])
+        if r["curation_tier"]:
+            score += f" {TIER_BADGE[r['curation_tier']]}"
         out.append(
-            f"| {r['paper_id']} | {study} | {topics} | {r['coverage'] or '—'} | "
-            f"{r['geographic_scope'] or '—'} | {DATA_BADGE[r['data_availability']]} | "
-            f"{CODE_BADGE[r['code_availability']]} | {fmt(r['openness_score'])} | "
-            f"{TIER_BADGE[r['curation_tier']]} | {link_cell(r, links_by_paper)} |"
+            f"| {r['paper_id']} | {study} | {topics} | {methods} | {inputs} | "
+            f"{oneline(r['coverage']) or '—'} | "
+            f"{oneline(r['geographic_scope']) or '—'} | {DATA_BADGE[r['data_availability']]} | "
+            f"{CODE_BADGE[r['code_availability']]} | {score} | "
+            f"{link_cell(r, links_by_paper)} |"
         )
 
     out += ["", "---", "", "## Index by cluster", "",
@@ -253,7 +351,7 @@ def citations(recs):
         "|---|---|---|",
     ]
     for r in sorted(recs, key=lambda r: int(r["paper_id"][1:])):
-        cite = r["citation"].replace("|", "\\|").replace("\n", " ")
+        cite = oneline(r["citation"])
         out.append(f"| {r['paper_id']} | {r['journal']} | {cite} |")
     return "\n".join(out) + "\n"
 
@@ -319,6 +417,35 @@ def stats_md(s):
         o.append(f"| {c} | {v['n']} | {fmt(v['data'])} | {fmt(v['code'])} | "
                  f"{fmt(v['open'])} | {v['fully_open']} | {v['median_lag']:.0f} | "
                  f"{v['median_end']:.0f} |")
+    o += [
+        "",
+        "## Methods",
+        "",
+        "Counted on an **any-mention** basis across the primary and secondary "
+        "method fields. The gap between the two columns is the result that "
+        "matters: a method can be widely used without being anyone's headline "
+        "technique.",
+        "",
+        "| Method | Any mention | Primary only | Mean openness | Mean data |",
+        "|---|---|---|---|---|",
+    ]
+    for code, v in s["methods"].items():
+        o.append(f"| {METHOD_NAME[code]} | {v['n']} | {v['primary']} | "
+                 f"{fmt(v['open'])} | {fmt(v['data'])} |")
+    o += [
+        "",
+        "### Methods by cluster",
+        "",
+        "| Cluster | n | Standard econometrics | Other methods, any mention |",
+        "|---|---|---|---|",
+    ]
+    for c in CLUSTER_ORDER:
+        mc = s["cluster_methods"][c]
+        n = s["clusters"][c]["n"]
+        econ = mc.get("ECON", 0)
+        rest = " · ".join(f"{METHOD_NAME[k].split(' /')[0].split(' on ')[0]} {v}"
+                          for k, v in mc.most_common() if k != "ECON")
+        o.append(f"| {c} | {n} | {econ} ({fmt(100*econ/n, 0)} %) | {rest or '—'} |")
     o += [
         "",
         "## Currency of the evidence",
@@ -413,8 +540,8 @@ def readme_tiers(recs, s, links):
             cell = ([f"[data]({du})"] if du else []) + ([f"[code]({cu})"] if cu else [])
         cl = " ".join(f"`{t}`" for t in r["topic_codes"])
         rows.append(
-            f"| **{r['paper_id']}** | {r['short_title']} | {cl} | "
-            f"{r['coverage'] or '—'} | {r['geographic_scope'] or '—'} | "
+            f"| **{r['paper_id']}** | {oneline(r['short_title'])} | {cl} | "
+            f"{oneline(r['coverage']) or '—'} | {oneline(r['geographic_scope']) or '—'} | "
             f"{DATA_BADGE[r['data_availability']]} | {CODE_BADGE[r['code_availability']]} | "
             f"{' · '.join(cell) or '—'} |"
         )

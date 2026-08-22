@@ -6,7 +6,7 @@ published in the *Journal of Finance*, *Journal of Financial Economics*,
 each study used, whether any of it can be obtained, and under what terms.
 
 <!-- BADGES:BEGIN -->
-![corpus](https://img.shields.io/badge/corpus-109%20papers-informational) ![journals](https://img.shields.io/badge/journals-4-informational) ![fully open](https://img.shields.io/badge/fully%20open-6%20%285.5%25%29-critical) ![mean openness](https://img.shields.io/badge/mean%20openness-0.33-yellow) ![links checked](https://img.shields.io/badge/links%20checked-2026--08--21-lightgrey) ![data licence](https://img.shields.io/badge/data%20licence-CC%20BY%204.0-blue) ![code licence](https://img.shields.io/badge/code%20licence-MIT-blue)
+![corpus](https://img.shields.io/badge/corpus-109%20papers-informational) ![journals](https://img.shields.io/badge/journals-4-informational) ![fully open](https://img.shields.io/badge/fully%20open-6%20%285.5%25%29-critical) ![mean openness](https://img.shields.io/badge/mean%20openness-0.33-yellow) ![links checked](https://img.shields.io/badge/links%20checked-2026--08--22-lightgrey) ![data licence](https://img.shields.io/badge/data%20licence-CC%20BY%204.0-blue) ![code licence](https://img.shields.io/badge/code%20licence-MIT-blue)
 <!-- BADGES:END -->
 
 Most catalogues of open data list only the open things. This one lists the
@@ -28,7 +28,7 @@ scored openness level and, where one exists, a link that has been checked.
 | Touch at least one licensed input | **92** (84.4 %) |
 | Mean data score, licensed-only vs public-only | **0.16** vs **0.55** |
 | Median lag, last data year to publication | **4 years** |
-| Access links resolving when last checked | **64** verified live, 40 not automatically verifiable (2026-08-21) |
+| Access links resolving when last checked | **65** verified live, 41 not automatically verifiable (2026-08-22) |
 <!-- STATS:END -->
 
 Full breakdowns — by cluster, by licensing exposure, by journal and by year —
@@ -43,11 +43,12 @@ every build.
 | [`docs/CITATIONS.md`](docs/CITATIONS.md) | Full verbatim citation for every paper ID. |
 | [`docs/CODEBOOK.md`](docs/CODEBOOK.md) | Every field defined; the two scoring keys; the source-licensing classification; the topic-to-cluster mapping. Read this before citing any number. |
 | [`docs/STATS.md`](docs/STATS.md) | All descriptive statistics, generated. |
-| [`data/SustFin_Corpus_FINAL.csv`](data/SustFin_Corpus_FINAL.csv) | **The frozen corpus.** The hand-coded source of everything else. Never edited by the build. |
+| [`data/Taxonomy_Coding_Sheet_FINAL.xlsx`](data/Taxonomy_Coding_Sheet_FINAL.xlsx) | **The coding workbook.** Where the hand-coding lives and where corrections are made. |
+| [`data/SustFin_Corpus_FINAL.csv`](data/SustFin_Corpus_FINAL.csv) | **The frozen corpus.** Generated from the workbook's *Full Coding* sheet by `make import`; never hand-edited, never touched by the build. |
 | [`data/sustfin_datasets.csv`](data/sustfin_datasets.csv) · [`.json`](data/sustfin_datasets.json) | The frozen fields plus every derived field (scores, clusters, licensing class, coverage window, lag, tier). Start here for analysis. |
 | [`data/link_checks.csv`](data/link_checks.csv) | The recorded verdict for each unique URL — the link-rot baseline. |
 | [`data/link_inventory.csv`](data/link_inventory.csv) | One row per paper × link, joining the baseline to the corpus. |
-| [`scripts/`](scripts/) | `derive.py` builds the derived table, `check_links.py` re-verifies links, `build_docs.py` renders the docs. |
+| [`scripts/`](scripts/) | `import_corpus.py` regenerates the frozen corpus from the coding workbook, `derive.py` builds the derived table, `check_links.py` re-verifies links, `build_docs.py` renders the docs, `verify.py` checks the lot. |
 
 ## How to use it
 
@@ -149,10 +150,13 @@ request. They are stated here so nobody cites a number without them.
   Finance* are not covered.
 - **Availability is coded as published, not as tested.** A paper coded `D:OPEN`
   released something; whether that something reproduces the paper's tables was
-  not verified. Two Tier 3 entries (`P80`, `P91`) point to Google Drive or
-  Sheets locations that resolve but ask for a sign-in — released in name,
-  restricted in practice. They are flagged `⚠` in the catalogue and left coded
-  as found rather than silently downgraded.
+  not verified, and nothing here attempts that.
+- **An automated probe cannot judge every host.** Consumer file-sharing
+  services — Google Drive and Sheets among them — serve a sign-in banner to
+  every automated client whatever the file's real sharing settings. Links on
+  those hosts are therefore recorded `BLOCKED` and settled by hand: `P80`'s
+  sheet was confirmed publicly viewable in a browser on 22 August 2026, and
+  `P91`'s Drive file has not yet been checked that way.
 - **The source-licensing classification is the author's judgement.** It is
   declared in one place, `LICENSED` and `PUBLIC` in
   [`scripts/derive.py`](scripts/derive.py), and changing it and rerunning the
@@ -165,19 +169,19 @@ request. They are stated here so nobody cites a number without them.
 ### Open items in the frozen corpus
 
 Found by `make verify`, which reports them on every build and fails if a new
-one appears. They are left in place rather than corrected, because the frozen
-corpus is the baseline the thesis reports; corrections are filed through
-[`data/corrections.csv`](data/corrections.csv).
+one appears. Coding corrections are made in the workbook and reimported with
+`make import`; link-level findings are settled in
+[`data/link_checks.csv`](data/link_checks.csv).
 
-| Entry | Issue |
-|---|---|
-| `P66`, `P105` | An unresolved coder note survives in the geographic field (`verify exact list`, `[VERIFY] exact sample years`). |
-| `P80` | Geographic scope is coded `US` while the note opens "Global firms operating near (newly) protected biodiversity areas". |
-| `P81`, `P82` | Carry an identical geographic note; P82 is the mangroves paper and the note appears to have been copied from P81. |
-| `P80`, `P91` | Coded `D:OPEN`, but the Google Sheets and Drive locations they point to ask for a sign-in. |
-| `P41` | The access note says ZTRAX is discontinued; Zillow's page states it remains available through ICPSR. |
-| `P76` | The JNCC link resolves to *SSSI Guidelines, Chapter 1a: Coastlands*, which may not be the intended resource. |
-| `P104` | The code link is file-level (`file.xhtml?fileId=…`) rather than dataset-level, and will break if the deposit is re-uploaded. |
+| Entry | Issue | Status |
+|---|---|---|
+| `P82` | The whole row had been coded from the wrong paper — method, sources, unit of observation and geographic note all belonged to `P81`. | **Resolved** in the 22 August reimport: now satellite and econometrics on mangrove, hazard and property data, asset-level, Florida. |
+| `P66`, `P105` | Unresolved coder notes survived in the geographic field (`verify exact list`, `[VERIFY] exact sample years`). | **Resolved** in the 22 August reimport. |
+| `P80` | Geographic scope is coded `US` while the note opens "Global firms operating near (newly) protected biodiversity areas". | **Resolved, coding correct.** The firms are multinational; the protected areas are all in the United States. Scope follows the phenomenon, not the firms — the rule is now stated in [CODEBOOK.md §6](docs/CODEBOOK.md). The check still fires and is accepted rather than suppressed, so the same pattern in a new entry is surfaced. |
+| `P91` | Coded `D:OPEN`; its Google Drive link cannot be verified automatically and has not yet been checked in a browser. (`P80`, the same case, was checked and is genuinely public.) | Open. |
+| `P41` | The access note says ZTRAX is discontinued; Zillow's page states it remains available through ICPSR. | Open. |
+| `P76` | The JNCC link resolves to *SSSI Guidelines, Chapter 1a: Coastlands*, which may not be the intended resource. | Open. |
+| `P104` | The code link is file-level (`file.xhtml?fileId=…`) rather than dataset-level, and will break if the deposit is re-uploaded. | Open. |
 
 ## Maintenance
 

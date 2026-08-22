@@ -118,6 +118,31 @@ METHOD_CODE = {
     "Other": "OTH",
 }
 
+# Short codes for the raw data sources, so an input can be shown in a table
+# cell. The licensing classification above is what determines LIC/PUB/—.
+SOURCE_CODE = {
+    "Proprietary Database": "PROP",
+    "Market Data": "MKT",
+    "Official Statistics": "OFF",
+    "SEC Filings": "SEC",
+    "Weather & Hazard": "WX",
+    "Satellite Imagery": "SATI",
+    "Earnings Call transcripts": "CALL",
+    "News & Media": "NEWS",
+    "CDP Reports": "CDP",
+    "Survey Data": "SURV",
+    "Social Media": "SOCM",
+    "Other": "OTH",
+}
+
+LICENSING_CODE = {
+    "licensed only": "LIC",
+    "licensed and public": "MIX",
+    "public only": "PUB",
+    "neither": "—",
+}
+
+
 OPENNESS_TIER = [
     # (lower bound inclusive, label)
     (1.00, "fully open"),
@@ -242,7 +267,9 @@ def derive(rows):
                 "method_codes": [METHOD_CODE.get(m, "OTH") for m in methods],
                 "source_primary": r["Data Source (primary)"].strip(),
                 "source_secondary": r["Data Source (secondary)"].strip(),
+                "source_codes": [SOURCE_CODE.get(x, "OTH") for x in sources],
                 "licensing_exposure": licensing_exposure(r),
+                "licensing_code": LICENSING_CODE[licensing_exposure(r)],
                 "dataset_start_year": start,
                 "dataset_end_year": end,
                 "coverage": coverage,

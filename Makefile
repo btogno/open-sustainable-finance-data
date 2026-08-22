@@ -1,11 +1,18 @@
 # Open Sustainable Finance Data — build targets.
-# Standard library only; no virtualenv required.
+# Standard library only, so no virtualenv is required to build or verify.
+# The one exception is `make import`, which needs openpyxl to read the workbook.
 
 PY ?= python3
 
-.PHONY: all build derive docs verify check-links check-links-offline clean help
+.PHONY: all import build derive docs verify check-links check-links-offline clean help
 
 all: build verify
+
+## import: rebuild the frozen corpus from the coding workbook (WORKBOOK=path.xlsx)
+import:
+	@test -n "$(WORKBOOK)" || { echo "usage: make import WORKBOOK=path/to/Taxonomy_Coding_Sheet_FINAL.xlsx"; exit 2; }
+	$(PY) scripts/import_corpus.py "$(WORKBOOK)"
+	$(MAKE) build verify
 
 ## build: regenerate the derived table and every generated document
 build: derive docs

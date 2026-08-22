@@ -28,7 +28,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "MKT",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1999,
     "dataset_end_year": 2011,
     "coverage": "1999–2011",
@@ -78,7 +83,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "MKT",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2008,
     "dataset_end_year": 2009,
     "coverage": "2008–2009",
@@ -128,7 +138,12 @@
     ],
     "source_primary": "Survey Data",
     "source_secondary": "Other",
+    "source_codes": [
+      "SURV",
+      "OTH"
+    ],
     "licensing_exposure": "neither",
+    "licensing_code": "—",
     "dataset_start_year": 2006,
     "dataset_end_year": 2012,
     "coverage": "2006–2012",
@@ -173,7 +188,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "MKT",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2016,
     "dataset_end_year": 2017,
     "coverage": "2016–2017",
@@ -223,7 +243,12 @@
     ],
     "source_primary": "Earnings Call transcripts",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "CALL",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2002,
     "dataset_end_year": 2020,
     "coverage": "2002–2020",
@@ -271,7 +296,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "MKT",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2005,
     "dataset_end_year": 2018,
     "coverage": "2005–2018",
@@ -317,7 +347,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2009,
     "dataset_end_year": 2021,
     "coverage": "2009–2021",
@@ -362,7 +397,12 @@
     ],
     "source_primary": "Weather & Hazard",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "WX",
+      "MKT"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 1996,
     "dataset_end_year": 2019,
     "coverage": "1996–2019",
@@ -412,7 +452,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OFF",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2000,
     "dataset_end_year": 2020,
     "coverage": "2000–2020",
@@ -461,7 +506,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2007,
     "dataset_end_year": 2018,
     "coverage": "2007–2018",
@@ -507,7 +557,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "MKT",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2016,
     "dataset_end_year": 2022,
     "coverage": "2016–2022",
@@ -554,7 +609,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2000,
     "dataset_end_year": 2020,
     "coverage": "2000–2020",
@@ -599,7 +659,12 @@
     ],
     "source_primary": "Survey Data",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "SURV",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2021,
     "dataset_end_year": 2021,
     "coverage": "2021–2021",
@@ -651,7 +716,12 @@
     ],
     "source_primary": "SEC Filings",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "SEC",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2000,
     "dataset_end_year": 2018,
     "coverage": "2000–2018",
@@ -674,7 +744,7 @@
   {
     "paper_id": "P15",
     "journal": "Journal of Financial Economics",
-    "citation": "Alex Edmans,; Does the stock market fully value intangibles? Employee satisfaction and equity prices,; Journal of Financial Economics,; Volume 101, Issue 3,; 2011,; Pages 621-640,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2011.03.021.",
+    "citation": "Alex Edmans,\nDoes the stock market fully value intangibles? Employee satisfaction and equity prices,\nJournal of Financial Economics,\nVolume 101, Issue 3,\n2011,\nPages 621-640,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2011.03.021.",
     "short_title": "Employee satisfaction / intangibles / stock returns",
     "data_description": "Long-short equity portfolios built from Fortune's '100 Best Companies to Work For in America' list (an employee-satisfaction proxy) merged with stock returns, testing whether the market fully prices intangible human-capital value.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2011.03.021",
@@ -696,7 +766,12 @@
     ],
     "source_primary": "Survey Data",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "SURV",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1984,
     "dataset_end_year": 2009,
     "coverage": "1984–2009",
@@ -719,7 +794,7 @@
   {
     "paper_id": "P16",
     "journal": "Journal of Financial Economics",
-    "citation": "Adair Morse,; Payday lenders: Heroes or villains?,; Journal of Financial Economics,; Volume 102, Issue 1,; 2011,; Pages 28-44,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2011.03.022.",
+    "citation": "Adair Morse,\nPayday lenders: Heroes or villains?,\nJournal of Financial Economics,\nVolume 102, Issue 1,\n2011,\nPages 28-44,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2011.03.022.",
     "short_title": "Payday lending / disasters / financial inclusion",
     "data_description": "County/ZIP-level study of whether payday-lender access mitigates financial distress (foreclosures, larcenies) after natural disasters, combining hand-collected payday-lender locations with FEMA disaster declarations and property/foreclosure data in California.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2011.03.022",
@@ -743,7 +818,12 @@
     ],
     "source_primary": "Other",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "OTH",
+      "WX"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 1996,
     "dataset_end_year": 2002,
     "coverage": "1996–2002",
@@ -766,7 +846,7 @@
   {
     "paper_id": "P17",
     "journal": "Journal of Financial Economics",
-    "citation": "Harrison Hong, Leonard Kostovetsky,; Red and blue investing: Values and finance,; Journal of Financial Economics,; Volume 103, Issue 1,; 2012,; Pages 1-19,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2011.01.006.",
+    "citation": "Harrison Hong, Leonard Kostovetsky,\nRed and blue investing: Values and finance,\nJournal of Financial Economics,\nVolume 103, Issue 1,\n2012,\nPages 1-19,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2011.01.006.",
     "short_title": "Fund manager politics / values investing",
     "data_description": "Study of whether US mutual-fund managers' personal political affiliation (from FEC campaign-contribution records) is reflected in portfolio tilts away from socially-irresponsible ('sin'/low-KLD) stocks, linking FEC donations, fund holdings, and KLD social ratings.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2011.01.006",
@@ -790,7 +870,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OFF",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 1992,
     "dataset_end_year": 2006,
     "coverage": "1992–2006",
@@ -813,7 +898,7 @@
   {
     "paper_id": "P18",
     "journal": "Journal of Financial Economics",
-    "citation": "Xin Deng, Jun-koo Kang, Buen Sin Low,; Corporate social responsibility and stakeholder value maximization: Evidence from mergers,; Journal of Financial Economics,; Volume 110, Issue 1,; 2013,; Pages 87-109,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2013.04.014.",
+    "citation": "Xin Deng, Jun-koo Kang, Buen Sin Low,\nCorporate social responsibility and stakeholder value maximization: Evidence from mergers,\nJournal of Financial Economics,\nVolume 110, Issue 1,\n2013,\nPages 87-109,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2013.04.014.",
     "short_title": "CSR / stakeholder value / mergers",
     "data_description": "Event study of acquirer CSR (KLD) and merger outcomes — announcement returns, deal completion, and long-run performance — testing the stakeholder-value-maximization view, using KLD CSR ratings, SDC M&A deals, and CRSP returns.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2013.04.014",
@@ -836,7 +921,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1992,
     "dataset_end_year": 2007,
     "coverage": "1992–2007",
@@ -859,7 +949,7 @@
   {
     "paper_id": "P19",
     "journal": "Journal of Financial Economics",
-    "citation": "Alberta Di Giuli, Leonard Kostovetsky,; Are red or blue companies more likely to go green? Politics and corporate social responsibility,; Journal of Financial Economics,; Volume 111, Issue 1,; 2014,; Pages 158-180,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2013.10.002.",
+    "citation": "Alberta Di Giuli, Leonard Kostovetsky,\nAre red or blue companies more likely to go green? Politics and corporate social responsibility,\nJournal of Financial Economics,\nVolume 111, Issue 1,\n2014,\nPages 158-180,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2013.10.002.",
     "short_title": "Corporate politics / going green / CSR",
     "data_description": "Study of whether firms' political leanings (from employee/executive FEC donations and founder/location proxies) predict higher CSR scores, linking KLD CSR ratings, FEC political donations, and Compustat financials.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2013.10.002",
@@ -882,7 +972,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Official Statistics",
+    "source_codes": [
+      "PROP",
+      "OFF"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2003,
     "dataset_end_year": 2009,
     "coverage": "2003–2009",
@@ -905,7 +1000,7 @@
   {
     "paper_id": "P20",
     "journal": "Journal of Financial Economics",
-    "citation": "Philipp Krüger,; Corporate goodness and shareholder wealth,; Journal of Financial Economics,; Volume 115, Issue 2,; 2015,; Pages 304-329,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2014.09.008",
+    "citation": "Philipp Krüger,\nCorporate goodness and shareholder wealth,\nJournal of Financial Economics,\nVolume 115, Issue 2,\n2015,\nPages 304-329,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2014.09.008",
     "short_title": "CSR events / shareholder wealth (event study)",
     "data_description": "Event study of stock-market reactions to corporate social-responsibility news, using KLD CSR strengths/concerns events matched to CRSP returns; finds investors respond negatively to some CSR and positively to offsetting/agency-reducing CSR.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2014.09.008",
@@ -926,7 +1021,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2001,
     "dataset_end_year": 2007,
     "coverage": "2001–2007",
@@ -949,7 +1049,7 @@
   {
     "paper_id": "P21",
     "journal": "Journal of Financial Economics",
-    "citation": "Allen Ferrell, Hao Liang, Luc Renneboog,; Socially responsible firms,; Journal of Financial Economics,; Volume 122, Issue 3,; 2016,; Pages 585-606,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2015.12.003",
+    "citation": "Allen Ferrell, Hao Liang, Luc Renneboog,\nSocially responsible firms,\nJournal of Financial Economics,\nVolume 122, Issue 3,\n2016,\nPages 585-606,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2015.12.003",
     "short_title": "Socially responsible firms / CSR & governance",
     "data_description": "International study of whether CSR is driven by managerial agency problems, showing well-governed firms engage in more CSR, using Thomson Reuters ASSET4 ESG/CSR scores combined with governance and financial data across countries.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2015.12.003",
@@ -972,7 +1072,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1999,
     "dataset_end_year": 2011,
     "coverage": "1999–2011",
@@ -995,7 +1100,7 @@
   {
     "paper_id": "P22",
     "journal": "Journal of Financial Economics",
-    "citation": "Kristle Romero Cortés, Philip E. Strahan,; Tracing out capital flows: How financially integrated banks respond to natural disasters,; Journal of Financial Economics,; Volume 125, Issue 1,; 2017,; Pages 182-199,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2017.04.011",
+    "citation": "Kristle Romero Cortés, Philip E. Strahan,\nTracing out capital flows: How financially integrated banks respond to natural disasters,\nJournal of Financial Economics,\nVolume 125, Issue 1,\n2017,\nPages 182-199,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2017.04.011",
     "short_title": "Banks & natural disasters / capital reallocation",
     "data_description": "Study of how multi-market banks reallocate capital after local natural disasters, raising lending in disaster areas while contracting elsewhere, using FEMA disaster declarations, HMDA mortgage data, and bank Call Reports.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2017.04.011",
@@ -1016,7 +1121,11 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Official Statistics",
+    "source_codes": [
+      "OFF"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 2001,
     "dataset_end_year": 2010,
     "coverage": "2001–2010",
@@ -1027,7 +1136,7 @@
     "unit_of_observation": "Other",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "FEMA/SHELDUS: https://cemhs.asu.edu/sheldus; https://www.consumerfinance.gov/data-research/hmda/; HMDA: https://www.consumerfinance.gov/data-research/hmda/",
+    "data_link": "FEMA/SHELDUS:\nhttps://cemhs.asu.edu/sheldus\nhttps://www.consumerfinance.gov/data-research/hmda/\n\nHMDA:\nhttps://www.consumerfinance.gov/data-research/hmda/",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -1039,7 +1148,7 @@
   {
     "paper_id": "P23",
     "journal": "Journal of Financial Economics",
-    "citation": "Henrik Cronqvist, Frank Yu,; Shaped by their daughters: Executives, female socialization, and corporate social responsibility,; Journal of Financial Economics,; Volume 126, Issue 3,; 2017,; Pages 543-562,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2017.09.003",
+    "citation": "Henrik Cronqvist, Frank Yu,\nShaped by their daughters: Executives, female socialization, and corporate social responsibility,\nJournal of Financial Economics,\nVolume 126, Issue 3,\n2017,\nPages 543-562,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2017.09.003",
     "short_title": "CEO daughters / female socialization / CSR",
     "data_description": "Study showing CEOs with daughters run firms with higher CSR (especially diversity), combining KLD CSR ratings with hand-collected data on S&P 500 executives' children and gender.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2017.09.003",
@@ -1062,7 +1171,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Other",
+    "source_codes": [
+      "PROP",
+      "OTH"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1992,
     "dataset_end_year": 2012,
     "coverage": "1992–2012",
@@ -1085,7 +1199,7 @@
   {
     "paper_id": "P24",
     "journal": "Journal of Financial Economics",
-    "citation": "Alexander Dyck, Karl V. Lins, Lukas Roth, Hannes F. Wagner,; Do institutional investors drive corporate social responsibility? International evidence,; Journal of Financial Economics,; Volume 131, Issue 3,; 2019,; Pages 693-714,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2018.08.013",
+    "citation": "Alexander Dyck, Karl V. Lins, Lukas Roth, Hannes F. Wagner,\nDo institutional investors drive corporate social responsibility? International evidence,\nJournal of Financial Economics,\nVolume 131, Issue 3,\n2019,\nPages 693-714,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2018.08.013",
     "short_title": "Institutional investors drive CSR (international)",
     "data_description": "International evidence that institutional ownership raises firms' environmental and social (E&S) performance, using Thomson Reuters ASSET4 E&S scores and institutional-ownership data across many countries; identification via index/quasi-natural-experiment variation.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2018.08.013",
@@ -1111,7 +1225,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2004,
     "dataset_end_year": 2013,
     "coverage": "2004–2013",
@@ -1134,7 +1253,7 @@
   {
     "paper_id": "P25",
     "journal": "Journal of Financial Economics",
-    "citation": "Asaf Bernstein, Matthew T. Gustafson, Ryan Lewis,; Disaster on the horizon: The price effect of sea level rise,; Journal of Financial Economics,; Volume 134, Issue 2,; 2019,; Pages 253-272,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2019.03.013",
+    "citation": "Asaf Bernstein, Matthew T. Gustafson, Ryan Lewis,\nDisaster on the horizon: The price effect of sea level rise,\nJournal of Financial Economics,\nVolume 134, Issue 2,\n2019,\nPages 253-272,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2019.03.013",
     "short_title": "Sea-level rise / coastal home prices",
     "data_description": "Hedonic study showing homes exposed to projected sea-level rise sell at a discount (~7%), combining Zillow ZTRAX property transactions with NOAA sea-level-rise and elevation data.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2019.03.013",
@@ -1156,7 +1275,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "PROP",
+      "WX"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2007,
     "dataset_end_year": 2016,
     "coverage": "2007–2016",
@@ -1179,7 +1303,7 @@
   {
     "paper_id": "P26",
     "journal": "Journal of Financial Economics",
-    "citation": "Marcus Painter,; An inconvenient cost: The effects of climate change on municipal bonds,; Journal of Financial Economics,; Volume 135, Issue 2,; 2020,; Pages 468-482,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2019.06.006",
+    "citation": "Marcus Painter,\nAn inconvenient cost: The effects of climate change on municipal bonds,\nJournal of Financial Economics,\nVolume 135, Issue 2,\n2020,\nPages 468-482,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2019.06.006",
     "short_title": "Climate change / municipal bonds",
     "data_description": "Study showing US counties more exposed to climate change / sea-level rise pay higher underwriting fees and yields on long-term municipal bonds, combining municipal-bond issuance data with climate-change and sea-level-rise exposure projections.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2019.06.006",
@@ -1204,7 +1328,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "MKT",
+      "WX"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2004,
     "dataset_end_year": 2017,
     "coverage": "2004–2017",
@@ -1227,7 +1356,7 @@
   {
     "paper_id": "P27",
     "journal": "Journal of Financial Economics",
-    "citation": "Tao Chen, Hui Dong, Chen Lin,; Institutional shareholders and corporate social responsibility,; Journal of Financial Economics,; Volume 135, Issue 2,; 2020,; Pages 483-504,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2019.06.007",
+    "citation": "Tao Chen, Hui Dong, Chen Lin,\nInstitutional shareholders and corporate social responsibility,\nJournal of Financial Economics,\nVolume 135, Issue 2,\n2020,\nPages 483-504,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2019.06.007",
     "short_title": "Institutional shareholders & CSR (RDD)",
     "data_description": "Causal study using Russell 1000/2000 index-reconstitution discontinuities as exogenous variation in institutional ownership to show institutions increase firms' CSR, linking MSCI/KLD CSR ratings, Russell index membership, and 13F ownership.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2019.06.007",
@@ -1253,7 +1382,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2003,
     "dataset_end_year": 2006,
     "coverage": "2003–2006",
@@ -1276,7 +1410,7 @@
   {
     "paper_id": "P28",
     "journal": "Journal of Financial Economics",
-    "citation": "Brad M. Barber, Adair Morse, Ayako Yasuda,; Impact investing,; Journal of Financial Economics,; Volume 139, Issue 1,; 2021,; Pages 162-185,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2020.07.008",
+    "citation": "Brad M. Barber, Adair Morse, Ayako Yasuda,\nImpact investing,\nJournal of Financial Economics,\nVolume 139, Issue 1,\n2021,\nPages 162-185,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2020.07.008",
     "short_title": "Impact investing / willingness-to-pay (VC)",
     "data_description": "Study of venture-capital impact funds showing investors accept lower expected returns for measurable social impact (a revealed willingness-to-pay), using Preqin VC/PE fund data with hand-classified impact vs traditional funds.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2020.07.008",
@@ -1297,7 +1431,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Other",
+    "source_codes": [
+      "PROP",
+      "OTH"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1995,
     "dataset_end_year": 2014,
     "coverage": "1995–2014",
@@ -1320,7 +1459,7 @@
   {
     "paper_id": "P29",
     "journal": "Journal of Financial Economics",
-    "citation": "Wolfram Schlenker, Charles A. Taylor,; Market expectations of a warming climate,; Journal of Financial Economics,; Volume 142, Issue 2,; 2021,; Pages 627-640,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2020.08.019",
+    "citation": "Wolfram Schlenker, Charles A. Taylor,\nMarket expectations of a warming climate,\nJournal of Financial Economics,\nVolume 142, Issue 2,\n2021,\nPages 627-640,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2020.08.019",
     "short_title": "Market expectations of warming / weather derivatives",
     "data_description": "Study showing prices of weather (temperature) futures embed market expectations of warming consistent with climate-model trends, combining CME weather-derivative prices with NOAA station temperature records and climate-model projections.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2020.08.019",
@@ -1342,7 +1481,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "MKT",
+      "WX"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2001,
     "dataset_end_year": 2020,
     "coverage": "2001–2020",
@@ -1353,7 +1497,7 @@
     "unit_of_observation": "Other",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "NOAA weather data: https://www.noaa.gov/tools-and-resources/weather-and-climate-resources#Climate",
+    "data_link": "NOAA weather data:\nhttps://www.noaa.gov/tools-and-resources/weather-and-climate-resources#Climate",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -1365,7 +1509,7 @@
   {
     "paper_id": "P30",
     "journal": "Journal of Financial Economics",
-    "citation": "Christopher Geczy, Jessica S. Jeffers, David K. Musto, Anne M. Tucker,; Contracts with (Social) benefits: The implementation of impact investing,; Journal of Financial Economics,; Volume 142, Issue 2,; 2021,; Pages 697-718,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2021.01.006",
+    "citation": "Christopher Geczy, Jessica S. Jeffers, David K. Musto, Anne M. Tucker,\nContracts with (Social) benefits: The implementation of impact investing,\nJournal of Financial Economics,\nVolume 142, Issue 2,\n2021,\nPages 697-718,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2021.01.006",
     "short_title": "Impact investing contracts (implementation)",
     "data_description": "Analysis of how impact is contractually implemented in private funds, using a hand-collected sample of impact-investing fund partnership agreements/side letters to document governance and impact-measurement provisions.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2021.01.006",
@@ -1388,7 +1532,12 @@
     ],
     "source_primary": "Other",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OTH",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1988,
     "dataset_end_year": 2016,
     "coverage": "1988–2016",
@@ -1411,7 +1560,7 @@
   {
     "paper_id": "P31",
     "journal": "Journal of Financial Economics",
-    "citation": "Patrick Bolton, Marcin Kacperczyk,; Do investors care about carbon risk?,; Journal of Financial Economics,; Volume 142, Issue 2,; 2021,; Pages 517-549,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2021.05.008",
+    "citation": "Patrick Bolton, Marcin Kacperczyk,\nDo investors care about carbon risk?,\nJournal of Financial Economics,\nVolume 142, Issue 2,\n2021,\nPages 517-549,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2021.05.008",
     "short_title": "Carbon risk / carbon premium",
     "data_description": "Asset-pricing study showing US stocks of higher-carbon-emitting firms earn higher returns (a carbon premium), and that some investors divest on carbon intensity, using Trucost carbon emissions (Scope 1/2/3) merged with CRSP/Compustat.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2021.05.008",
@@ -1434,7 +1583,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2005,
     "dataset_end_year": 2017,
     "coverage": "2005–2017",
@@ -1457,7 +1611,7 @@
   {
     "paper_id": "P32",
     "journal": "Journal of Financial Economics",
-    "citation": "Rui Dai, Hao Liang, Lilian Ng,; Socially responsible corporate customers,; Journal of Financial Economics,; Volume 142, Issue 2,; 2021,; Pages 598-626,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2020.01.003",
+    "citation": "Rui Dai, Hao Liang, Lilian Ng,\nSocially responsible corporate customers,\nJournal of Financial Economics,\nVolume 142, Issue 2,\n2021,\nPages 598-626,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2020.01.003",
     "short_title": "Socially responsible corporate customers (supply chain)",
     "data_description": "Supply-chain study showing large customers' CSR propagates to their suppliers' CSR, combining customer-supplier links (Compustat segment / FactSet Revere) with ESG/CSR ratings for an international sample.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2020.01.003",
@@ -1478,7 +1632,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2003,
     "dataset_end_year": 2015,
     "coverage": "2003–2015",
@@ -1501,7 +1660,7 @@
   {
     "paper_id": "P33",
     "journal": "Journal of Financial Economics",
-    "citation": "Caroline Flammer,; Corporate green bonds,; Journal of Financial Economics,; Volume 142, Issue 2,; 2021,; Pages 499-516,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2021.01.010",
+    "citation": "Caroline Flammer,\nCorporate green bonds,\nJournal of Financial Economics,\nVolume 142, Issue 2,\n2021,\nPages 499-516,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2021.01.010",
     "short_title": "Corporate green bonds",
     "data_description": "Study of corporate green-bond issuance showing positive stock-market reactions and real effects (improved environmental performance, more green innovation, green-investor clientele), using Bloomberg green-bond data with CRSP/Compustat and environmental ratings.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2021.01.010",
@@ -1525,7 +1684,12 @@
     ],
     "source_primary": "Other",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "OTH",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2010,
     "dataset_end_year": 2018,
     "coverage": "2010–2018",
@@ -1548,7 +1712,7 @@
   {
     "paper_id": "P34",
     "journal": "Journal of Financial Economics",
-    "citation": "José Azar, Miguel Duro, Igor Kadach, Gaizka Ormazabal,; The Big Three and corporate carbon emissions around the world,; Journal of Financial Economics,; Volume 142, Issue 2,; 2021,; Pages 674-696,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2021.05.007",
+    "citation": "José Azar, Miguel Duro, Igor Kadach, Gaizka Ormazabal,\nThe Big Three and corporate carbon emissions around the world,\nJournal of Financial Economics,\nVolume 142, Issue 2,\n2021,\nPages 674-696,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2021.05.007",
     "short_title": "Big Three ownership & carbon emissions",
     "data_description": "International study showing Big Three (BlackRock, Vanguard, State Street) ownership and engagement are associated with subsequent reductions in investee carbon emissions, combining Trucost emissions, Big Three ownership (FactSet), and engagement data.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2021.05.007",
@@ -1575,7 +1739,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2005,
     "dataset_end_year": 2018,
     "coverage": "2005–2018",
@@ -1598,7 +1767,7 @@
   {
     "paper_id": "P35",
     "journal": "Journal of Financial Economics",
-    "citation": "Lasse Heje Pedersen, Shaun Fitzgibbons, Lukasz Pomorski,; Responsible investing: The ESG-efficient frontier,; Journal of Financial Economics,; Volume 142, Issue 2,; 2021,; Pages 572-597,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2020.11.001",
+    "citation": "Lasse Heje Pedersen, Shaun Fitzgibbons, Lukasz Pomorski,\nResponsible investing: The ESG-efficient frontier,\nJournal of Financial Economics,\nVolume 142, Issue 2,\n2021,\nPages 572-597,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2020.11.001",
     "short_title": "ESG-efficient frontier (theory + empirics)",
     "data_description": "Develops the ESG-efficient frontier — the best risk-return trade-off attainable at each ESG level — and characterizes optimal portfolios for ESG-motivated and ESG-aware investors, with an empirical implementation using ESG scores and market data.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2020.11.001",
@@ -1622,7 +1791,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2009,
     "dataset_end_year": 2019,
     "coverage": "2009–2019",
@@ -1645,7 +1819,7 @@
   {
     "paper_id": "P36",
     "journal": "Journal of Financial Economics",
-    "citation": "Söhnke M. Bartram, Kewei Hou, Sehoon Kim,; Real effects of climate policy: Financial constraints and spillovers,; Journal of Financial Economics,; Volume 143, Issue 2,; 2022,; Pages 668-696,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2021.06.015",
+    "citation": "Söhnke M. Bartram, Kewei Hou, Sehoon Kim,\nReal effects of climate policy: Financial constraints and spillovers,\nJournal of Financial Economics,\nVolume 143, Issue 2,\n2022,\nPages 668-696,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2021.06.015",
     "short_title": "Climate policy real effects / emissions leakage",
     "data_description": "Study of California's cap-and-trade program showing financially constrained firms shift emissions and activity to plants in other states (within-firm leakage/spillovers), using EPA plant-level emissions, the California program, and Compustat financials.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2021.06.015",
@@ -1668,7 +1842,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OFF",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2010,
     "dataset_end_year": 2015,
     "coverage": "2010–2015",
@@ -1679,7 +1858,7 @@
     "unit_of_observation": "Firm-Year",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "EPA emissions public: https://ghgdata.epa.gov/flight/?viewType=map",
+    "data_link": "EPA emissions public:\n https://ghgdata.epa.gov/flight/?viewType=map",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -1691,7 +1870,7 @@
   {
     "paper_id": "P37",
     "journal": "Journal of Financial Economics",
-    "citation": "Zhongchen Hu,; Social interactions and households’ flood insurance decisions,; Journal of Financial Economics,; Volume 144, Issue 2,; 2022,; Pages 414-432,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2022.02.004",
+    "citation": "Zhongchen Hu,\nSocial interactions and households’ flood insurance decisions,\nJournal of Financial Economics,\nVolume 144, Issue 2,\n2022,\nPages 414-432,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2022.02.004",
     "short_title": "Social interactions & flood insurance",
     "data_description": "Study showing social interactions affect households' flood-insurance take-up, combining FEMA National Flood Insurance Program (NFIP) policy data with flood events and social-connectedness proxies.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2022.02.004",
@@ -1716,7 +1895,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "OFF",
+      "WX"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 2010,
     "dataset_end_year": 2019,
     "coverage": "2010–2019",
@@ -1727,7 +1911,7 @@
     "unit_of_observation": "Other",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "FEMA NFIP: https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2; Risk Map: https://www.fema.gov/flood-maps/tools-resources/risk-map",
+    "data_link": "FEMA NFIP: \nhttps://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2\n\nRisk Map: \nhttps://www.fema.gov/flood-maps/tools-resources/risk-map",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -1739,7 +1923,7 @@
   {
     "paper_id": "P38",
     "journal": "Journal of Financial Economics",
-    "citation": "Doron Avramov, Si Cheng, Abraham Lioui, Andrea Tarelli,; Sustainable investing with ESG rating uncertainty,; Journal of Financial Economics,; Volume 145, Issue 2, Part B,; 2022,; Pages 642-664,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2021.09.009",
+    "citation": "Doron Avramov, Si Cheng, Abraham Lioui, Andrea Tarelli,\nSustainable investing with ESG rating uncertainty,\nJournal of Financial Economics,\nVolume 145, Issue 2, Part B,\n2022,\nPages 642-664,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2021.09.009",
     "short_title": "Sustainable investing with ESG rating uncertainty (theory + empirics)",
     "data_description": "Equilibrium asset-pricing model with uncertainty about firms' ESG ratings (rating disagreement), with empirical tests linking ESG-rating disagreement to the carbon/ESG premium and demand, using multiple ESG raters and market data.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2021.09.009",
@@ -1763,7 +1947,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2002,
     "dataset_end_year": 2019,
     "coverage": "2002–2019",
@@ -1786,7 +1975,7 @@
   {
     "paper_id": "P39",
     "journal": "Journal of Financial Economics",
-    "citation": "Ľuboš Pástor, Robert F. Stambaugh, Lucian A. Taylor,; Dissecting green returns,; Journal of Financial Economics,; Volume 146, Issue 2,; 2022,; Pages 403-424,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2022.07.007",
+    "citation": "Ľuboš Pástor, Robert F. Stambaugh, Lucian A. Taylor,\nDissecting green returns,\nJournal of Financial Economics,\nVolume 146, Issue 2,\n2022,\nPages 403-424,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2022.07.007",
     "short_title": "Dissecting green returns",
     "data_description": "Shows that green US stocks outperformed brown over 2012-2020 largely because of unexpected increases in climate concern (not high expected returns), decomposing realized green returns using MSCI environmental scores, returns, and climate-concern shocks.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2022.07.007",
@@ -1810,7 +1999,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2003,
     "dataset_end_year": 2018,
     "coverage": "2003–2018",
@@ -1833,7 +2027,7 @@
   {
     "paper_id": "P40",
     "journal": "Journal of Financial Economics",
-    "citation": "Stephen B. Billings, Emily A. Gallagher, Lowell Ricketts,; Let the rich be flooded: The distribution of financial aid and distress after hurricane harvey,; Journal of Financial Economics,; Volume 146, Issue 2,; 2022,; Pages 797-819,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2021.11.006",
+    "citation": "Stephen B. Billings, Emily A. Gallagher, Lowell Ricketts,\nLet the rich be flooded: The distribution of financial aid and distress after hurricane harvey,\nJournal of Financial Economics,\nVolume 146, Issue 2,\n2022,\nPages 797-819,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2021.11.006",
     "short_title": "Hurricane Harvey / aid distribution & distress",
     "data_description": "Study of Hurricane Harvey showing financial distress concentrated among lower-income flooded households while aid distribution favored higher-income areas, combining a consumer credit-bureau panel, FEMA/SBA disaster aid, and flood-depth data.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2021.11.006",
@@ -1858,7 +2052,12 @@
     ],
     "source_primary": "Weather & Hazard",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "WX",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2015,
     "dataset_end_year": 2019,
     "coverage": "2015–2019",
@@ -1869,7 +2068,7 @@
     "unit_of_observation": "Other",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "FEMA NFIP: https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2",
+    "data_link": "FEMA NFIP: \nhttps://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -1881,7 +2080,7 @@
   {
     "paper_id": "P41",
     "journal": "Journal of Financial Economics",
-    "citation": "Asaf Bernstein, Stephen B. Billings, Matthew T. Gustafson, Ryan Lewis,; Partisan residential sorting on climate change risk,; Journal of Financial Economics,; Volume 146, Issue 3,; 2022,; Pages 989-1015,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2022.03.004",
+    "citation": "Asaf Bernstein, Stephen B. Billings, Matthew T. Gustafson, Ryan Lewis,\nPartisan residential sorting on climate change risk,\nJournal of Financial Economics,\nVolume 146, Issue 3,\n2022,\nPages 989-1015,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2022.03.004",
     "short_title": "Partisan residential sorting on climate risk",
     "data_description": "Shows Republicans are relatively more willing to buy sea-level-rise-exposed coastal homes (partisan sorting on climate beliefs), combining Zillow ZTRAX transactions, voter-registration party data, and NOAA sea-level-rise exposure.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2022.03.004",
@@ -1906,7 +2105,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "PROP",
+      "WX"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2018,
     "dataset_end_year": 2018,
     "coverage": "2018–2018",
@@ -1917,7 +2121,7 @@
     "unit_of_observation": "Asset-Level",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "Ztrax data (on demand): https://www.zillow.com/research/ztrax/; NOAA SLR viewer: https://coast.noaa.gov/digitalcoast/tools/slr.html; L2 voter data: https://www.l2-data.com/; HMDA data: https://www.consumerfinance.gov/data-research/hmda/",
+    "data_link": "Ztrax data (on demand):\n https://www.zillow.com/research/ztrax/\n\nNOAA SLR viewer: \nhttps://coast.noaa.gov/digitalcoast/tools/slr.html\n\nL2 voter data:\nhttps://www.l2-data.com/\n\nHMDA data: \nhttps://www.consumerfinance.gov/data-research/hmda/",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -1929,7 +2133,7 @@
   {
     "paper_id": "P42",
     "journal": "Journal of Financial Economics",
-    "citation": "Nickolay Gantchev, Mariassunta Giannetti, Rachel Li,; Sustainability or performance? Ratings and fund managers’ incentives,; Journal of Financial Economics,; Volume 155,; 2024,; 103831,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2024.103831",
+    "citation": "Nickolay Gantchev, Mariassunta Giannetti, Rachel Li,\nSustainability or performance? Ratings and fund managers’ incentives,\nJournal of Financial Economics,\nVolume 155,\n2024,\n103831,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2024.103831",
     "short_title": "Sustainability ratings & fund-manager incentives",
     "data_description": "Study of Morningstar sustainability ('globe') ratings showing fund managers tilt holdings to improve ratings and that ratings drive fund flows, using Morningstar globe ratings with mutual-fund flows and holdings.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2024.103831",
@@ -1952,7 +2156,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2015,
     "dataset_end_year": 2017,
     "coverage": "2015–2017",
@@ -1975,7 +2184,7 @@
   {
     "paper_id": "P43",
     "journal": "Journal of Financial Economics",
-    "citation": "Jessica Jeffers, Tianshu Lyu, Kelly Posenau,; The risk and return of impact investing funds,; Journal of Financial Economics,; Volume 161,; 2024,; 103928,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2024.103928",
+    "citation": "Jessica Jeffers, Tianshu Lyu, Kelly Posenau,\nThe risk and return of impact investing funds,\nJournal of Financial Economics,\nVolume 161,\n2024,\n103928,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2024.103928",
     "short_title": "Risk & return of impact investing funds",
     "data_description": "Estimates the risk and return of impact-investing funds using fund cash-flow data and public-market-equivalent / benchmark methods, characterizing how impact funds' returns compare with conventional VC/PE and public markets.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2024.103928",
@@ -1996,7 +2205,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1999,
     "dataset_end_year": 2021,
     "coverage": "1999–2021",
@@ -2019,7 +2233,7 @@
   {
     "paper_id": "P44",
     "journal": "Journal of Financial Economics",
-    "citation": "Peter Feldhütter, Kristoffer Halskov, Arthur Krebbers,; Pricing of sustainability-linked bonds,; Journal of Financial Economics,; Volume 162,; 2024,; 103944,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2024.103944",
+    "citation": "Peter Feldhütter, Kristoffer Halskov, Arthur Krebbers,\nPricing of sustainability-linked bonds,\nJournal of Financial Economics,\nVolume 162,\n2024,\n103944,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2024.103944",
     "short_title": "Pricing of sustainability-linked bonds",
     "data_description": "Empirical study of sustainability-linked bonds (SLBs), whose coupons step up if ESG/KPI targets are missed, examining their pricing, greenium, and target-setting, using SLB issuance and pricing data (Bloomberg/Refinitiv).",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2024.103944",
@@ -2040,7 +2254,12 @@
     ],
     "source_primary": "Other",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OTH",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2020,
     "dataset_end_year": 2024,
     "coverage": "2020–2024",
@@ -2063,7 +2282,7 @@
   {
     "paper_id": "P45",
     "journal": "Journal of Financial Economics",
-    "citation": "Jean-François Bonnefon, Augustin Landier, Parinitha Sastry, David Thesmar,; The moral preferences of investors: Experimental evidence,; Journal of Financial Economics,; Volume 163,; 2025,; 103955,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2024.103955",
+    "citation": "Jean-François Bonnefon, Augustin Landier, Parinitha Sastry, David Thesmar,\nThe moral preferences of investors: Experimental evidence,\nJournal of Financial Economics,\nVolume 163,\n2025,\n103955,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2024.103955",
     "short_title": "Moral preferences of investors (EXPERIMENT)",
     "data_description": "Incentivized experiment eliciting investors' moral/social preferences — their willingness to pay (or sacrifice return) for firms' ethical behavior — using a controlled online experiment with real monetary stakes.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2024.103955",
@@ -2087,7 +2306,11 @@
     ],
     "source_primary": "Survey Data",
     "source_secondary": "",
+    "source_codes": [
+      "SURV"
+    ],
     "licensing_exposure": "neither",
+    "licensing_code": "—",
     "dataset_start_year": 2019,
     "dataset_end_year": 2022,
     "coverage": "2019–2022",
@@ -2110,7 +2333,7 @@
   {
     "paper_id": "P46",
     "journal": "Journal of Financial Economics",
-    "citation": "Jonathan B. Berk, Jules H. van Binsbergen,; The impact of impact investing,; Journal of Financial Economics,; Volume 164,; 2025,; 103972,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2024.103972",
+    "citation": "Jonathan B. Berk, Jules H. van Binsbergen,\nThe impact of impact investing,\nJournal of Financial Economics,\nVolume 164,\n2025,\n103972,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2024.103972",
     "short_title": "The impact of impact investing (THEORY/quantitative)",
     "data_description": "Theoretical and quantitative analysis arguing that the cost-of-capital impact of divestment/impact investing on targeted firms is small under realistic conditions; primarily a model with calibration rather than a novel dataset.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2024.103972",
@@ -2135,7 +2358,11 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "",
+    "source_codes": [
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2000,
     "dataset_end_year": 2020,
     "coverage": "2000–2020",
@@ -2158,7 +2385,7 @@
   {
     "paper_id": "P47",
     "journal": "Journal of Financial Economics",
-    "citation": "Stefano Giglio, Matteo Maggiori, Johannes Stroebel, Zhenhao Tan, Stephen Utkus, Xiao Xu,; Four facts about ESG beliefs and investor portfolios,; Journal of Financial Economics,; Volume 164,; 2025,; 103984,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2024.103984",
+    "citation": "Stefano Giglio, Matteo Maggiori, Johannes Stroebel, Zhenhao Tan, Stephen Utkus, Xiao Xu,\nFour facts about ESG beliefs and investor portfolios,\nJournal of Financial Economics,\nVolume 164,\n2025,\n103984,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2024.103984",
     "short_title": "Four facts about ESG beliefs & investor portfolios",
     "data_description": "Documents four facts about retail investors' ESG beliefs and how they relate to portfolio holdings, combining a large survey of Vanguard investors with their administrative portfolio-holding data.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2024.103984",
@@ -2182,7 +2409,12 @@
     ],
     "source_primary": "Survey Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "SURV",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2021,
     "dataset_end_year": 2023,
     "coverage": "2021–2023",
@@ -2205,7 +2437,7 @@
   {
     "paper_id": "P48",
     "journal": "Journal of Financial Economics",
-    "citation": "Caroline Flammer, Thomas Giroux, Geoffrey M. Heal,; Biodiversity finance,; Journal of Financial Economics,; Volume 164,; 2025,; 103987,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2024.103987",
+    "citation": "Caroline Flammer, Thomas Giroux, Geoffrey M. Heal,\nBiodiversity finance,\nJournal of Financial Economics,\nVolume 164,\n2025,\n103987,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2024.103987",
     "short_title": "Biodiversity finance (framework + deal data)",
     "data_description": "Introduces biodiversity finance — using private and blended capital to fund conservation/restoration — with a conceptual framework on 'monetizing' biodiversity and empirical evidence from deal-level data of a leading biodiversity-finance institution, supporting a three-dimensional (return, risk, biodiversity) efficient frontier.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2024.103987",
@@ -2227,7 +2459,11 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "",
+    "source_codes": [
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2020,
     "dataset_end_year": 2022,
     "coverage": "2020–2022",
@@ -2250,7 +2486,7 @@
   {
     "paper_id": "P49",
     "journal": "Journal of Financial Economics",
-    "citation": "Hyeyoon Jung, Robert F. Engle, Richard Berner,; CRISK: Measuring the climate risk exposure of the financial system,; Journal of Financial Economics,; Volume 171,; 2025,; 104076,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2025.104076",
+    "citation": "Hyeyoon Jung, Robert F. Engle, Richard Berner,\nCRISK: Measuring the climate risk exposure of the financial system,\nJournal of Financial Economics,\nVolume 171,\n2025,\n104076,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2025.104076",
     "short_title": "CRISK — systemic climate risk of banks",
     "data_description": "Introduces CRISK, a market-based measure of the expected capital shortfall of banks in a climate stress scenario (a climate analogue to SRISK), estimated from bank equity/market data and a climate risk factor.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2025.104076",
@@ -2271,7 +2507,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Other",
+    "source_codes": [
+      "MKT",
+      "OTH"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2000,
     "dataset_end_year": 2021,
     "coverage": "2000–2021",
@@ -2294,7 +2535,7 @@
   {
     "paper_id": "P50",
     "journal": "Journal of Financial Economics",
-    "citation": "Daniel Green, Boris Vallee,; Measurement and effects of bank exit policies,; Journal of Financial Economics,; Volume 172,; 2025,; 104129,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2025.104129",
+    "citation": "Daniel Green, Boris Vallee,\nMeasurement and effects of bank exit policies,\nJournal of Financial Economics,\nVolume 172,\n2025,\n104129,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2025.104129",
     "short_title": "Bank exit (coal divestment) policies & emissions",
     "data_description": "Uses bank coal-exit policies as a laboratory to show divestment has large real effects: targeted coal assets face reduced financing and are more likely to retire, cutting CO2 emissions by an estimated ~0.62-1 gigaton; built from hand-collected bank exit policies, the Global Coal Exit List, coal-plant data, and syndicated loans.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2025.104129",
@@ -2320,7 +2561,12 @@
     ],
     "source_primary": "Other",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OTH",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2005,
     "dataset_end_year": 2021,
     "coverage": "2005–2021",
@@ -2343,7 +2589,7 @@
   {
     "paper_id": "P51",
     "journal": "Journal of Financial Economics",
-    "citation": "George O. Aragon, Yuxiang Jiang, Juha Joenväärä, Cristian Ioan Tiu,; Responsible investing: Costs and benefits for university endowment funds,; Journal of Financial Economics,; Volume 172,; 2025,; 104151,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2025.104151",
+    "citation": "George O. Aragon, Yuxiang Jiang, Juha Joenväärä, Cristian Ioan Tiu,\nResponsible investing: Costs and benefits for university endowment funds,\nJournal of Financial Economics,\nVolume 172,\n2025,\n104151,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2025.104151",
     "short_title": "Responsible investing & university endowments",
     "data_description": "Studies the costs and benefits of responsible/ESG investing for US university endowment funds, relating endowments' responsible-investing adoption to their asset allocation and returns, using endowment survey/filing data and returns.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2025.104151",
@@ -2367,7 +2613,12 @@
     ],
     "source_primary": "Survey Data",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "SURV",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2009,
     "dataset_end_year": 2017,
     "coverage": "2009–2017",
@@ -2390,7 +2641,7 @@
   {
     "paper_id": "P52",
     "journal": "Journal of Financial Economics",
-    "citation": "Sehoon Kim, Nitish Kumar, Jongsub Lee, Junho Oh,; ESG lending,; Journal of Financial Economics,; Volume 173,; 2025,; 104150,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2025.104150",
+    "citation": "Sehoon Kim, Nitish Kumar, Jongsub Lee, Junho Oh,\nESG lending,\nJournal of Financial Economics,\nVolume 173,\n2025,\n104150,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2025.104150",
     "short_title": "ESG lending / sustainability-linked loans",
     "data_description": "Empirical study of ESG/sustainability-linked lending — loans whose pricing is tied to borrowers' ESG performance targets — examining their design, pricing, and incentive effects, using DealScan syndicated-loan data with ESG ratings.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2025.104150",
@@ -2414,7 +2665,11 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2016,
     "dataset_end_year": 2021,
     "coverage": "2016–2021",
@@ -2437,7 +2692,7 @@
   {
     "paper_id": "P53",
     "journal": "Journal of Financial Economics",
-    "citation": "Lubos Pastor, Robert F. Stambaugh, Lucian A. Taylor,; Green tilts,; Journal of Financial Economics,; Volume 174,; 2025,; 104173,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2025.104173",
+    "citation": "Lubos Pastor, Robert F. Stambaugh, Lucian A. Taylor,\nGreen tilts,\nJournal of Financial Economics,\nVolume 174,\n2025,\n104173,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2025.104173",
     "short_title": "Green tilts (institutional green portfolio tilts)",
     "data_description": "Measures institutional investors' 'green tilts' — the degree to which their equity holdings are tilted toward greener stocks — and how these tilts have grown and vary across institution types, using 13F holdings and MSCI green/environmental scores.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2025.104173",
@@ -2461,7 +2716,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "MKT",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2023,
     "dataset_end_year": 2023,
     "coverage": "2023–2023",
@@ -2484,7 +2744,7 @@
   {
     "paper_id": "P54",
     "journal": "Journal of Financial Economics",
-    "citation": "Mengyu Wang, Jeffrey Wurgler, Hong Zhang,; Policy uncertainty reduces green innovation,; Journal of Financial Economics,; Volume 175,; 2026,; 104189,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2025.104189",
+    "citation": "Mengyu Wang, Jeffrey Wurgler, Hong Zhang,\nPolicy uncertainty reduces green innovation,\nJournal of Financial Economics,\nVolume 175,\n2026,\n104189,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2025.104189",
     "short_title": "Policy uncertainty & green innovation",
     "data_description": "Shows that heightened (climate/economic) policy uncertainty reduces firms' green innovation, measured by green patents, linking green-patent data to a policy-uncertainty index and firm characteristics.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2025.104189",
@@ -2505,7 +2765,12 @@
     ],
     "source_primary": "Other",
     "source_secondary": "News & Media",
+    "source_codes": [
+      "OTH",
+      "NEWS"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2009,
     "dataset_end_year": 2019,
     "coverage": "2009–2019",
@@ -2528,7 +2793,7 @@
   {
     "paper_id": "P55",
     "journal": "Journal of Financial Economics",
-    "citation": "Stefania D’Amico, Johannes Klausmann, N. Aaron Pancost,; The benchmark greenium,; Journal of Financial Economics,; Volume 176,; 2026,; 104217,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2025.104217",
+    "citation": "Stefania D’Amico, Johannes Klausmann, N. Aaron Pancost,\nThe benchmark greenium,\nJournal of Financial Economics,\nVolume 176,\n2026,\n104217,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2025.104217",
     "short_title": "The benchmark greenium (German twin bonds)",
     "data_description": "Exploits the 'twin' structure of German sovereign green and conventional bonds (2009-2023) and a dynamic no-arbitrage term-structure model to estimate a time-varying greenium driven solely by investors' green values, distinct from the raw green spread.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2025.104217",
@@ -2549,7 +2814,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Other",
+    "source_codes": [
+      "MKT",
+      "OTH"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2009,
     "dataset_end_year": 2023,
     "coverage": "2009–2023",
@@ -2572,7 +2842,7 @@
   {
     "paper_id": "P56",
     "journal": "Journal of Financial Economics",
-    "citation": "Nuno Clara, João F. Cocco, S. Lakshmi Naaraayanan, Varun Sharma,; Investments that make our homes greener: The role of regulation,; Journal of Financial Economics,; Volume 177,; 2026,; 104236,; ISSN 0304-405X,; https://doi.org/10.1016/j.jfineco.2026.104236",
+    "citation": "Nuno Clara, João F. Cocco, S. Lakshmi Naaraayanan, Varun Sharma,\nInvestments that make our homes greener: The role of regulation,\nJournal of Financial Economics,\nVolume 177,\n2026,\n104236,\nISSN 0304-405X,\nhttps://doi.org/10.1016/j.jfineco.2026.104236",
     "short_title": "Home energy-efficiency investments & regulation",
     "data_description": "Uses the UK Minimum Energy Efficiency Standard (requiring rented properties to meet minimum energy-efficiency ratings) in an instrumented difference-in-differences design to show the regulation triggers low-cost retrofits, with little pass-through to rents; built on a large sample of residential Energy Performance Certificate (EPC) records.",
     "paper_link": "https://doi.org/10.1016/j.jfineco.2026.104236",
@@ -2595,7 +2865,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OFF",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2008,
     "dataset_end_year": 2020,
     "coverage": "2008–2020",
@@ -2618,7 +2893,7 @@
   {
     "paper_id": "P57",
     "journal": "Review of Finance",
-    "citation": "Nickolay Gantchev, Mariassunta Giannetti, Rachel Li, Does Money Talk? Divestitures and Corporate Environmental and Social Policies, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1469–1508, https://doi.org/10.1093/rof/rfac029",
+    "citation": "Nickolay Gantchev, Mariassunta Giannetti, Rachel Li, Does Money Talk? Divestitures and Corporate Environmental and Social Policies, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1469–1508, https://doi.org/10.1093/rof/rfac029",
     "short_title": "Divestitures / E&S incidents / institutional ownership",
     "data_description": "Firm-level analysis testing whether E&S-conscious institutional investors' divestitures and exit threats induce changes in firms' E&S policies, built from RepRisk ESG incidents linked to FactSet/13F institutional holdings, executive compensation data, and ESG ratings, covering global firms.",
     "paper_link": "https://doi.org/10.1093/rof/rfac029",
@@ -2647,7 +2922,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2007,
     "dataset_end_year": 2016,
     "coverage": "2007–2016",
@@ -2670,7 +2950,7 @@
   {
     "paper_id": "P58",
     "journal": "Review of Finance",
-    "citation": "Olivier David Zerbib, A Sustainable Capital Asset Pricing Model (S-CAPM): Evidence from Environmental Integration and Sin Stock Exclusion, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1345–1388, https://doi.org/10.1093/rof/rfac045",
+    "citation": "Olivier David Zerbib, A Sustainable Capital Asset Pricing Model (S-CAPM): Evidence from Environmental Integration and Sin Stock Exclusion, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1345–1388, https://doi.org/10.1093/rof/rfac045",
     "short_title": "Sustainable CAPM / sin stocks / green premium",
     "data_description": "Theoretical extension of CAPM incorporating sustainable preferences (exclusionary screening and ESG integration), with empirical calibration of sin-stock and green premia using US equity returns and ESG/sin classifications.",
     "paper_link": "https://doi.org/10.1093/rof/rfac045",
@@ -2695,7 +2975,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "MKT",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2007,
     "dataset_end_year": 2019,
     "coverage": "2007–2019",
@@ -2718,7 +3003,7 @@
   {
     "paper_id": "P59",
     "journal": "Review of Finance",
-    "citation": "Duc Duy Nguyen, Steven Ongena, Shusen Qi, Vathunyoo Sila, Climate Change Risk and the Cost of Mortgage Credit, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1509–1549, https://doi.org/10.1093/rof/rfac013",
+    "citation": "Duc Duy Nguyen, Steven Ongena, Shusen Qi, Vathunyoo Sila, Climate Change Risk and the Cost of Mortgage Credit, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1509–1549, https://doi.org/10.1093/rof/rfac013",
     "short_title": "Sea level rise / mortgage rates / physical risk",
     "data_description": "Loan-level US residential mortgage panel testing whether lenders price sea-level-rise (SLR) exposure, built from HMDA mortgage applications matched to NOAA SLR risk data and property location data, covering US originations 2018–2020.",
     "paper_link": "https://doi.org/10.1093/rof/rfac013",
@@ -2740,7 +3025,12 @@
     ],
     "source_primary": "Weather & Hazard",
     "source_secondary": "Official Statistics",
+    "source_codes": [
+      "WX",
+      "OFF"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 2018,
     "dataset_end_year": 2020,
     "coverage": "2018–2020",
@@ -2751,7 +3041,7 @@
     "unit_of_observation": "Other",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "HMDA: https://www.consumerfinance.gov/data-research/hmda/; NOAA SLR viewer: https://coast.noaa.gov/slr/; NOAA SLR: https://coast.noaa.gov/digitalcoast/tools/slr.html",
+    "data_link": "HMDA: https://www.consumerfinance.gov/data-research/hmda/; NOAA SLR viewer: https://coast.noaa.gov/slr/\n\nNOAA SLR:\nhttps://coast.noaa.gov/digitalcoast/tools/slr.html",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -2763,7 +3053,7 @@
   {
     "paper_id": "P60",
     "journal": "Review of Finance",
-    "citation": "Hao Liang, Lin Sun, Melvyn Teo, Responsible Hedge Funds, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1585–1633, https://doi.org/10.1093/rof/rfac028",
+    "citation": "Hao Liang, Lin Sun, Melvyn Teo, Responsible Hedge Funds, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1585–1633, https://doi.org/10.1093/rof/rfac028",
     "short_title": "Hedge funds / UN PRI signatories / responsible investing",
     "data_description": "Hedge fund-level panel testing whether UN PRI signatory hedge funds outperform and behave more responsibly, built from a major commercial hedge fund database (e.g., HFR, TASS, Eurekahedge) merged with UN PRI signatory list and SEC ADV filings.",
     "paper_link": "https://doi.org/10.1093/rof/rfac028",
@@ -2787,7 +3077,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "SEC Filings",
+    "source_codes": [
+      "PROP",
+      "SEC"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2006,
     "dataset_end_year": 2019,
     "coverage": "2006–2019",
@@ -2798,7 +3093,7 @@
     "unit_of_observation": "Other",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "UN PRI signatories: https://www.unpri.org/signatories; SEC ADV: https://adviserinfo.sec.gov/",
+    "data_link": "UN PRI signatories: https://www.unpri.org/signatories\n\nSEC ADV:\n https://adviserinfo.sec.gov/",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -2810,7 +3105,7 @@
   {
     "paper_id": "P61",
     "journal": "Review of Finance",
-    "citation": "Florian Berg, Julian F Kölbel, Roberto Rigobon, Aggregate Confusion: The Divergence of ESG Ratings, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1315–1344, https://doi.org/10.1093/rof/rfac033",
+    "citation": "Florian Berg, Julian F Kölbel, Roberto Rigobon, Aggregate Confusion: The Divergence of ESG Ratings, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1315–1344, https://doi.org/10.1093/rof/rfac033",
     "short_title": "ESG rating divergence / six raters",
     "data_description": "Cross-rater comparison of ESG ratings from six providers (KLD, Sustainalytics, Moody's ESG/Vigeo-Eiris, S&P Global/RobecoSAM, Refinitiv/Asset4, MSCI), decomposing pairwise rating divergence into scope, measurement, and weight contributions using a common taxonomy of indicators; baseline year 2014.",
     "paper_link": "https://doi.org/10.1093/rof/rfac033",
@@ -2834,7 +3129,11 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "",
+    "source_codes": [
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2014,
     "dataset_end_year": 2017,
     "coverage": "2014–2017",
@@ -2857,7 +3156,7 @@
   {
     "paper_id": "P62",
     "journal": "Review of Finance",
-    "citation": "Rajna Gibson Brandon, Simon Glossner, Philipp Krueger, Pedro Matos, Tom Steffen, Do Responsible Investors Invest Responsibly?, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1389–1432, https://doi.org/10.1093/rof/rfac064",
+    "citation": "Rajna Gibson Brandon, Simon Glossner, Philipp Krueger, Pedro Matos, Tom Steffen, Do Responsible Investors Invest Responsibly?, Review of Finance, Volume 26, Issue 6, November 2022, Pages 1389–1432, https://doi.org/10.1093/rof/rfac064",
     "short_title": "UN PRI signatories / institutional portfolios / ESG holdings",
     "data_description": "Institutional investor-level analysis testing whether UN PRI signatories actually hold portfolios with better ESG profiles, built from FactSet/13F institutional holdings linked to UN PRI signatory data, MSCI ESG ratings, and Sustainalytics ratings, covering global institutional investors.",
     "paper_link": "https://doi.org/10.1093/rof/rfac064",
@@ -2880,7 +3179,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "MKT",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2003,
     "dataset_end_year": 2017,
     "coverage": "2003–2017",
@@ -2891,7 +3195,7 @@
     "unit_of_observation": "Portfolio-Level",
     "data_availability": "On Demand",
     "data_score": 0.25,
-    "data_link": "UN PRI signatories: https://www.unpri.org/signatories; https://www.unpri.org/sustainability-issues/research.",
+    "data_link": "UN PRI signatories: https://www.unpri.org/signatories\nhttps://www.unpri.org/sustainability-issues/research.",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -2934,7 +3238,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OFF",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2010,
     "dataset_end_year": 2019,
     "coverage": "2010–2019",
@@ -2945,7 +3254,7 @@
     "unit_of_observation": "Firm-Year",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "EPA: https://www.epa.gov/toxics-release-inventory-tri-program; OSHA: https://www.osha.gov/data",
+    "data_link": "EPA: \n https://www.epa.gov/toxics-release-inventory-tri-program\n\n OSHA: \nhttps://www.osha.gov/data",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -2957,7 +3266,7 @@
   {
     "paper_id": "P64",
     "journal": "Review of Finance",
-    "citation": "Jitendra Aswani, Aneesh Raghunandan, Shiva Rajgopal, Are Carbon Emissions Associated with Stock Returns?, Review of Finance, Volume 28, Issue 1, January 2024, Pages 75–106, https://doi.org/10.1093/rof/rfad013",
+    "citation": "Jitendra Aswani, Aneesh Raghunandan, Shiva Rajgopal, Are Carbon Emissions Associated with Stock Returns?, Review of Finance, Volume 28, Issue 1, January 2024, Pages 75–106, https://doi.org/10.1093/rof/rfad013",
     "short_title": "Carbon emissions / stock returns / Trucost estimated vs disclosed",
     "data_description": "Re-examination of carbon-return correlations distinguishing vendor-estimated vs firm-disclosed emissions, built from S&P Trucost emissions (with estimated/disclosed flag) merged with CRSP/Compustat returns and accounting data, covering US firms (with European validation), 2005–2019.",
     "paper_link": "https://doi.org/10.1093/rof/rfad013",
@@ -2980,7 +3289,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2005,
     "dataset_end_year": 2019,
     "coverage": "2005–2019",
@@ -3003,7 +3317,7 @@
   {
     "paper_id": "P65",
     "journal": "Review of Finance",
-    "citation": "Andreas G F Hoepner, Ioannis Oikonomou, Zacharias Sautner, Laura T Starks, Xiao Y Zhou, ESG shareholder engagement and downside risk, Review of Finance, Volume 28, Issue 2, March 2024, Pages 483–510, https://doi.org/10.1093/rof/rfad034",
+    "citation": "Andreas G F Hoepner, Ioannis Oikonomou, Zacharias Sautner, Laura T Starks, Xiao Y Zhou, ESG shareholder engagement and downside risk, Review of Finance, Volume 28, Issue 2, March 2024, Pages 483–510, https://doi.org/10.1093/rof/rfad034",
     "short_title": "ESG engagement / downside risk / VaR",
     "data_description": "Firm-level panel testing whether ESG shareholder engagements reduce downside risk (VaR, lower partial moments), built from a proprietary ESG engagement database from a large institutional investor (Federated Hermes) linked to CRSP/Compustat returns and RepRisk environmental incidents.",
     "paper_link": "https://doi.org/10.1093/rof/rfad034",
@@ -3034,7 +3348,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2005,
     "dataset_end_year": 2019,
     "coverage": "2005–2019",
@@ -3057,7 +3376,7 @@
   {
     "paper_id": "P66",
     "journal": "Review of Finance",
-    "citation": "Runfeng Yang, Massimiliano Caporin, Juan-Angel Jiménez-Martin, Measuring Climate Transition Risk Spillovers, Review of Finance, Volume 28, Issue 2, March 2024, Pages 447–481, https://doi.org/10.1093/rof/rfad026",
+    "citation": "Runfeng Yang, Massimiliano Caporin, Juan-Angel Jiménez-Martin, Measuring Climate Transition Risk Spillovers, Review of Finance, Volume 28, Issue 2, March 2024, Pages 447–481, https://doi.org/10.1093/rof/rfad026",
     "short_title": "Transition risk spillovers / six markets / network",
     "data_description": "Cross-country panel measuring climate transition risk spillovers among six major financial markets (US, Japan, China, plus three others), built from listed-firm equity returns and transition-risk shock proxies (e.g., carbon-intensive vs green portfolio returns), 2013–2021.",
     "paper_link": "https://doi.org/10.1093/rof/rfad026",
@@ -3078,14 +3397,19 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "MKT",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2013,
     "dataset_end_year": 2021,
     "coverage": "2013–2021",
     "coverage_window_years": 9,
     "lag_years": 3,
     "geographic_scope": "Global",
-    "geographic_notes": "Six major markets: USA (main contributor), Japan and China (net receivers), plus three others — verify exact list",
+    "geographic_notes": "Six major markets: USA (main contributor), Japan and China (net receivers), plus three otherst",
     "unit_of_observation": "Country-Year",
     "data_availability": "N",
     "data_score": 0.0,
@@ -3101,7 +3425,7 @@
   {
     "paper_id": "P67",
     "journal": "Review of Finance",
-    "citation": "Audra Boone, Austin Starkweather, Joshua T White, The saliency of the CEO pay ratio, Review of Finance, Volume 28, Issue 3, May 2024, Pages 1059–1104, https://doi.org/10.1093/rof/rfad039",
+    "citation": "Audra Boone, Austin Starkweather, Joshua T White, The saliency of the CEO pay ratio, Review of Finance, Volume 28, Issue 3, May 2024, Pages 1059–1104, https://doi.org/10.1093/rof/rfad039",
     "short_title": "Theory / employee matching grants / charitable giving",
     "data_description": "Theoretical model of corporate employee charitable matching grant schemes as a coordination device for public-good giving, motivated by US corporate giving statistics ($20.77B in 2017) and matching-grant prevalence among S&P 1500 firms; no novel empirical dataset.",
     "paper_link": "https://doi.org/10.1093/rof/rfad039",
@@ -3127,7 +3451,11 @@
     ],
     "source_primary": "Other",
     "source_secondary": "",
+    "source_codes": [
+      "OTH"
+    ],
     "licensing_exposure": "neither",
+    "licensing_code": "—",
     "dataset_start_year": 2018,
     "dataset_end_year": 2021,
     "coverage": "2018–2021",
@@ -3150,7 +3478,7 @@
   {
     "paper_id": "P68",
     "journal": "Review of Finance",
-    "citation": "Alexandre Garel, Arthur Romec, Zacharias Sautner, Alexander F Wagner, Do investors care about biodiversity?, Review of Finance, Volume 28, Issue 4, July 2024, Pages 1151–1186, https://doi.org/10.1093/rof/rfae010",
+    "citation": "Alexandre Garel, Arthur Romec, Zacharias Sautner, Alexander F Wagner, Do investors care about biodiversity?, Review of Finance, Volume 28, Issue 4, July 2024, Pages 1151–1186, https://doi.org/10.1093/rof/rfae010",
     "short_title": "Biodiversity / corporate biodiversity footprint (CBF) / pricing",
     "data_description": "Firm-level panel testing whether investors price corporate biodiversity exposure, built around the Corporate Biodiversity Footprint (CBF) measure from Iceberg Data Lab — aggregating biodiversity loss from land use, GHG emissions, water and air pollution — merged with CRSP/Compustat returns and accounting data.",
     "paper_link": "https://doi.org/10.1093/rof/rfae010",
@@ -3174,7 +3502,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2018,
     "dataset_end_year": 2021,
     "coverage": "2018–2021",
@@ -3197,7 +3530,7 @@
   {
     "paper_id": "P69",
     "journal": "Review of Finance",
-    "citation": "Roni Michaely, Guillem Ordonez-Calafi, Silvina Rubio, Mutual funds’ strategic voting on environmental and social issues, Review of Finance, Volume 28, Issue 5, September 2024, Pages 1575–1610, https://doi.org/10.1093/rof/rfae017",
+    "citation": "Roni Michaely, Guillem Ordonez-Calafi, Silvina Rubio, Mutual funds’ strategic voting on environmental and social issues, Review of Finance, Volume 28, Issue 5, September 2024, Pages 1575–1610, https://doi.org/10.1093/rof/rfae017",
     "short_title": "ES funds / strategic voting / proxy proposals",
     "data_description": "Mutual fund-level analysis of strategic voting on environmental and social shareholder proposals, built from N-PX proxy voting filings, ISS Voting Analytics, CRSP/Morningstar mutual fund data, and Morningstar ESG fund classifications.",
     "paper_link": "https://doi.org/10.1093/rof/rfae017",
@@ -3223,7 +3556,12 @@
     ],
     "source_primary": "SEC Filings",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "SEC",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2011,
     "dataset_end_year": 2021,
     "coverage": "2011–2021",
@@ -3246,7 +3584,7 @@
   {
     "paper_id": "P70",
     "journal": "Review of Finance",
-    "citation": "Amanda Heitz, Youan Wang, Zigan Wang, The power of the people: labor unions and corporate social responsibility, Review of Finance, Volume 28, Issue 6, November 2024, Pages 1833–1879, https://doi.org/10.1093/rof/rfae018",
+    "citation": "Amanda Heitz, Youan Wang, Zigan Wang, The power of the people: labor unions and corporate social responsibility, Review of Finance, Volume 28, Issue 6, November 2024, Pages 1833–1879, https://doi.org/10.1093/rof/rfae018",
     "short_title": "Labor unions / E&S scores / RDD",
     "data_description": "Firm-level regression discontinuity design exploiting close labor union elections (NLRB) to identify causal effects of unionization on internal vs external E&S scores, merged with KLD/MSCI ESG ratings and CRSP/Compustat data, covering US firms.",
     "paper_link": "https://doi.org/10.1093/rof/rfae018",
@@ -3274,7 +3612,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OFF",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2002,
     "dataset_end_year": 2021,
     "coverage": "2002–2021",
@@ -3297,7 +3640,7 @@
   {
     "paper_id": "P71",
     "journal": "Review of Finance",
-    "citation": "Eliezer M Fich, Guosong Xu, Do salient climatic risks affect shareholder voting?, Review of Finance, Volume 29, Issue 2, March 2025, Pages 567–602, https://doi.org/10.1093/rof/rfaf003",
+    "citation": "Eliezer M Fich, Guosong Xu, Do salient climatic risks affect shareholder voting?, Review of Finance, Volume 29, Issue 2, March 2025, Pages 567–602, https://doi.org/10.1093/rof/rfaf003",
     "short_title": "Hurricanes / shareholder voting / E proposals",
     "data_description": "Mutual fund-level analysis of 357,649 votes on environmental shareholder proposals, testing whether hurricane exposure at fund headquarter location increases support for E proposals; built from SEC N-PX filings, ISS Voting Analytics, NOAA hurricane data, and FEMA disaster declarations, covering US 2006–2020.",
     "paper_link": "https://doi.org/10.1093/rof/rfaf003",
@@ -3321,7 +3664,12 @@
     ],
     "source_primary": "SEC Filings",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "SEC",
+      "WX"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 2006,
     "dataset_end_year": 2020,
     "coverage": "2006–2020",
@@ -3344,7 +3692,7 @@
   {
     "paper_id": "P72",
     "journal": "Review of Finance",
-    "citation": "Hao Liang, Cara Vansteenkiste, Disaster Relief, Inc.: when is corporate philanthropy good or bad for shareholders?, Review of Finance, Volume 29, Issue 3, May 2025, Pages 851–886, https://doi.org/10.1093/rof/rfaf007",
+    "citation": "Hao Liang, Cara Vansteenkiste, Disaster Relief, Inc.: when is corporate philanthropy good or bad for shareholders?, Review of Finance, Volume 29, Issue 3, May 2025, Pages 851–886, https://doi.org/10.1093/rof/rfaf007",
     "short_title": "Disaster relief donations / CARs / philanthropy",
     "data_description": "Event-study of stock market reactions to 1,162 disaster relief donation announcements by publicly listed firms globally, computing cumulative abnormal returns (CARs) in narrow event windows, 2006–2018.",
     "paper_link": "https://doi.org/10.1093/rof/rfaf007",
@@ -3368,7 +3716,12 @@
     ],
     "source_primary": "News & Media",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "NEWS",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2006,
     "dataset_end_year": 2018,
     "coverage": "2006–2018",
@@ -3391,7 +3744,7 @@
   {
     "paper_id": "P73",
     "journal": "Review of Finance",
-    "citation": "Alessandro Moro, Andrea Zaghini, The green sin: how exchange rate volatility and financial openness affect green premia, Review of Finance, Volume 29, Issue 4, July 2025, Pages 1189–1217, https://doi.org/10.1093/rof/rfaf024",
+    "citation": "Alessandro Moro, Andrea Zaghini, The green sin: how exchange rate volatility and financial openness affect green premia, Review of Finance, Volume 29, Issue 4, July 2025, Pages 1189–1217, https://doi.org/10.1093/rof/rfaf024",
     "short_title": "Green bonds / FX volatility / financial openness",
     "data_description": "Theoretical model with mean-variance foreign investors disinclined to hold brown bonds, plus empirical test using a global bond market dataset to show green premia are smaller in economies with more closed financial accounts and more volatile exchange rates.",
     "paper_link": "https://doi.org/10.1093/rof/rfaf024",
@@ -3416,7 +3769,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Official Statistics",
+    "source_codes": [
+      "MKT",
+      "OFF"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2014,
     "dataset_end_year": 2021,
     "coverage": "2014–2021",
@@ -3439,7 +3797,7 @@
   {
     "paper_id": "P74",
     "journal": "Review of Finance",
-    "citation": "Lin William Cong, Yuanyu Qu, Guojun Wang, Blockchains for environmental monitoring: theory and empirical evidence from China, Review of Finance, Volume 29, Issue 5, September 2025, Pages 1303–1336, https://doi.org/10.1093/rof/rfaf033",
+    "citation": "Lin William Cong, Yuanyu Qu, Guojun Wang, Blockchains for environmental monitoring: theory and empirical evidence from China, Review of Finance, Volume 29, Issue 5, September 2025, Pages 1303–1336, https://doi.org/10.1093/rof/rfaf033",
     "short_title": "Blockchain / environmental monitoring / China",
     "data_description": "Theoretical model of regulator-firm strategic interactions plus firm-level empirical analysis of China's blockchain-based environmental monitoring system, using monitored emissions/pollution data and firm-level outcomes; identifies effects on industrial pollution, business relocation, and other socioeconomic outcomes.",
     "paper_link": "https://doi.org/10.1093/rof/rfaf033",
@@ -3461,7 +3819,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "OFF",
+      "MKT"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2018,
     "dataset_end_year": 2024,
     "coverage": "2018–2024",
@@ -3484,7 +3847,7 @@
   {
     "paper_id": "P75",
     "journal": "Review of Finance",
-    "citation": "Jess Cornaggia, Yu-Hsuan (Jennifer) Liang, Peter Iliev, Qiang Wang, Biodiversity and local asset values, Review of Finance, Volume 30, Issue 1, January 2026, Pages 391–421, https://doi.org/10.1093/rof/rfaf051",
+    "citation": "Jess Cornaggia, Yu-Hsuan (Jennifer) Liang, Peter Iliev, Qiang Wang, Biodiversity and local asset values, Review of Finance, Volume 30, Issue 1, January 2026, Pages 391–421, https://doi.org/10.1093/rof/rfaf051",
     "short_title": "Biodiversity / US property values / 58M transactions",
     "data_description": "Property-level panel of more than 58 million US real estate transactions linking transaction prices to local biodiversity measures from CSIRO and regional species richness from NatureServe, decomposing local vs regional biodiversity effects on property values, 2000–2021.",
     "paper_link": "https://academic.oup.com/rof/article/30/1/391/8286335#548122822",
@@ -3508,7 +3871,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Official Statistics",
+    "source_codes": [
+      "PROP",
+      "OFF"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2000,
     "dataset_end_year": 2021,
     "coverage": "2000–2021",
@@ -3531,7 +3899,7 @@
   {
     "paper_id": "P76",
     "journal": "Review of Finance",
-    "citation": "Massimo Guidolin, Manuela Pedio, The pricing of biodiversity risk in commodity markets, Review of Finance, Volume 30, Issue 1, January 2026, Pages 351–389, https://doi.org/10.1093/rof/rfaf068",
+    "citation": "Massimo Guidolin, Manuela Pedio, The pricing of biodiversity risk in commodity markets, Review of Finance, Volume 30, Issue 1, January 2026, Pages 351–389, https://doi.org/10.1093/rof/rfaf068",
     "short_title": "Commodities / biodiversity premium / agricultural",
     "data_description": "Commodity-level panel testing whether biodiversity-related transition risk is priced in global commodity markets (especially agricultural), built from species-loss-per-harvested-land intensity metrics combined with Bloomberg/futures commodity price data; includes Kunming Declaration event study and aggregate cross-section asset pricing analysis.",
     "paper_link": "https://academic.oup.com/rof/article/30/1/351/8316107",
@@ -3555,7 +3923,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Official Statistics",
+    "source_codes": [
+      "MKT",
+      "OFF"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2005,
     "dataset_end_year": 2022,
     "coverage": "2005–2022",
@@ -3578,7 +3951,7 @@
   {
     "paper_id": "P77",
     "journal": "Review of Finance",
-    "citation": "Franklin Allen, Patrick Behr, Riccardo Cosenza, Eric Nowak, Do investors care about the rainforest? Evidence from voluntary carbon offsets around the world, Review of Finance, Volume 30, Issue 1, January 2026, Pages 321–349, https://doi.org/10.1093/rof/rfaf059",
+    "citation": "Franklin Allen, Patrick Behr, Riccardo Cosenza, Eric Nowak, Do investors care about the rainforest? Evidence from voluntary carbon offsets around the world, Review of Finance, Volume 30, Issue 1, January 2026, Pages 321–349, https://doi.org/10.1093/rof/rfaf059",
     "short_title": "Voluntary carbon offsets / rainforest / global firms",
     "data_description": "Firm-level analysis of voluntary carbon offset purchases targeting rainforest/forest projects, built from voluntary carbon market registries (Verra/Gold Standard) merged with global firm financials and emissions data, testing investor responses to firms' voluntary biodiversity-relevant offset disclosures.",
     "paper_link": "https://academic.oup.com/rof/article/30/1/321/8362620",
@@ -3607,7 +3980,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2009,
     "dataset_end_year": 2024,
     "coverage": "2009–2024",
@@ -3618,7 +3996,7 @@
     "unit_of_observation": "Firm-Year",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "voluntary Registry Offsets Database: https://gspp.berkeley.edu/berkeley-carbon-trading-project/offsets-database; Verra registry: https://registry.verra.org/; Gold Standard: https://registry.goldstandard.org/",
+    "data_link": "voluntary Registry Offsets Database: https://gspp.berkeley.edu/berkeley-carbon-trading-project/offsets-database\n\nVerra registry: https://registry.verra.org/\n\n Gold Standard: https://registry.goldstandard.org/",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -3630,7 +4008,7 @@
   {
     "paper_id": "P78",
     "journal": "Review of Finance",
-    "citation": "Andre Poyser, Does financing biodiversity reduce biodiversity loss? Evidence from EU funding of science and innovation, Review of Finance, Volume 30, Issue 1, January 2026, Pages 273–319, https://doi.org/10.1093/rof/rfaf064",
+    "citation": "Andre Poyser, Does financing biodiversity reduce biodiversity loss? Evidence from EU funding of science and innovation, Review of Finance, Volume 30, Issue 1, January 2026, Pages 273–319, https://doi.org/10.1093/rof/rfaf064",
     "short_title": "EU biodiversity funding / Horizon programs / project-level",
     "data_description": "Project- and country-level analysis of EU biodiversity science and innovation funding (CORDIS Horizon 2020 / Horizon Europe), with funding allocations across UK (€695.12M, 16% of total), Norway (€386.30M), Portugal (€223.02M) and others, decomposed by ecosystem (terrestrial/marine/freshwater/subterranean); tests whether funding actually reduces biodiversity loss outcomes.",
     "paper_link": "https://academic.oup.com/rof/article/30/1/273/8315367",
@@ -3651,7 +4029,11 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "",
+    "source_codes": [
+      "OFF"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 2003,
     "dataset_end_year": 2023,
     "coverage": "2003–2023",
@@ -3674,7 +4056,7 @@
   {
     "paper_id": "P79",
     "journal": "Review of Finance",
-    "citation": "Alexandre Garel, Arthur Romec, Zacharias Sautner, Alexander Wagner, Firm-level nature dependence, Review of Finance, Volume 30, Issue 1, January 2026, Pages 231–272, https://doi.org/10.1093/rof/rfaf069",
+    "citation": "Alexandre Garel, Arthur Romec, Zacharias Sautner, Alexander Wagner, Firm-level nature dependence, Review of Finance, Volume 30, Issue 1, January 2026, Pages 231–272, https://doi.org/10.1093/rof/rfaf069",
     "short_title": "NatureDep scores / ecosystem services / firm exposure",
     "data_description": "Firm-level panel introducing new \"NatureDep\" measures of corporate dependence on ecosystem services (built by mapping industry-level nature dependence to firms via NACE/GICS codes), merged with CRSP/Compustat or international equivalents and tested for asset-pricing implications.",
     "paper_link": "https://academic.oup.com/rof/article/30/1/231/8316106",
@@ -3698,7 +4080,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2010,
     "dataset_end_year": 2023,
     "coverage": "2010–2023",
@@ -3709,7 +4096,7 @@
     "unit_of_observation": "Firm-Year",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "ENCORE Natural Capital Finance Alliance): https://www.encorenature.org/en",
+    "data_link": "ENCORE Natural Capital Finance Alliance):  https://www.encorenature.org/en",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -3721,7 +4108,7 @@
   {
     "paper_id": "P80",
     "journal": "Review of Finance",
-    "citation": "Amir Akbari, Lilian Ng, Man Duy (Marty) Pham, Jing Yu, The real effects of protecting biodiversity, Review of Finance, Volume 30, Issue 1, January 2026, Pages 193–230, https://doi.org/10.1093/rof/rfaf055",
+    "citation": "Amir Akbari, Lilian Ng, Man Duy (Marty) Pham, Jing Yu, The real effects of protecting biodiversity, Review of Finance, Volume 30, Issue 1, January 2026, Pages 193–230, https://doi.org/10.1093/rof/rfaf055",
     "short_title": "Protected areas / Kunming-Montreal / firm corporate behavior",
     "data_description": "Firm-level panel testing how the designation of new protected areas — motivated by the COP15 Kunming-Montreal \"30 by 30\" target — affects corporate behavior and financial performance for firms operating near newly protected ecosystems, built from World Database on Protected Areas (WDPA) merged with global firm-level financials.",
     "paper_link": "https://academic.oup.com/rof/article/30/1/193/8304741",
@@ -3745,7 +4132,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "OFF",
+      "MKT"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 1990,
     "dataset_end_year": 2021,
     "coverage": "1990–2021",
@@ -3768,7 +4160,7 @@
   {
     "paper_id": "P81",
     "journal": "Review of Finance",
-    "citation": "Stefano Giglio, Theresa Kuchler, Johannes Stroebel, Xuran Zeng, Biodiversity risk, Review of Finance, Volume 30, Issue 1, January 2026, Pages 131–161, https://doi.org/10.1093/rof/rfaf063",
+    "citation": "Stefano Giglio, Theresa Kuchler, Johannes Stroebel, Xuran Zeng, Biodiversity risk, Review of Finance, Volume 30, Issue 1, January 2026, Pages 131–161, https://doi.org/10.1093/rof/rfaf063",
     "short_title": "Biodiversity risk indices / news + 10-K + survey",
     "data_description": "Multi-source biodiversity risk dataset: aggregate news-based biodiversity risk index from NYT and other media; firm- and industry-level exposure measures from (1) textual analysis of 10-K filings, (2) holdings of biodiversity-related funds, (3) firms' CDP questionnaire responses, and (4) a large survey of finance professionals/regulators/academics.",
     "paper_link": "https://academic.oup.com/rof/article/30/1/131/8307061",
@@ -3793,7 +4185,12 @@
     ],
     "source_primary": "News & Media",
     "source_secondary": "SEC Filings",
+    "source_codes": [
+      "NEWS",
+      "SEC"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2010,
     "dataset_end_year": 2023,
     "coverage": "2010–2023",
@@ -3816,7 +4213,7 @@
   {
     "paper_id": "P82",
     "journal": "Review of Finance",
-    "citation": "Teng Liu, Brook Constantz, Galina Hale, Michael W Beck, Financial value of nature: coastal housing markets, mangroves, and climate resilience, Review of Finance, Volume 30, Issue 1, January 2026, Pages 87–129, https://doi.org/10.1093/rof/rfaf061",
+    "citation": "Teng Liu, Brook Constantz, Galina Hale, Michael W Beck, Financial value of nature: coastal housing markets, mangroves, and climate resilience, Review of Finance, Volume 30, Issue 1, January 2026, Pages 87–129, https://doi.org/10.1093/rof/rfaf061",
     "short_title": "Mangroves / coastal housing prices / climate resilience",
     "data_description": "Property-level panel testing whether mangrove ecosystem services are capitalized into coastal housing prices, built from real estate transaction data linked to mangrove coverage maps (likely Global Mangrove Watch or NASA satellite data) and storm/hurricane hazard exposure data.",
     "paper_link": "https://academic.oup.com/rof/article/30/1/87/8304747",
@@ -3833,23 +4230,28 @@
       "Biodiversity & Nature",
       "Climate Transition Risk & Corporate Emissions"
     ],
-    "method_primary": "NLP / Textual Analysis",
-    "method_secondary": "Survey Instrument",
+    "method_primary": "Satellite & Remote Sensing",
+    "method_secondary": "Standard Econometrics Accounting / Market Data",
     "method_codes": [
-      "NLP",
-      "SURV"
+      "SAT",
+      "ECON"
     ],
-    "source_primary": "News & Media",
-    "source_secondary": "SEC Filings",
+    "source_primary": "Weather & Hazard",
+    "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "WX",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 1993,
     "dataset_end_year": 2019,
     "coverage": "1993–2019",
     "coverage_window_years": 27,
     "lag_years": 7,
     "geographic_scope": "US",
-    "geographic_notes": "Aggregate (news indices) + firm/industry-level (10-K, fund holdings, CDP); global with US emphasis",
-    "unit_of_observation": "Firm-Year",
+    "geographic_notes": "Florida only",
+    "unit_of_observation": "Asset-Level",
     "data_availability": "Y",
     "data_score": 1.0,
     "data_link": "https://github.com/tengtedliu/financial_value_of_nature_mangrove",
@@ -3864,7 +4266,7 @@
   {
     "paper_id": "P83",
     "journal": "Review of Finance",
-    "citation": "Sean Shun Cao, G Andrew Karolyi, William W Xiong, Hui Xu, Biodiversity entrepreneurship, Review of Finance, Volume 30, Issue 1, January 2026, Pages 43–86, https://doi.org/10.1093/rof/rfaf062",
+    "citation": "Sean Shun Cao, G Andrew Karolyi, William W Xiong, Hui Xu, Biodiversity entrepreneurship, Review of Finance, Volume 30, Issue 1, January 2026, Pages 43–86, https://doi.org/10.1093/rof/rfaf062",
     "short_title": "Biodiversity startups / PitchBook / LLM classification",
     "data_description": "Startup-level analysis of 630 biodiversity-linked startups identified by fine-tuning a large language model (LLM) on PitchBook venture data, comparing financing dynamics with non-biodiversity ventures and analyzing the role of Twitter/X social media activity in attracting \"value\" vs \"values\" investors.",
     "paper_link": "https://academic.oup.com/rof/article/30/1/43/8303924",
@@ -3886,7 +4288,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Social Media",
+    "source_codes": [
+      "PROP",
+      "SOCM"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2010,
     "dataset_end_year": 2023,
     "coverage": "2010–2023",
@@ -3909,7 +4316,7 @@
   {
     "paper_id": "P84",
     "journal": "Review of Finance",
-    "citation": "Snorre Gjerde, Zacharias Sautner, Alexander F Wagner, Alexis Wegerich, Corporate nature risk perceptions, Review of Finance, Volume 30, Issue 1, January 2026, Pages 11–42, https://doi.org/10.1093/rof/rfaf050",
+    "citation": "Snorre Gjerde, Zacharias Sautner, Alexander F Wagner, Alexis Wegerich, Corporate nature risk perceptions, Review of Finance, Volume 30, Issue 1, January 2026, Pages 11–42, https://doi.org/10.1093/rof/rfaf050",
     "short_title": "Nature risk / earnings calls / textual measure",
     "data_description": "Firm-level panel of corporate nature/biodiversity risk perceptions constructed via NLP analysis of earnings call transcripts (and likely 10-K filings), separating physical from transition nature risks, merged with firm financial and market data.",
     "paper_link": "https://academic.oup.com/rof/article/30/1/11/8322449",
@@ -3936,7 +4343,12 @@
     ],
     "source_primary": "Earnings Call transcripts",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "CALL",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2025,
     "dataset_end_year": 2025,
     "coverage": "2025–2025",
@@ -3959,7 +4371,7 @@
   {
     "paper_id": "P85",
     "journal": "Review of Finance",
-    "citation": "René Bernard, Panagiota Tzamourani, Michael Weber, Climate change and individual behavior, Review of Finance, Volume 30, Issue 2, March 2026, Pages 571–596, https://doi.org/10.1093/rof/rfaf053",
+    "citation": "René Bernard, Panagiota Tzamourani, Michael Weber, Climate change and individual behavior, Review of Finance, Volume 30, Issue 2, March 2026, Pages 571–596, https://doi.org/10.1093/rof/rfaf053",
     "short_title": "Information experiment / WTP CO2 offsets / green investment",
     "data_description": "Individual-level information-provision experiment embedded in a German Bundesbank household survey, testing causal effects of climate-information treatments on willingness to pay for CO2 offsets, willingness to invest in green assets, and downstream information-acquisition behavior.",
     "paper_link": "https://academic.oup.com/rof/article/30/2/571/8381550",
@@ -3987,7 +4399,11 @@
     ],
     "source_primary": "Survey Data",
     "source_secondary": "",
+    "source_codes": [
+      "SURV"
+    ],
     "licensing_exposure": "neither",
+    "licensing_code": "—",
     "dataset_start_year": 2020,
     "dataset_end_year": 2024,
     "coverage": "2020–2024",
@@ -3998,7 +4414,7 @@
     "unit_of_observation": "Other",
     "data_availability": "On Demand",
     "data_score": 0.25,
-    "data_link": "The data underlying this article can be; made available for academic research projects by the Research Data and Service Centre of the Deutsche Bundesbank.",
+    "data_link": "The data underlying this article can be \nmade available for academic research projects by the Research Data and Service Centre of the Deutsche Bundesbank.",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -4010,7 +4426,7 @@
   {
     "paper_id": "P86",
     "journal": "Review of Finance",
-    "citation": "Zoey Yiyuan Zhou, Douglas Almond, Biodiversity co-benefits in carbon markets? Evidence from voluntary offset projects, Review of Finance, Volume 30, Issue 2, March 2026, Pages 537–570, https://doi.org/10.1093/rof/rfaf066",
+    "citation": "Zoey Yiyuan Zhou, Douglas Almond, Biodiversity co-benefits in carbon markets? Evidence from voluntary offset projects, Review of Finance, Volume 30, Issue 2, March 2026, Pages 537–570, https://doi.org/10.1093/rof/rfaf066",
     "short_title": "Voluntary carbon offsets / habitat quality / satellite",
     "data_description": "Project-level analysis of ~30,000 voluntary carbon offset projects (~2,700 with mapped spatial boundaries) and 419,000+ credit retirements, linking registry records (Verra, Gold Standard, etc.) to satellite-derived habitat indicators (Human Influence Index, Biodiversity Habitat Index, BERI) to test claimed biodiversity co-benefits.",
     "paper_link": "https://academic.oup.com/rof/article/30/2/537/8317468",
@@ -4035,7 +4451,12 @@
     ],
     "source_primary": "Satellite Imagery",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "SATI",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2000,
     "dataset_end_year": 2023,
     "coverage": "2000–2023",
@@ -4046,7 +4467,7 @@
     "unit_of_observation": "Asset-Level",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "Verra: https://registry.verra.org/; HII via SEDAC/CIESIN: https://sedac.ciesin.columbia.edu/",
+    "data_link": "Verra: \nhttps://registry.verra.org/\n\n HII via SEDAC/CIESIN: https://sedac.ciesin.columbia.edu/",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -4058,7 +4479,7 @@
   {
     "paper_id": "P87",
     "journal": "Review of Finance",
-    "citation": "Markus Leippold, Tingyu Yu, Firm-level green innovation beyond patents, Review of Finance, Volume 30, Issue 2, March 2026, Pages 423–458, https://doi.org/10.1093/rof/rfaf058",
+    "citation": "Markus Leippold, Tingyu Yu, Firm-level green innovation beyond patents, Review of Finance, Volume 30, Issue 2, March 2026, Pages 423–458, https://doi.org/10.1093/rof/rfaf058",
     "short_title": "Green innovation / textual measure / beyond patents",
     "data_description": "Firm-level panel constructing new measures of green innovation that capture commercialization and adoption (not just patent invention), built via NLP/textual analysis of corporate disclosures and other text sources, merged with patent data and standard firm financials.",
     "paper_link": "https://academic.oup.com/rof/article/30/2/423/8304746",
@@ -4082,7 +4503,12 @@
     ],
     "source_primary": "Earnings Call transcripts",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "CALL",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2006,
     "dataset_end_year": 2022,
     "coverage": "2006–2022",
@@ -4105,7 +4531,7 @@
   {
     "paper_id": "P88",
     "journal": "Review of Financial Studies",
-    "citation": "Sophie A Shive, Margaret M Forster, Corporate Governance and Pollution Externalities of Public and Private Firms, The Review of Financial Studies, Volume 33, Issue 3, March 2020, Pages 1296–1330, https://doi.org/10.1093/rfs/hhz079",
+    "citation": "Sophie A Shive, Margaret M Forster, Corporate Governance and Pollution Externalities of Public and Private Firms, The Review of Financial Studies, Volume 33, Issue 3, March 2020, Pages 1296–1330, https://doi.org/10.1093/rfs/hhz079",
     "short_title": "Pollution externalities / public vs private firms",
     "data_description": "Firm-level comparison of toxic/greenhouse pollution by public vs private US firms, built from EPA emissions data (Greenhouse Gas Reporting Program, Toxic Release Inventory) linked to firm ownership and financial data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhz079",
@@ -4129,7 +4555,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OFF",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2007,
     "dataset_end_year": 2016,
     "coverage": "2007–2016",
@@ -4140,7 +4571,7 @@
     "unit_of_observation": "Firm-Year",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "EPA GHGRP: https://www.epa.gov/ghgreporting; TRI: https://www.epa.gov/toxics-release-inventory-tri-program",
+    "data_link": "EPA GHGRP: https://www.epa.gov/ghgreporting\n TRI: \nhttps://www.epa.gov/toxics-release-inventory-tri-program",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -4152,7 +4583,7 @@
   {
     "paper_id": "P89",
     "journal": "Review of Financial Studies",
-    "citation": "Markus Baldauf, Lorenzo Garlappi, Constantine Yannelis, Does Climate Change Affect Real Estate Prices? Only If You Believe In It, The Review of Financial Studies, Volume 33, Issue 3, March 2020, Pages 1256–1295, https://doi.org/10.1093/rfs/hhz073",
+    "citation": "Markus Baldauf, Lorenzo Garlappi, Constantine Yannelis, Does Climate Change Affect Real Estate Prices? Only If You Believe In It, The Review of Financial Studies, Volume 33, Issue 3, March 2020, Pages 1256–1295, https://doi.org/10.1093/rfs/hhz073",
     "short_title": "Climate beliefs / house prices / sea-level rise",
     "data_description": "Property-level study of whether US coastal house prices reflect climate-change beliefs, pairing real-estate transaction data with local climate-opinion measures (Yale Climate Opinion Maps) and sea-level-rise/flood exposure; includes an equilibrium housing-sorting model.",
     "paper_link": "https://doi.org/10.1093/rfs/hhz073",
@@ -4174,7 +4605,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Survey Data",
+    "source_codes": [
+      "PROP",
+      "SURV"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1997,
     "dataset_end_year": 2017,
     "coverage": "1997–2017",
@@ -4185,7 +4621,7 @@
     "unit_of_observation": "Asset-Level",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "Yale Climate Opinion Maps: https://climatecommunication.yale.edu/visualizations-data/ycom-us/; Air temp and heat index: https://wonder.cdc.gov/nasa-nldas.html",
+    "data_link": "Yale Climate Opinion Maps: https://climatecommunication.yale.edu/visualizations-data/ycom-us/\n\nAir temp and heat index:\nhttps://wonder.cdc.gov/nasa-nldas.html",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -4197,7 +4633,7 @@
   {
     "paper_id": "P90",
     "journal": "Review of Financial Studies",
-    "citation": "Justin Murfin, Matthew Spiegel, Is the Risk of Sea Level Rise Capitalized in Residential Real Estate?, The Review of Financial Studies, Volume 33, Issue 3, March 2020, Pages 1217–1255, https://doi.org/10.1093/rfs/hhz134",
+    "citation": "Justin Murfin, Matthew Spiegel, Is the Risk of Sea Level Rise Capitalized in Residential Real Estate?, The Review of Financial Studies, Volume 33, Issue 3, March 2020, Pages 1217–1255, https://doi.org/10.1093/rfs/hhz134",
     "short_title": "Sea-level rise / coastal home prices / inundation",
     "data_description": "Property-level study comparing coastal home prices by inundation threshold under sea-level-rise projections, built from a comprehensive coastal home-sales database merged with NOAA elevation-relative-to-tide data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhz134",
@@ -4218,7 +4654,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "PROP",
+      "WX"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2014,
     "dataset_end_year": 2017,
     "coverage": "2014–2017",
@@ -4241,7 +4682,7 @@
   {
     "paper_id": "P91",
     "journal": "Review of Financial Studies",
-    "citation": "Robert F Engle, Stefano Giglio, Bryan Kelly, Heebum Lee, Johannes Stroebel, Hedging Climate Change News, The Review of Financial Studies, Volume 33, Issue 3, March 2020, Pages 1184–1216, https://doi.org/10.1093/rfs/hhz072",
+    "citation": "Robert F Engle, Stefano Giglio, Bryan Kelly, Heebum Lee, Johannes Stroebel, Hedging Climate Change News, The Review of Financial Studies, Volume 33, Issue 3, March 2020, Pages 1184–1216, https://doi.org/10.1093/rfs/hhz072",
     "short_title": "Climate news index / hedge portfolios / textual analysis",
     "data_description": "Construction of climate-change news indices via textual analysis of newspapers (WSJ and a Crimson Hexagon news corpus), then mimicking-portfolio hedge construction disciplined by third-party ESG scores; authors publicly release the climate news series.",
     "paper_link": "https://doi.org/10.1093/rfs/hhz072",
@@ -4266,7 +4707,12 @@
     ],
     "source_primary": "News & Media",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "NEWS",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1984,
     "dataset_end_year": 2018,
     "coverage": "1984–2018",
@@ -4289,7 +4735,7 @@
   {
     "paper_id": "P92",
     "journal": "Review of Financial Studies",
-    "citation": "Darwin Choi, Zhenyu Gao, Wenxi Jiang, Attention to Global Warming, The Review of Financial Studies, Volume 33, Issue 3, March 2020, Pages 1112–1145, https://doi.org/10.1093/rfs/hhz086",
+    "citation": "Darwin Choi, Zhenyu Gao, Wenxi Jiang, Attention to Global Warming, The Review of Financial Studies, Volume 33, Issue 3, March 2020, Pages 1112–1145, https://doi.org/10.1093/rfs/hhz086",
     "short_title": "Attention (Google search) / temperature / carbon returns",
     "data_description": "International study linking abnormally warm local temperatures to climate-change attention (Google search volume) and to underperformance of carbon-intensive stocks, combining Google Trends, weather/temperature data, and equity returns.",
     "paper_link": "https://doi.org/10.1093/rfs/hhz086",
@@ -4313,7 +4759,12 @@
     ],
     "source_primary": "Other",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "OTH",
+      "WX"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 1973,
     "dataset_end_year": 2017,
     "coverage": "1973–2017",
@@ -4324,7 +4775,7 @@
     "unit_of_observation": "Other",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "Google Trends: https://trends.google.com/; ISD temperature Data: https://www.ncei.noaa.gov/products/land-based-station/integrated-surface-database",
+    "data_link": "Google Trends: https://trends.google.com/\n\n  ISD temperature Data:\nhttps://www.ncei.noaa.gov/products/land-based-station/integrated-surface-database",
     "code_availability": "N",
     "code_score": 0.0,
     "code_link": "",
@@ -4336,7 +4787,7 @@
   {
     "paper_id": "P93",
     "journal": "Review of Financial Studies",
-    "citation": "Emirhan Ilhan, Zacharias Sautner, Grigory Vilkov, Carbon Tail Risk, The Review of Financial Studies, Volume 34, Issue 3, March 2021, Pages 1540–1571, https://doi.org/10.1093/rfs/hhaa071",
+    "citation": "Emirhan Ilhan, Zacharias Sautner, Grigory Vilkov, Carbon Tail Risk, The Review of Financial Studies, Volume 34, Issue 3, March 2021, Pages 1540–1571, https://doi.org/10.1093/rfs/hhaa071",
     "short_title": "Carbon tail risk / option-implied / climate policy uncertainty",
     "data_description": "Firm-level study showing option-implied downside tail risk is larger for carbon-intensive firms, combining OptionMetrics option prices, firm carbon intensity (vendor emissions), and climate-attention proxies.",
     "paper_link": "https://doi.org/10.1093/rfs/hhaa071",
@@ -4359,7 +4810,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "MKT",
+      "PROP"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2009,
     "dataset_end_year": 2016,
     "coverage": "2009–2016",
@@ -4382,7 +4838,7 @@
   {
     "paper_id": "P94",
     "journal": "Review of Financial Studies",
-    "citation": "Stefano Giglio, Matteo Maggiori, Krishna Rao, Johannes Stroebel, Andreas Weber, Climate Change and Long-Run Discount Rates: Evidence from Real Estate, The Review of Financial Studies, Volume 34, Issue 8, August 2021, Pages 3527–3571, https://doi.org/10.1093/rfs/hhab032",
+    "citation": "Stefano Giglio, Matteo Maggiori, Krishna Rao, Johannes Stroebel, Andreas Weber, Climate Change and Long-Run Discount Rates: Evidence from Real Estate, The Review of Financial Studies, Volume 34, Issue 8, August 2021, Pages 3527–3571, https://doi.org/10.1093/rfs/hhab032",
     "short_title": "Long-run discount rates / leaseholds vs freeholds",
     "data_description": "Estimates the term structure of discount rates for very-long-horizon (climate) payoffs by exploiting the price gap between leasehold and freehold residential properties, using UK Land Registry transactions and Singapore housing data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhab032",
@@ -4406,7 +4862,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OFF",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2008,
     "dataset_end_year": 2017,
     "coverage": "2008–2017",
@@ -4429,7 +4890,7 @@
   {
     "paper_id": "P95",
     "journal": "Review of Financial Studies",
-    "citation": "Rob Bauer, Tobias Ruof, Paul Smeets, Get Real! Individuals Prefer More Sustainable Investments, The Review of Financial Studies, Volume 34, Issue 8, August 2021, Pages 3976–4043, https://doi.org/10.1093/rfs/hhab037",
+    "citation": "Rob Bauer, Tobias Ruof, Paul Smeets, Get Real! Individuals Prefer More Sustainable Investments, The Review of Financial Studies, Volume 34, Issue 8, August 2021, Pages 3976–4043, https://doi.org/10.1093/rfs/hhab037",
     "short_title": "Sustainable investing preferences / pension field experiment",
     "data_description": "Field experiment with real financial stakes among members of a Dutch pension fund, combining an incentivized vote and surveys to measure individuals' preferences for sustainable investments.",
     "paper_link": "https://doi.org/10.1093/rfs/hhab037",
@@ -4454,7 +4915,11 @@
     ],
     "source_primary": "Survey Data",
     "source_secondary": "",
+    "source_codes": [
+      "SURV"
+    ],
     "licensing_exposure": "neither",
+    "licensing_code": "—",
     "dataset_start_year": 2018,
     "dataset_end_year": 2020,
     "coverage": "2018–2020",
@@ -4477,7 +4942,7 @@
   {
     "paper_id": "P96",
     "journal": "Review of Financial Studies",
-    "citation": "Ravi Bansal, Di (Andrew) Wu, Amir Yaron, Socially Responsible Investing in Good and Bad Times, The Review of Financial Studies, Volume 35, Issue 4, April 2022, Pages 2067–2099, https://doi.org/10.1093/rfs/hhab072",
+    "citation": "Ravi Bansal, Di (Andrew) Wu, Amir Yaron, Socially Responsible Investing in Good and Bad Times, The Review of Financial Studies, Volume 35, Issue 4, April 2022, Pages 2067–2099, https://doi.org/10.1093/rfs/hhab072",
     "short_title": "SRI returns / business cycle / wealth-dependent preferences",
     "data_description": "Time-varying analysis of SRI abnormal returns over the business cycle, using portfolio regressions and event studies on analyst ESG ratings, firm announcements, and realized ESG incidents linked to market data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhab072",
@@ -4500,7 +4965,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1993,
     "dataset_end_year": 2013,
     "coverage": "1993–2013",
@@ -4523,7 +4993,7 @@
   {
     "paper_id": "P97",
     "journal": "Review of Financial Studies",
-    "citation": "Joel F Houston, Hongyu Shan, Corporate ESG Profiles and Banking Relationships, The Review of Financial Studies, Volume 35, Issue 7, July 2022, Pages 3373–3417, https://doi.org/10.1093/rfs/hhab125",
+    "citation": "Joel F Houston, Hongyu Shan, Corporate ESG Profiles and Banking Relationships, The Review of Financial Studies, Volume 35, Issue 7, July 2022, Pages 3373–3417, https://doi.org/10.1093/rfs/hhab125",
     "short_title": "Bank-borrower ESG matching / lending",
     "data_description": "Loan-level study showing banks lend to borrowers with similar ESG profiles and influence borrowers' subsequent ESG performance, combining DealScan syndicated-loan data with bank and borrower ESG ratings and financials.",
     "paper_link": "https://doi.org/10.1093/rfs/hhab125",
@@ -4549,7 +5019,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2007,
     "dataset_end_year": 2017,
     "coverage": "2007–2017",
@@ -4572,7 +5047,7 @@
   {
     "paper_id": "P98",
     "journal": "Review of Financial Studies",
-    "citation": "Laura A Bakkensen, Lint Barrage, Going Underwater? Flood Risk Belief Heterogeneity and Coastal Home Price Dynamics, The Review of Financial Studies, Volume 35, Issue 8, August 2022, Pages 3666–3709, https://doi.org/10.1093/rfs/hhab122",
+    "citation": "Laura A Bakkensen, Lint Barrage, Going Underwater? Flood Risk Belief Heterogeneity and Coastal Home Price Dynamics, The Review of Financial Studies, Volume 35, Issue 8, August 2022, Pages 3666–3709, https://doi.org/10.1093/rfs/hhab122",
     "short_title": "Flood-risk beliefs / coastal home prices / survey",
     "data_description": "Dynamic housing-market model plus a door-to-door survey in Rhode Island measuring flood-risk beliefs, combined with coastal property transactions and FEMA flood-risk maps to study capitalization of flood risk.",
     "paper_link": "https://doi.org/10.1093/rfs/hhab122",
@@ -4594,7 +5069,12 @@
     ],
     "source_primary": "Survey Data",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "SURV",
+      "WX"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 2017,
     "dataset_end_year": 2017,
     "coverage": "2017–2017",
@@ -4617,7 +5097,7 @@
   {
     "paper_id": "P99",
     "journal": "Review of Financial Studies",
-    "citation": "Emily A Gallagher, Stephen B Billings, Lowell R Ricketts, Human Capital Investment after the Storm, The Review of Financial Studies, Volume 36, Issue 7, July 2023, Pages 2651–2684, https://doi.org/10.1093/rfs/hhad003",
+    "citation": "Emily A Gallagher, Stephen B Billings, Lowell R Ricketts, Human Capital Investment after the Storm, The Review of Financial Studies, Volume 36, Issue 7, July 2023, Pages 2651–2684, https://doi.org/10.1093/rfs/hhad003",
     "short_title": "Natural disasters / human capital / household finance",
     "data_description": "Study of how natural-disaster (storm) exposure affects household human-capital investment, combining FEMA disaster declarations with individual-level education/financial-aid and credit-bureau data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhad003",
@@ -4642,7 +5122,12 @@
     ],
     "source_primary": "Weather & Hazard",
     "source_secondary": "Official Statistics",
+    "source_codes": [
+      "WX",
+      "OFF"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 2015,
     "dataset_end_year": 2021,
     "coverage": "2015–2021",
@@ -4665,7 +5150,7 @@
   {
     "paper_id": "P100",
     "journal": "Review of Financial Studies",
-    "citation": "Emirhan Ilhan, Philipp Krueger, Zacharias Sautner, Laura T Starks, Climate Risk Disclosure and Institutional Investors, The Review of Financial Studies, Volume 36, Issue 7, July 2023, Pages 2617–2650, https://doi.org/10.1093/rfs/hhad002",
+    "citation": "Emirhan Ilhan, Philipp Krueger, Zacharias Sautner, Laura T Starks, Climate Risk Disclosure and Institutional Investors, The Review of Financial Studies, Volume 36, Issue 7, July 2023, Pages 2617–2650, https://doi.org/10.1093/rfs/hhad002",
     "short_title": "Climate disclosure demand / institutional investors / survey",
     "data_description": "Survey of institutional investors plus observational holdings analysis showing investors value and demand climate-risk disclosure, linking the survey to 13F holdings and CDP climate-disclosure data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhad002",
@@ -4690,7 +5175,12 @@
     ],
     "source_primary": "Survey Data",
     "source_secondary": "CDP Reports",
+    "source_codes": [
+      "SURV",
+      "CDP"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 2010,
     "dataset_end_year": 2019,
     "coverage": "2010–2019",
@@ -4713,7 +5203,7 @@
   {
     "paper_id": "P101",
     "journal": "Review of Financial Studies",
-    "citation": "Joseph Engelberg, Matthew Henriksson, Asaf Manela, Jared Williams, The Partisanship of Financial Regulators, The Review of Financial Studies, Volume 36, Issue 11, November 2023, Pages 4373–4416, https://doi.org/10.1093/rfs/hhad029",
+    "citation": "Joseph Engelberg, Matthew Henriksson, Asaf Manela, Jared Williams, The Partisanship of Financial Regulators, The Review of Financial Studies, Volume 36, Issue 11, November 2023, Pages 4373–4416, https://doi.org/10.1093/rfs/hhad029",
     "short_title": "Regulator partisanship / ML text / SEC & Fed",
     "data_description": "Machine-learning textual analysis identifying partisan phrases (e.g., \"red tape,\" \"climate change\") in Congress and measuring their usage by SEC Commissioners and Federal Reserve Governors, 1930-2019.",
     "paper_link": "https://doi.org/10.1093/rfs/hhad029",
@@ -4734,7 +5224,11 @@
     ],
     "source_primary": "Other",
     "source_secondary": "",
+    "source_codes": [
+      "OTH"
+    ],
     "licensing_exposure": "neither",
+    "licensing_code": "—",
     "dataset_start_year": 1930,
     "dataset_end_year": 2019,
     "coverage": "1930–2019",
@@ -4757,7 +5251,7 @@
   {
     "paper_id": "P102",
     "journal": "Review of Financial Studies",
-    "citation": "Paul Goldsmith-Pinkham, Matthew T Gustafson, Ryan C Lewis, Michael Schwert, Sea-Level Rise Exposure and Municipal Bond Yields, The Review of Financial Studies, Volume 36, Issue 11, November 2023, Pages 4588–4635, https://doi.org/10.1093/rfs/hhad041",
+    "citation": "Paul Goldsmith-Pinkham, Matthew T Gustafson, Ryan C Lewis, Michael Schwert, Sea-Level Rise Exposure and Municipal Bond Yields, The Review of Financial Studies, Volume 36, Issue 11, November 2023, Pages 4588–4635, https://doi.org/10.1093/rfs/hhad041",
     "short_title": "Sea-level rise / municipal bond yields",
     "data_description": "Study of whether municipal-bond yields price sea-level-rise exposure, combining municipal-bond transaction/yield data with property-level sea-level-rise exposure measures (Climate Central / NOAA).",
     "paper_link": "https://doi.org/10.1093/rfs/hhad041",
@@ -4782,7 +5276,12 @@
     ],
     "source_primary": "Market Data",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "MKT",
+      "WX"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2001,
     "dataset_end_year": 2017,
     "coverage": "2001–2017",
@@ -4805,7 +5304,7 @@
   {
     "paper_id": "P103",
     "journal": "Review of Financial Studies",
-    "citation": "Ivan T Ivanov, Mathias S Kruttli, Sumudu W Watugala, Banking on Carbon: Corporate Lending and Cap-and-Trade Policy, The Review of Financial Studies, Volume 37, Issue 5, May 2024, Pages 1640–1684, https://doi.org/10.1093/rfs/hhad085",
+    "citation": "Ivan T Ivanov, Mathias S Kruttli, Sumudu W Watugala, Banking on Carbon: Corporate Lending and Cap-and-Trade Policy, The Review of Financial Studies, Volume 37, Issue 5, May 2024, Pages 1640–1684, https://doi.org/10.1093/rfs/hhad085",
     "short_title": "Cap-and-trade / bank credit / emitters",
     "data_description": "Estimates the effect of carbon-pricing policy on bank credit to emitting firms, exploiting geographic restrictions in California's cap-and-trade program and a free-permit-threshold discontinuity in the federal Waxman-Markey bill, using syndicated-loan, EPA emissions, and regulatory data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhad085",
@@ -4831,7 +5330,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Official Statistics",
+    "source_codes": [
+      "PROP",
+      "OFF"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2009,
     "dataset_end_year": 2023,
     "coverage": "2009–2023",
@@ -4842,7 +5346,7 @@
     "unit_of_observation": "Firm-Year",
     "data_availability": "Raw Data",
     "data_score": 0.5,
-    "data_link": "EPA GHGRP: https://www.epa.gov/ghgreporting; SNC data: https://www.federalreserve.gov/data.htm",
+    "data_link": "EPA GHGRP: \n https://www.epa.gov/ghgreporting\n\nSNC data:\nhttps://www.federalreserve.gov/data.htm",
     "code_availability": "Y",
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/RR86M2",
@@ -4854,7 +5358,7 @@
   {
     "paper_id": "P104",
     "journal": "Review of Financial Studies",
-    "citation": "Nora M C Pankratz, Christoph M Schiller, Climate Change and Adaptation in Global Supply-Chain Networks, The Review of Financial Studies, Volume 37, Issue 6, June 2024, Pages 1729–1777, https://doi.org/10.1093/rfs/hhad093",
+    "citation": "Nora M C Pankratz, Christoph M Schiller, Climate Change and Adaptation in Global Supply-Chain Networks, The Review of Financial Studies, Volume 37, Issue 6, June 2024, Pages 1729–1777, https://doi.org/10.1093/rfs/hhad093",
     "short_title": "Heat exposure / supply chains / adaptation",
     "data_description": "Study of how supplier heat exposure reduces supplier and customer operating income and triggers supplier-relationship termination, combining FactSet Revere supply-chain links with firm financials and local temperature/heat-exposure data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhad093",
@@ -4876,7 +5380,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "PROP",
+      "WX"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 2003,
     "dataset_end_year": 2016,
     "coverage": "2003–2016",
@@ -4899,7 +5408,7 @@
   {
     "paper_id": "P105",
     "journal": "Review of Financial Studies",
-    "citation": "Gustav Martinsson, László Sajtos, Per Strömberg, Christian Thomann, The Effect of Carbon Pricing on Firm Emissions: Evidence from the Swedish CO2 Tax, The Review of Financial Studies, Volume 37, Issue 6, June 2024, Pages 1848–1886, https://doi.org/10.1093/rfs/hhad097",
+    "citation": "Gustav Martinsson, László Sajtos, Per Strömberg, Christian Thomann, The Effect of Carbon Pricing on Firm Emissions: Evidence from the Swedish CO2 Tax, The Review of Financial Studies, Volume 37, Issue 6, June 2024, Pages 1848–1886, https://doi.org/10.1093/rfs/hhad097",
     "short_title": "Swedish CO2 tax / firm emissions elasticity",
     "data_description": "Estimates the emission-to-carbon-price elasticity using a unique 26-year panel of CO2 emissions for Swedish manufacturing firms (administrative registers), exploiting Sweden's 1991 carbon tax and firm-level financial/abatement heterogeneity.",
     "paper_link": "https://doi.org/10.1093/rfs/hhad097",
@@ -4923,14 +5432,19 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Proprietary Database",
+    "source_codes": [
+      "OFF",
+      "PROP"
+    ],
     "licensing_exposure": "licensed and public",
+    "licensing_code": "MIX",
     "dataset_start_year": 1990,
     "dataset_end_year": 2015,
     "coverage": "1990–2015",
     "coverage_window_years": 26,
     "lag_years": 9,
     "geographic_scope": "Europe",
-    "geographic_notes": "Sweden — manufacturing firms; carbon tax since 1991 ([VERIFY] exact sample years)",
+    "geographic_notes": "Sweden — manufacturing firms; carbon tax since 1991",
     "unit_of_observation": "Firm-Year",
     "data_availability": "Partial",
     "data_score": 0.75,
@@ -4946,7 +5460,7 @@
   {
     "paper_id": "P106",
     "journal": "Review of Financial Studies",
-    "citation": "Michael LaCour-Little, Andrey Pavlov, Susan Wachter, Adverse Selection and Climate Risk: A Response to , The Review of Financial Studies, Volume 37, Issue 6, June 2024, Pages 1831–1847, https://doi.org/10.1093/rfs/hhad072",
+    "citation": "Michael LaCour-Little, Andrey Pavlov, Susan Wachter, Adverse Selection and Climate Risk: A Response to , The Review of Financial Studies, Volume 37, Issue 6, June 2024, Pages 1831–1847, https://doi.org/10.1093/rfs/hhad072",
     "short_title": "Adverse selection / climate risk / mortgage securitization (replication)",
     "data_description": "Replication/comment re-examining Ouazad & Kahn (2022): correcting the FHFA conforming-loan-limit construction reverses the original adverse-selection result, finding no evidence that lenders transfer climate risk via loan origination/securitization. Built from HMDA mortgage data, FHFA conforming loan limits, flood-zone designations, and GSE securitization data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhad072",
@@ -4968,7 +5482,12 @@
     ],
     "source_primary": "Official Statistics",
     "source_secondary": "Weather & Hazard",
+    "source_codes": [
+      "OFF",
+      "WX"
+    ],
     "licensing_exposure": "public only",
+    "licensing_code": "PUB",
     "dataset_start_year": 1995,
     "dataset_end_year": 2020,
     "coverage": "1995–2020",
@@ -4991,7 +5510,7 @@
   {
     "paper_id": "P107",
     "journal": "Review of Financial Studies",
-    "citation": "Qing Li, Hongyu Shan, Yuehua Tang, Vincent Yao, Corporate Climate Risk: Measurements and Responses, The Review of Financial Studies, Volume 37, Issue 6, June 2024, Pages 1778–1830, https://doi.org/10.1093/rfs/hhad094",
+    "citation": "Qing Li, Hongyu Shan, Yuehua Tang, Vincent Yao, Corporate Climate Risk: Measurements and Responses, The Review of Financial Studies, Volume 37, Issue 6, June 2024, Pages 1778–1830, https://doi.org/10.1093/rfs/hhad094",
     "short_title": "Climate risk measure / earnings calls / physical vs transition",
     "data_description": "Constructs firm-level physical and transition climate-risk measures via textual analysis of earnings-call transcripts using purpose-built dictionaries, and links them to firms' proactive climate responses and financials.",
     "paper_link": "https://doi.org/10.1093/rfs/hhad094",
@@ -5016,7 +5535,12 @@
     ],
     "source_primary": "Earnings Call transcripts",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "CALL",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2002,
     "dataset_end_year": 2018,
     "coverage": "2002–2018",
@@ -5039,7 +5563,7 @@
   {
     "paper_id": "P108",
     "journal": "Review of Financial Studies",
-    "citation": "Michelle Lowry, Pingle Wang, Kelsey D Wei, Are All ESG Funds Created Equal? Only Some Funds Are Committed, The Review of Financial Studies, Volume 39, Issue 1, January 2026, Pages 79–113, https://doi.org/10.1093/rfs/hhaf084",
+    "citation": "Michelle Lowry, Pingle Wang, Kelsey D Wei, Are All ESG Funds Created Equal? Only Some Funds Are Committed, The Review of Financial Studies, Volume 39, Issue 1, January 2026, Pages 79–113, https://doi.org/10.1093/rfs/hhaf084",
     "short_title": "Committed vs uncommitted ESG funds / engagement",
     "data_description": "Compares ESG mutual funds with similar ESG holdings but different incentives to engage, showing \"committed\" ESG funds do more ESG information acquisition, longer-horizon investing, and more intense engagement with greater real impact; built from fund holdings, ESG fund classifications, and engagement/information-acquisition data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhaf084",
@@ -5065,7 +5589,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 2013,
     "dataset_end_year": 2020,
     "coverage": "2013–2020",
@@ -5088,7 +5617,7 @@
   {
     "paper_id": "P109",
     "journal": "Review of Financial Studies",
-    "citation": "Tuomas Tomunen, Failure to Share Natural Disaster Risk, The Review of Financial Studies, Volume 39, Issue 3, March 2026, Pages 661–701, https://doi.org/10.1093/rfs/hhaf055",
+    "citation": "Tuomas Tomunen, Failure to Share Natural Disaster Risk, The Review of Financial Studies, Volume 39, Issue 3, March 2026, Pages 661–701, https://doi.org/10.1093/rfs/hhaf055",
     "short_title": "Catastrophe bonds / natural disaster risk / intermediary asset pricing",
     "data_description": "Intermediary asset-pricing study of catastrophe (cat) bonds whose payoffs are linked to natural disasters, showing ~71% of cross-sectional variation in cat-bond expected returns is explained by a theoretically motivated measure of intermediaries' marginal utility; built from a security-level catastrophe-bond database with secondary-market trading data.",
     "paper_link": "https://doi.org/10.1093/rfs/hhaf055",
@@ -5112,7 +5641,12 @@
     ],
     "source_primary": "Proprietary Database",
     "source_secondary": "Market Data",
+    "source_codes": [
+      "PROP",
+      "MKT"
+    ],
     "licensing_exposure": "licensed only",
+    "licensing_code": "LIC",
     "dataset_start_year": 1997,
     "dataset_end_year": 2018,
     "coverage": "1997–2018",

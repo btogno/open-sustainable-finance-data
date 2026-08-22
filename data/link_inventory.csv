@@ -40,9 +40,21 @@ P19,data_link,https://www.fec.gov/data/,FEC contributions public,LIVE,200,,2026-
 P20,paper_link,https://doi.org/10.1016/j.jfineco.2014.09.008,,NOT CHECKED,,,,,,
 P21,paper_link,https://doi.org/10.1016/j.jfineco.2015.12.003,,NOT CHECKED,,,,,,
 P22,paper_link,https://doi.org/10.1016/j.jfineco.2017.04.011,,NOT CHECKED,,,,,,
-P22,data_link,https://cemhs.asu.edu/sheldus,FEMA/SHELDUS: ; ; HMDA,LIVE,200,SHELDUS 24 landing page; access is by subscription/licence,2026-08-21,,,
-P22,data_link,https://www.consumerfinance.gov/data-research/hmda/,FEMA/SHELDUS: ; ; HMDA,LIVE,200,,2026-08-21,,,
-P22,data_link,https://www.consumerfinance.gov/data-research/hmda/,FEMA/SHELDUS: ; ; HMDA,LIVE,200,,2026-08-21,,,
+P22,data_link,https://cemhs.asu.edu/sheldus,"FEMA/SHELDUS:
+
+
+
+HMDA:",LIVE,200,SHELDUS 24 landing page; access is by subscription/licence,2026-08-21,,,
+P22,data_link,https://www.consumerfinance.gov/data-research/hmda/,"FEMA/SHELDUS:
+
+
+
+HMDA:",LIVE,200,,2026-08-21,,,
+P22,data_link,https://www.consumerfinance.gov/data-research/hmda/,"FEMA/SHELDUS:
+
+
+
+HMDA:",LIVE,200,,2026-08-21,,,
 P23,paper_link,https://doi.org/10.1016/j.jfineco.2017.09.003,,NOT CHECKED,,,,,,
 P24,paper_link,https://doi.org/10.1016/j.jfineco.2018.08.013,,NOT CHECKED,,,,,,
 P25,paper_link,https://doi.org/10.1016/j.jfineco.2019.03.013,,NOT CHECKED,,,,,,
@@ -52,7 +64,7 @@ P27,paper_link,https://doi.org/10.1016/j.jfineco.2019.06.007,,NOT CHECKED,,,,,,
 P27,data_link,https://www.sec.gov/edgar/search/#,,LIVE,200,,2026-08-21,,,
 P28,paper_link,https://doi.org/10.1016/j.jfineco.2020.07.008,,NOT CHECKED,,,,,,
 P29,paper_link,https://doi.org/10.1016/j.jfineco.2020.08.019,,NOT CHECKED,,,,,,
-P29,data_link,https://www.noaa.gov/tools-and-resources/weather-and-climate-resources#Climate,NOAA weather data,LIVE,200,,2026-08-21,,,
+P29,data_link,https://www.noaa.gov/tools-and-resources/weather-and-climate-resources#Climate,NOAA weather data:,LIVE,200,,2026-08-21,,,
 P30,paper_link,https://doi.org/10.1016/j.jfineco.2021.01.006,,NOT CHECKED,,,,,,
 P31,paper_link,https://doi.org/10.1016/j.jfineco.2021.05.008,,NOT CHECKED,,,,,,
 P32,paper_link,https://doi.org/10.1016/j.jfineco.2020.01.003,,NOT CHECKED,,,,,,
@@ -60,20 +72,62 @@ P33,paper_link,https://doi.org/10.1016/j.jfineco.2021.01.010,,NOT CHECKED,,,,,,
 P34,paper_link,https://doi.org/10.1016/j.jfineco.2021.05.007,,NOT CHECKED,,,,,,
 P35,paper_link,https://doi.org/10.1016/j.jfineco.2020.11.001,,NOT CHECKED,,,,,,
 P36,paper_link,https://doi.org/10.1016/j.jfineco.2021.06.015,,NOT CHECKED,,,,,,
-P36,data_link,https://ghgdata.epa.gov/flight/?viewType=map,EPA emissions public,LIVE,200,EPA FLIGHT,2026-08-21,,,
+P36,data_link,https://ghgdata.epa.gov/flight/?viewType=map,EPA emissions public:,LIVE,200,EPA FLIGHT,2026-08-21,,,
 P37,paper_link,https://doi.org/10.1016/j.jfineco.2022.02.004,,NOT CHECKED,,,,,,
-P37,data_link,https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2,FEMA NFIP: ; Risk Map,BLOCKED,403,FEMA refuses automated access; verify in a browser,2026-08-21,,,
-P37,data_link,https://www.fema.gov/flood-maps/tools-resources/risk-map,FEMA NFIP: ; Risk Map,BLOCKED,403,FEMA refuses automated access; verify in a browser,2026-08-21,,,
+P37,data_link,https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2,"FEMA NFIP: 
+
+
+Risk Map:",BLOCKED,403,FEMA refuses automated access; verify in a browser,2026-08-21,,,
+P37,data_link,https://www.fema.gov/flood-maps/tools-resources/risk-map,"FEMA NFIP: 
+
+
+Risk Map:",BLOCKED,403,FEMA refuses automated access; verify in a browser,2026-08-21,,,
 P38,paper_link,https://doi.org/10.1016/j.jfineco.2021.09.009,,NOT CHECKED,,,,,,
 P39,paper_link,https://doi.org/10.1016/j.jfineco.2022.07.007,,NOT CHECKED,,,,,,
 P39,code_link,https://data.mendeley.com/datasets/dnskbdnmsz/1,,LIVE,200,"""Dissecting Green Returns -- Replication Package""",2026-08-21,,,
 P40,paper_link,https://doi.org/10.1016/j.jfineco.2021.11.006,,NOT CHECKED,,,,,,
-P40,data_link,https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2,FEMA NFIP,BLOCKED,403,FEMA refuses automated access; verify in a browser,2026-08-21,,,
+P40,data_link,https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2,FEMA NFIP:,BLOCKED,403,FEMA refuses automated access; verify in a browser,2026-08-21,,,
 P41,paper_link,https://doi.org/10.1016/j.jfineco.2022.03.004,,NOT CHECKED,,,,,,
-P41,data_link,https://www.zillow.com/research/ztrax/,Ztrax data (on demand): ; NOAA SLR viewer: ; L2 voter data: ; HMDA data,LIVE,200,"Page states ZTRAX remains available via ICPSR; the corpus note ""now discontinued"" may need revisiting",2026-08-21,,,
-P41,data_link,https://coast.noaa.gov/digitalcoast/tools/slr.html,Ztrax data (on demand): ; NOAA SLR viewer: ; L2 voter data: ; HMDA data,LIVE,200,,2026-08-21,,,
-P41,data_link,https://www.l2-data.com/,Ztrax data (on demand): ; NOAA SLR viewer: ; L2 voter data: ; HMDA data,ERROR,,Server error on fetch; commercial voter-file vendor,2026-08-21,,,
-P41,data_link,https://www.consumerfinance.gov/data-research/hmda/,Ztrax data (on demand): ; NOAA SLR viewer: ; L2 voter data: ; HMDA data,LIVE,200,,2026-08-21,,,
+P41,data_link,https://www.zillow.com/research/ztrax/,"Ztrax data (on demand):
+ 
+
+NOAA SLR viewer: 
+
+
+L2 voter data:
+
+
+HMDA data:",LIVE,200,"Page states ZTRAX remains available via ICPSR; the corpus note ""now discontinued"" may need revisiting",2026-08-21,,,
+P41,data_link,https://coast.noaa.gov/digitalcoast/tools/slr.html,"Ztrax data (on demand):
+ 
+
+NOAA SLR viewer: 
+
+
+L2 voter data:
+
+
+HMDA data:",LIVE,200,,2026-08-21,,,
+P41,data_link,https://www.l2-data.com/,"Ztrax data (on demand):
+ 
+
+NOAA SLR viewer: 
+
+
+L2 voter data:
+
+
+HMDA data:",ERROR,,Server error on fetch; commercial voter-file vendor,2026-08-21,,,
+P41,data_link,https://www.consumerfinance.gov/data-research/hmda/,"Ztrax data (on demand):
+ 
+
+NOAA SLR viewer: 
+
+
+L2 voter data:
+
+
+HMDA data:",LIVE,200,,2026-08-21,,,
 P42,paper_link,https://doi.org/10.1016/j.jfineco.2024.103831,,NOT CHECKED,,,,,,
 P42,code_link,https://data.mendeley.com/datasets/7pbjvjsbvb/2,,LIVE,200,,2026-08-21,,,
 P43,paper_link,https://doi.org/10.1016/j.jfineco.2024.103928,,NOT CHECKED,,,,,,
@@ -113,19 +167,35 @@ P57,paper_link,https://doi.org/10.1093/rof/rfac029,,NOT CHECKED,,,,,,
 P58,paper_link,https://doi.org/10.1093/rof/rfac045,,NOT CHECKED,,,,,,
 P58,data_link,,odzerbib@gmail.com,NO URL,,,,,,
 P59,paper_link,https://doi.org/10.1093/rof/rfac013,,NOT CHECKED,,,,,,
-P59,data_link,https://www.consumerfinance.gov/data-research/hmda/,HMDA: ; NOAA SLR viewer: ; NOAA SLR,LIVE,200,,2026-08-21,,,
-P59,data_link,https://coast.noaa.gov/slr/,HMDA: ; NOAA SLR viewer: ; NOAA SLR,LIVE,200,NOAA Sea Level Rise Viewer,2026-08-21,,,
-P59,data_link,https://coast.noaa.gov/digitalcoast/tools/slr.html,HMDA: ; NOAA SLR viewer: ; NOAA SLR,LIVE,200,,2026-08-21,,,
+P59,data_link,https://www.consumerfinance.gov/data-research/hmda/,"HMDA: ; NOAA SLR viewer: 
+
+NOAA SLR:",LIVE,200,,2026-08-21,,,
+P59,data_link,https://coast.noaa.gov/slr/,"HMDA: ; NOAA SLR viewer: 
+
+NOAA SLR:",LIVE,200,NOAA Sea Level Rise Viewer,2026-08-21,,,
+P59,data_link,https://coast.noaa.gov/digitalcoast/tools/slr.html,"HMDA: ; NOAA SLR viewer: 
+
+NOAA SLR:",LIVE,200,,2026-08-21,,,
 P60,paper_link,https://doi.org/10.1093/rof/rfac028,,NOT CHECKED,,,,,,
-P60,data_link,https://www.unpri.org/signatories,UN PRI signatories: ; SEC ADV,LIVE,200,,2026-08-21,,,
-P60,data_link,https://adviserinfo.sec.gov/,UN PRI signatories: ; SEC ADV,LIVE,200,,2026-08-21,,,
+P60,data_link,https://www.unpri.org/signatories,"UN PRI signatories: 
+
+SEC ADV:",LIVE,200,,2026-08-21,,,
+P60,data_link,https://adviserinfo.sec.gov/,"UN PRI signatories: 
+
+SEC ADV:",LIVE,200,,2026-08-21,,,
 P61,paper_link,https://doi.org/10.1093/rof/rfac033,,NOT CHECKED,,,,,,
 P62,paper_link,https://doi.org/10.1093/rof/rfac064,,NOT CHECKED,,,,,,
-P62,data_link,https://www.unpri.org/signatories,UN PRI signatories,LIVE,200,,2026-08-21,,,
-P62,data_link,https://www.unpri.org/sustainability-issues/research,UN PRI signatories,LIVE,200,,2026-08-21,,,
+P62,data_link,https://www.unpri.org/signatories,UN PRI signatories:,LIVE,200,,2026-08-21,,,
+P62,data_link,https://www.unpri.org/sustainability-issues/research,UN PRI signatories:,LIVE,200,,2026-08-21,,,
 P63,paper_link,https://doi.org/10.1093/rof/rfad002,,NOT CHECKED,,,,,,
-P63,data_link,https://www.epa.gov/toxics-release-inventory-tri-program,EPA: ; OSHA,LIVE,200,,2026-08-21,,,
-P63,data_link,https://www.osha.gov/data,EPA: ; OSHA,LIVE,200,,2026-08-21,,,
+P63,data_link,https://www.epa.gov/toxics-release-inventory-tri-program,"EPA: 
+ 
+
+ OSHA:",LIVE,200,,2026-08-21,,,
+P63,data_link,https://www.osha.gov/data,"EPA: 
+ 
+
+ OSHA:",LIVE,200,,2026-08-21,,,
 P64,paper_link,https://doi.org/10.1093/rof/rfad013,,NOT CHECKED,,,,,,
 P65,paper_link,https://doi.org/10.1093/rof/rfad034,,NOT CHECKED,,,,,,
 P66,paper_link,https://doi.org/10.1093/rof/rfad026,,NOT CHECKED,,,,,,
@@ -148,16 +218,28 @@ P75,data_link,,jnc29@psu.edu,NO URL,,,,,,
 P76,paper_link,https://academic.oup.com/rof/article/30/1/351/8316107,,NOT CHECKED,,,,,,
 P76,data_link,https://jncc.gov.uk/resources/36b59d93-8487-471d-9428-bc3d7dff0423,,LIVE,200,"Resolves to ""SSSI Guidelines. Chapter 1a: Coastlands"" — confirm this is the intended resource",2026-08-21,,,
 P77,paper_link,https://academic.oup.com/rof/article/30/1/321/8362620,,NOT CHECKED,,,,,,
-P77,data_link,https://gspp.berkeley.edu/berkeley-carbon-trading-project/offsets-database,voluntary Registry Offsets Database: ; Verra registry: ; Gold Standard,LIVE,200,Voluntary Registry Offsets Database,2026-08-21,,,
-P77,data_link,https://registry.verra.org/,voluntary Registry Offsets Database: ; Verra registry: ; Gold Standard,LIVE,200,,2026-08-21,,,
-P77,data_link,https://registry.goldstandard.org/,voluntary Registry Offsets Database: ; Verra registry: ; Gold Standard,BLOCKED,200,Requires JavaScript; cannot be verified automatically,2026-08-21,,,
+P77,data_link,https://gspp.berkeley.edu/berkeley-carbon-trading-project/offsets-database,"voluntary Registry Offsets Database: 
+
+Verra registry: 
+
+ Gold Standard",LIVE,200,Voluntary Registry Offsets Database,2026-08-21,,,
+P77,data_link,https://registry.verra.org/,"voluntary Registry Offsets Database: 
+
+Verra registry: 
+
+ Gold Standard",LIVE,200,,2026-08-21,,,
+P77,data_link,https://registry.goldstandard.org/,"voluntary Registry Offsets Database: 
+
+Verra registry: 
+
+ Gold Standard",BLOCKED,200,Requires JavaScript; cannot be verified automatically,2026-08-21,,,
 P78,paper_link,https://academic.oup.com/rof/article/30/1/273/8315367,,NOT CHECKED,,,,,,
 P78,data_link,https://researchbox.org/5014,,LIVE,200,ResearchBox #5014; single 4.8 GB archive,2026-08-21,,,
 P78,code_link,https://researchbox.org/5014,,LIVE,200,ResearchBox #5014; single 4.8 GB archive,2026-08-21,,,
 P79,paper_link,https://academic.oup.com/rof/article/30/1/231/8316106,,NOT CHECKED,,,,,,
 P79,data_link,https://www.encorenature.org/en,ENCORE Natural Capital Finance Alliance),LIVE,200,ENCORE,2026-08-21,,,
 P80,paper_link,https://academic.oup.com/rof/article/30/1/193/8304741,,NOT CHECKED,,,,,,
-P80,data_link,https://docs.google.com/spreadsheets/d/1Lz3FSaHMt36nuq82qmg9DWtWYxslPMYH/edit?pli=1&gid=1092822974#gid=1092822974,Corporate Biodiversity Exposure measures,RESTRICTED,200,Google Sheet resolves but prompts for sign-in; not openly downloadable,2026-08-21,,,
+P80,data_link,https://docs.google.com/spreadsheets/d/1Lz3FSaHMt36nuq82qmg9DWtWYxslPMYH/edit?pli=1&gid=1092822974#gid=1092822974,Corporate Biodiversity Exposure measures,LIVE,200,"Publicly viewable without sign-in, confirmed manually in a browser. Automated clients are served a sign-in banner, which is a property of Google's bot handling and not of the file's sharing settings",2026-08-22,,,
 P81,paper_link,https://academic.oup.com/rof/article/30/1/131/8307061,,NOT CHECKED,,,,,,
 P81,data_link,https://www.biodiversityrisk.org/download/,,LIVE,200,Offers multiple biodiversity datasets for download,2026-08-21,,,
 P82,paper_link,https://academic.oup.com/rof/article/30/1/87/8304747,,NOT CHECKED,,,,,,
@@ -166,26 +248,43 @@ P82,code_link,https://github.com/tengtedliu/financial_value_of_nature_mangrove,,
 P83,paper_link,https://academic.oup.com/rof/article/30/1/43/8303924,,NOT CHECKED,,,,,,
 P84,paper_link,https://academic.oup.com/rof/article/30/1/11/8322449,,NOT CHECKED,,,,,,
 P85,paper_link,https://academic.oup.com/rof/article/30/2/571/8381550,,NOT CHECKED,,,,,,
-P85,data_link,,The data underlying this article can be; made available for academic research projects by the Research Data and Service Centre of the Deutsche Bundesbank.,NO URL,,,,,,
+P85,data_link,,"The data underlying this article can be 
+made available for academic research projects by the Research Data and Service Centre of the Deutsche Bundesbank.",NO URL,,,,,,
 P86,paper_link,https://academic.oup.com/rof/article/30/2/537/8317468,,NOT CHECKED,,,,,,
-P86,data_link,https://registry.verra.org/,Verra: ; HII via SEDAC/CIESIN,LIVE,200,,2026-08-21,,,
-P86,data_link,https://sedac.ciesin.columbia.edu/,Verra: ; HII via SEDAC/CIESIN,LIVE,200,,2026-08-21,,,
+P86,data_link,https://registry.verra.org/,"Verra: 
+
+
+ HII via SEDAC/CIESIN",LIVE,200,,2026-08-21,,,
+P86,data_link,https://sedac.ciesin.columbia.edu/,"Verra: 
+
+
+ HII via SEDAC/CIESIN",LIVE,200,,2026-08-21,,,
 P87,paper_link,https://academic.oup.com/rof/article/30/2/423/8304746,,NOT CHECKED,,,,,,
 P87,data_link,,USPTO/Google Patents are public; SEC EDGAR filings are public,NO URL,,,,,,
 P87,code_link,https://www.chatclimate.ai/climatebert,climate bert,LIVE,200,,2026-08-21,,,
 P88,paper_link,https://doi.org/10.1093/rfs/hhz079,,NOT CHECKED,,,,,,
-P88,data_link,https://www.epa.gov/ghgreporting,EPA GHGRP: ; TRI,LIVE,200,,2026-08-21,,,
-P88,data_link,https://www.epa.gov/toxics-release-inventory-tri-program,EPA GHGRP: ; TRI,LIVE,200,,2026-08-21,,,
+P88,data_link,https://www.epa.gov/ghgreporting,"EPA GHGRP: 
+ TRI:",LIVE,200,,2026-08-21,,,
+P88,data_link,https://www.epa.gov/toxics-release-inventory-tri-program,"EPA GHGRP: 
+ TRI:",LIVE,200,,2026-08-21,,,
 P89,paper_link,https://doi.org/10.1093/rfs/hhz073,,NOT CHECKED,,,,,,
-P89,data_link,https://climatecommunication.yale.edu/visualizations-data/ycom-us/,Yale Climate Opinion Maps: ; Air temp and heat index,LIVE,200,Yale Climate Opinion Maps 2025,2026-08-21,,,
-P89,data_link,https://wonder.cdc.gov/nasa-nldas.html,Yale Climate Opinion Maps: ; Air temp and heat index,LIVE,200,CDC WONDER NLDAS request form,2026-08-21,,,
+P89,data_link,https://climatecommunication.yale.edu/visualizations-data/ycom-us/,"Yale Climate Opinion Maps: 
+
+Air temp and heat index:",LIVE,200,Yale Climate Opinion Maps 2025,2026-08-21,,,
+P89,data_link,https://wonder.cdc.gov/nasa-nldas.html,"Yale Climate Opinion Maps: 
+
+Air temp and heat index:",LIVE,200,CDC WONDER NLDAS request form,2026-08-21,,,
 P90,paper_link,https://doi.org/10.1093/rfs/hhz134,,NOT CHECKED,,,,,,
 P90,data_link,https://coast.noaa.gov/slr/,NOAA SLR/elevation,LIVE,200,NOAA Sea Level Rise Viewer,2026-08-21,,,
 P91,paper_link,https://doi.org/10.1093/rfs/hhz072,,NOT CHECKED,,,,,,
-P91,data_link,https://drive.google.com/file/d/1pCHmcebmOwrVCFim78ALhB51c3h1qt2T/view?pli=1,,RESTRICTED,200,Google Drive file resolves but prompts for sign-in; not openly downloadable,2026-08-21,,,
+P91,data_link,https://drive.google.com/file/d/1pCHmcebmOwrVCFim78ALhB51c3h1qt2T/view?pli=1,,BLOCKED,200,Google Drive serves a sign-in banner to automated clients regardless of sharing settings; needs a manual check in a browser,2026-08-21,,,
 P92,paper_link,https://doi.org/10.1093/rfs/hhz086,,NOT CHECKED,,,,,,
-P92,data_link,https://trends.google.com/,Google Trends: ; ISD temperature Data,LIVE,200,,2026-08-21,,,
-P92,data_link,https://www.ncei.noaa.gov/products/land-based-station/integrated-surface-database,Google Trends: ; ISD temperature Data,LIVE,200,,2026-08-21,,,
+P92,data_link,https://trends.google.com/,"Google Trends: 
+
+  ISD temperature Data:",LIVE,200,,2026-08-21,,,
+P92,data_link,https://www.ncei.noaa.gov/products/land-based-station/integrated-surface-database,"Google Trends: 
+
+  ISD temperature Data:",LIVE,200,,2026-08-21,,,
 P93,paper_link,https://doi.org/10.1093/rfs/hhaa071,,NOT CHECKED,,,,,,
 P94,paper_link,https://doi.org/10.1093/rfs/hhab032,,NOT CHECKED,,,,,,
 P94,data_link,https://www.gov.uk/government/collections/price-paid-data,UK Land Registry Price Paid,LIVE,200,,2026-08-21,,,
@@ -207,8 +306,14 @@ P102,paper_link,https://doi.org/10.1093/rfs/hhad041,,NOT CHECKED,,,,,,
 P102,data_link,https://emma.msrb.org/,Climate Central surging-seas / NOAA SLR public; MSRB EMMA,ERROR,200,"Returned ""An Error Has Occurred""; may be transient or bot protection",2026-08-21,,,
 P102,code_link,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W5HTWA,,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,,,
 P103,paper_link,https://doi.org/10.1093/rfs/hhad085,,NOT CHECKED,,,,,,
-P103,data_link,https://www.epa.gov/ghgreporting,EPA GHGRP: ; SNC data,LIVE,200,,2026-08-21,,,
-P103,data_link,https://www.federalreserve.gov/data.htm,EPA GHGRP: ; SNC data,LIVE,200,,2026-08-21,,,
+P103,data_link,https://www.epa.gov/ghgreporting,"EPA GHGRP: 
+ 
+
+SNC data:",LIVE,200,,2026-08-21,,,
+P103,data_link,https://www.federalreserve.gov/data.htm,"EPA GHGRP: 
+ 
+
+SNC data:",LIVE,200,,2026-08-21,,,
 P103,code_link,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/RR86M2,,BLOCKED,,Harvard Dataverse refuses automated access; verify in a browser,2026-08-21,,,
 P104,paper_link,https://doi.org/10.1093/rfs/hhad093,,NOT CHECKED,,,,,,
 P104,data_link,,Weather/temperature data public; FactSet Revere supply-chain data proprietary,NO URL,,,,,,

@@ -1,6 +1,6 @@
 {
   "n": 109,
-  "built_on": "2026-08-21",
+  "built_on": "2026-08-22",
   "journals": {
     "Journal of Finance": 14,
     "Journal of Financial Economics": 42,
@@ -45,11 +45,11 @@
     "Europe": 7
   },
   "unit": {
-    "Firm-Year": 44,
+    "Firm-Year": 43,
     "Document-Level": 3,
     "Portfolio-Level": 17,
     "Other": 28,
-    "Asset-Level": 14,
+    "Asset-Level": 15,
     "(unrecorded)": 1,
     "Country-Year": 2
   },
@@ -163,6 +163,114 @@
       "median_end": 2019.0
     }
   },
+  "methods": {
+    "ECON": {
+      "n": 99,
+      "primary": 84,
+      "open": 0.3333333333333333,
+      "data": 0.3005050505050505
+    },
+    "SAT": {
+      "n": 14,
+      "primary": 3,
+      "open": 0.42857142857142855,
+      "data": 0.5
+    },
+    "NLP": {
+      "n": 10,
+      "primary": 8,
+      "open": 0.5625,
+      "data": 0.575
+    },
+    "SURV": {
+      "n": 9,
+      "primary": 4,
+      "open": 0.25,
+      "data": 0.3333333333333333
+    },
+    "EXP": {
+      "n": 6,
+      "primary": 3,
+      "open": 0.1875,
+      "data": 0.20833333333333334
+    },
+    "FILE": {
+      "n": 4,
+      "primary": 0,
+      "open": 0.46875,
+      "data": 0.4375
+    },
+    "ML": {
+      "n": 1,
+      "primary": 0,
+      "open": 0.0,
+      "data": 0.0
+    },
+    "META": {
+      "n": 1,
+      "primary": 0,
+      "open": 0.0,
+      "data": 0.0
+    },
+    "OTH": {
+      "n": 10,
+      "primary": 7,
+      "open": 0.2,
+      "data": 0.1
+    }
+  },
+  "cluster_methods": {
+    "Biodiversity & Nature": {
+      "ECON": 10,
+      "OTH": 1,
+      "NLP": 3,
+      "SURV": 2,
+      "SAT": 2,
+      "ML": 1,
+      "EXP": 1
+    },
+    "Climate Physical Risk": {
+      "NLP": 4,
+      "ECON": 26,
+      "SAT": 12,
+      "OTH": 1,
+      "SURV": 1
+    },
+    "Climate Transition Risk & Corporate Emissions": {
+      "NLP": 7,
+      "ECON": 39,
+      "OTH": 5,
+      "SURV": 3,
+      "SAT": 2,
+      "EXP": 1,
+      "FILE": 1
+    },
+    "Green Bonds & Sustainable Debt": {
+      "OTH": 2,
+      "ECON": 12,
+      "SAT": 2,
+      "EXP": 1,
+      "SURV": 1
+    },
+    "Social & Governance": {
+      "ECON": 35,
+      "EXP": 4,
+      "SURV": 4,
+      "FILE": 2,
+      "SAT": 4,
+      "OTH": 2,
+      "NLP": 1
+    },
+    "ESG Disclosure & Ratings": {
+      "ECON": 34,
+      "EXP": 5,
+      "SURV": 4,
+      "NLP": 2,
+      "FILE": 2,
+      "OTH": 4,
+      "META": 1
+    }
+  },
   "lag_median": 4,
   "lag_mean": 4.440366972477064,
   "lag_max": 14,
@@ -171,11 +279,10 @@
   "links_total": 218,
   "links_verdicts": {
     "NOT CHECKED": 109,
-    "BLOCKED": 40,
-    "LIVE": 64,
+    "BLOCKED": 41,
+    "LIVE": 65,
     "ERROR": 2,
-    "REDIRECT": 1,
-    "RESTRICTED": 2
+    "REDIRECT": 1
   },
-  "links_checked_on": "2026-08-21"
+  "links_checked_on": "2026-08-22"
 }

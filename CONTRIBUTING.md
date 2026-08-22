@@ -3,16 +3,39 @@
 This catalogue is meant to outlive the thesis it was built for. That imposes
 one hard constraint and a few soft ones.
 
-## The hard constraint: the frozen corpus does not change
+## Where the data actually comes from
 
-`data/SustFin_Corpus_FINAL.csv` is the baseline the thesis's numbers are
-computed from. A reader following the citation must find the corpus the thesis
-describes, not a later and better one. So:
+The coding was done in a spreadsheet, `Taxonomy_Coding_Sheet_FINAL.xlsx`, and
+that workbook is the source of truth for the coding itself.
+`data/SustFin_Corpus_FINAL.csv` is generated from its *Full Coding* sheet:
 
-- **New papers do not go into the frozen corpus.** They go into
-  `data/extensions/` (see below).
+```bash
+make import WORKBOOK=path/to/Taxonomy_Coding_Sheet_FINAL.xlsx
+```
+
+which converts the sheet, then runs `build` and `verify`. The importer refuses
+to write if the workbook's columns have been renamed or reordered, so a
+restructured sheet cannot quietly corrupt the corpus. It is the one script here
+that needs a third-party package: `pip install openpyxl`.
+
+**Never hand-edit `data/SustFin_Corpus_FINAL.csv`.** A coding correction made
+there is lost the next time the workbook is reimported. Correct the workbook.
+
+## The hard constraint: the released baseline does not change
+
+`data/SustFin_Corpus_FINAL.csv` as tagged `v1.0.0` is the baseline the thesis's
+numbers are computed from. A reader following the citation must find the corpus
+the thesis describes, not a later and better one.
+
+Before the thesis is submitted and the DOI minted, correcting the workbook and
+reimporting is the right move — a known coding error should not be carried into
+submission for the sake of a rule. **After that point the baseline is closed**,
+and:
+
+- **New papers do not go into it.** They go into `data/extensions/` (see below).
 - **Corrections do not go into it silently either.** They go through the
-  correction procedure, which records what changed and why.
+  correction procedure, which records what changed and why, and are folded into
+  a new baseline at the next major version.
 
 Everything else in the repository is generated, so it can be rebuilt at will:
 
@@ -108,8 +131,10 @@ URL, and put the new date in `checked_on`.
 
 ## Style
 
-Python in `scripts/` is standard-library only and is meant to be read by an
-economist, not admired by an engineer. Keep it dependency-free, keep every
+Python in `scripts/` is standard-library only — `import_corpus.py` and its
+`openpyxl` dependency are the single exception, and it is not needed to build
+or verify the repository. The code is meant to be read by an economist, not
+admired by an engineer. Keep it dependency-free, keep every
 scoring key and classification declared in exactly one place, and keep the
 comment that explains *why* a judgement was made next to the judgement.
 
