@@ -144,7 +144,7 @@ The catalogue's badge legend is repeated at the top of
 ## Known limitations
 
 These are properties of the instrument, not defects to be fixed by a pull
-request. They are stated here so nobody cites a number without them.
+request. They are stated here as a transparence mesure.
 
 - **One coder.** The corpus was coded by a single reader with no second-coder
   agreement statistic. Borderline calls between `Partial` and `Raw Data`, in
