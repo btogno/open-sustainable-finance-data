@@ -150,8 +150,7 @@ request. They are stated here as a transparence mesure.
   agreement statistic. Borderline calls between `Partial` and `Raw Data`, in
   particular, are judgement.
 - **Four journals.** A statement about the top of the field, not the field.
-  Management Science, *Nature Climate Change* and the *Journal of Banking and
-  Finance* are not covered.
+
 - **Availability is coded as published, not as tested.** A paper coded `D:OPEN`
   released something; whether that something reproduces the paper's tables was
   not verified, and nothing here attempts that.
@@ -176,9 +175,9 @@ request. They are stated here as a transparence mesure.
 
 ## Maintenance
 
-Links decay, and a catalogue of dead links is worse than none. The repository
-therefore ships its own baseline rather than a promise: every unique URL has a
-recorded verdict and a date in [`data/link_checks.csv`](data/link_checks.csv).
+Links decay, and a catalogue of dead links is useless. The repository
+therefore ships its own baseline: every URL has a
+recorded state and a date in [`data/link_checks.csv`](data/link_checks.csv).
 
 ```bash
 make check-links     # re-probe every URL and diff against the recorded baseline
