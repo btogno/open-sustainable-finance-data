@@ -1,6 +1,6 @@
 # Catalogue — all 109 papers
 
-Every paper in the frozen corpus, whether or not it releases anything. Papers with no public data and no code are listed too: the openness rate of the field is only measurable against the whole population, and a catalogue that showed only the open subset would misdescribe it.
+Every paper in the frozen corpus, whether or not it releases anything. Papers with no public data and no code are listed too. The openness rate of the field is only measurable against the whole population.
 
 Sorted by openness score, descending. Full citations are in [CITATIONS.md](CITATIONS.md); field definitions and scoring keys are in [CODEBOOK.md](CODEBOOK.md).
 

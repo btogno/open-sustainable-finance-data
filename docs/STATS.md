@@ -1,6 +1,6 @@
 # Statistics
 
-Recomputed from the frozen corpus on 2026-08-22. Every figure the README or the thesis cites is derived here, so the two cannot drift apart.
+Recomputed from the frozen corpus on 2026-08-23. Every figure the README or the thesis cites is derived here, so the two cannot drift apart.
 
 ## Corpus
 
@@ -44,7 +44,7 @@ Ordered along the openness gradient. Non-exclusive, so counts sum above 109.
 
 ## Methods
 
-Counted on an **any-mention** basis across the primary and secondary method fields. The gap between the two columns is the result that matters: a method can be widely used without being anyone's headline technique.
+Counted on an **any-mention** basis across the primary and secondary method fields. A method can be widely used without being any paper's primary technique, which is why the two columns differ.
 
 | Method | Any mention | Primary only | Mean openness | Mean data |
 |---|---|---|---|---|
@@ -79,5 +79,5 @@ Counted on an **any-mention** basis across the primary and secondary method fiel
 
 109 data and code link entries across the corpus, last checked 2026-08-22: LIVE 106 · ERROR 2 · REDIRECT 1. Established by web 65 · manual 44.
 
-The 109 publisher landing pages are excluded: they are DOIs and were never in question. Where an automated probe could not settle a link — Harvard Dataverse, Wiley, Mendeley, FEMA, OSF and Google all refuse robots or answer them identically whatever a file's real permissions — it was opened in a browser instead, which is what the `manual` method records. See [LINK_CHECKS.md](LINK_CHECKS.md).
+The 109 publisher landing pages are excluded: they are DOIs and were not probed. Where an automated probe could not settle a link — Harvard Dataverse, Wiley, Mendeley, FEMA, OSF and Google all refuse robots or answer them identically whatever a file's real permissions — it was opened in a browser instead, which is what the `manual` method records. See [LINK_CHECKS.md](LINK_CHECKS.md).
 

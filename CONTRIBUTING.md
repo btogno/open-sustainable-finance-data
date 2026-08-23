@@ -50,7 +50,7 @@ rejected out of hand, but they need an explanation in the PR description.
 
 1. **In scope?** The catalogue covers *empirical* sustainable finance research.
    Theory papers with no dataset have nothing to catalogue.
-2. **Every field coded?** Blanks are not authorized, and
+2. **Every field coded?** Blanks are not permitted, and
    `derive.py` will fail loudly on an unrecognised availability level.
 3. **Availability coded as published.** `Y` means the constructed
    analysis panel is released. If the paper names public sources but releases
@@ -127,7 +127,7 @@ the link.
   different self-selection problem, and mixing them silently would make the
   openness rate uninterpretable. If they are added it will be as a separately
   labelled corpus.
-- **Quality judgements about the papers.** The tiers rank what is *retrievable*, No checks about the quality of the datasets were performed.
+- **Quality judgements about the papers.** The tiers rank what is *retrievable*. No checks on the quality of the datasets were performed.
 
 ## Style
 

@@ -1,6 +1,6 @@
 {
   "n": 109,
-  "built_on": "2026-08-22",
+  "built_on": "2026-08-23",
   "journals": {
     "Journal of Finance": 14,
     "Journal of Financial Economics": 42,
@@ -221,24 +221,24 @@
   },
   "cluster_methods": {
     "Biodiversity & Nature": {
-      "ECON": 10,
       "OTH": 1,
-      "SURV": 2,
+      "ECON": 10,
       "NLP": 3,
+      "SURV": 2,
       "SAT": 2,
       "ML": 1,
       "EXP": 1
     },
     "Climate Physical Risk": {
-      "ECON": 26,
       "NLP": 4,
+      "ECON": 26,
       "SAT": 12,
       "OTH": 1,
       "SURV": 1
     },
     "Climate Transition Risk & Corporate Emissions": {
-      "ECON": 39,
       "NLP": 7,
+      "ECON": 39,
       "OTH": 5,
       "SURV": 3,
       "SAT": 2,
@@ -246,8 +246,8 @@
       "FILE": 1
     },
     "Green Bonds & Sustainable Debt": {
-      "ECON": 12,
       "OTH": 2,
+      "ECON": 12,
       "SAT": 2,
       "EXP": 1,
       "SURV": 1

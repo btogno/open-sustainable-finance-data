@@ -265,9 +265,8 @@ def catalogue(recs, links, s):
         "# Catalogue — all 109 papers",
         "",
         "Every paper in the frozen corpus, whether or not it releases anything. "
-        "Papers with no public data and no code are listed too: the openness rate "
-        "of the field is only measurable against the whole population, and a "
-        "catalogue that showed only the open subset would misdescribe it.",
+        "Papers with no public data and no code are listed too. The openness rate "
+        "of the field is only measurable against the whole population.",
         "",
         "Sorted by openness score, descending. Full citations are in "
         "[CITATIONS.md](CITATIONS.md); field definitions and scoring keys are in "
@@ -488,9 +487,8 @@ def stats_md(s):
         "## Methods",
         "",
         "Counted on an **any-mention** basis across the primary and secondary "
-        "method fields. The gap between the two columns is the result that "
-        "matters: a method can be widely used without being anyone's headline "
-        "technique.",
+        "method fields. A method can be widely used without being any paper's "
+        "primary technique, which is why the two columns differ.",
         "",
         "| Method | Any mention | Primary only | Mean openness | Mean data |",
         "|---|---|---|---|---|",
@@ -531,7 +529,7 @@ def stats_md(s):
         + ".",
         "",
         f"The {s['links_paper_pages']} publisher landing pages are excluded: they "
-        "are DOIs and were never in question. Where an automated probe could not "
+        "are DOIs and were not probed. Where an automated probe could not "
         "settle a link — Harvard Dataverse, Wiley, Mendeley, FEMA, OSF and Google "
         "all refuse robots or answer them identically whatever a file's real "
         "permissions — it was opened in a browser instead, which is what the "

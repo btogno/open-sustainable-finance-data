@@ -1,7 +1,7 @@
 # Licences
 
-This repository contains two kinds of material under two different licences,
-and links to a third kind that it does not license at all.
+This repository contains material under two licences, and links to data covered
+by neither.
 
 ## 1. Curated metadata — CC BY 4.0
 
@@ -50,11 +50,11 @@ MIT Licence.
 
 ## 3. The underlying datasets — not licensed here
 
-This repository **catalogues and links; it redistributes nothing**. The datasets
+This repository **links to the underlying data and does not redistribute it**. The datasets
 described in the catalogue remain governed entirely by the terms their producers
 set. For 92 of the 109 papers that includes at least one commercially licensed
 input — CRSP, Compustat, Refinitiv, MSCI, Sustainalytics, Factiva and the like —
-and neither licence above grants any right whatever in those.
+and neither licence above grants any rights in those.
 
 Nor does anything here relicense the authors' own replication materials.
 Whatever terms a Dataverse, Zenodo, Mendeley or OSF deposit carries continue to

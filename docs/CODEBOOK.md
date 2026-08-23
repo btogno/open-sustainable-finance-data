@@ -24,11 +24,10 @@ of Finance*, *Journal of Financial Economics*, *Review of Financial Studies* and
 *Review of Finance*, with issues covered through April 2026. Publication years
 run 2011–2026. **n = 109.**
 
-**Not conditioned on openness.** Papers releasing nothing are included. This is
-the decision that makes the openness rate a measurement rather than a
-description of a self-selected subset: 52 papers in the corpus have no public
-data and 69 have no code, and excluding them would make the quantity of
-interest unobservable.
+**Not conditioned on openness.** Papers releasing nothing are included.
+Including them is what makes the openness rate a measurement: 52 papers in the
+corpus have no public data and 69 have no code, and excluding them would make
+the quantity of interest unobservable.
 
 **Unit of the row.** One paper. A paper releasing several distinct assets
 carries several links in one row rather than several rows, so counts here
@@ -68,9 +67,8 @@ result survives a different weighting.
 | `N` | 0.00 | No public pathway to the data. |
 
 `Raw Data` is the analytically important level and the largest single category
-(36 of 109). It marks documented provenance without release, which is precisely
-the position of a paper whose inputs are public but whose constructed panel
-never leaves the authors' machines.
+(36 of 109). It marks documented provenance without release: the inputs are
+public, but the constructed panel is not.
 
 ### `code_availability` → `code_score`
 
@@ -89,15 +87,15 @@ for `data = Y` **and** `code = Y`, never awarded on score alone, because code
 released against no data cannot be run.
 
 Treating these ordinal levels as cardinal in order to average them is a
-convenience. It is defensible for ranking and indefensible as measurement of a
-latent quantity; nothing in the catalogue depends on the exact spacing.
+convenience. It supports ranking, but not measurement of a latent quantity.
+Nothing in the catalogue depends on the exact spacing.
 
 ### `could_be_open`
 
 The coder's judgement on whether a paper's data *could* have been released
-given its inputs. Judgement, not observation, and reported as such. Useful for
-identifying where editorial pressure would have the highest return; not usable
-as an outcome variable.
+given its inputs. This is a judgement rather than an observation. It is useful
+for identifying where editorial pressure would have the highest return, and is
+not usable as an outcome variable.
 
 ---
 
@@ -132,7 +130,7 @@ flagging as arguable. `Market Data` is treated as licensed because in this
 corpus it means CRSP, Compustat or Refinitiv rather than free price feeds.
 `News & Media` is treated as licensed because the studies using it access it
 through Factiva, RavenPack or equivalent. Reclassifying either and rerunning
-the build shows immediately how much any conclusion depends on the call.
+the build shows how much a conclusion depends on the call.
 
 ---
 
@@ -211,11 +209,10 @@ Many studies observe firms in one place and a phenomenon in another: a
 multinational sample exposed to a hazard, a policy or a protected area that
 exists in a single country. **The scope follows the geography of the
 phenomenon under study, not the domicile of the entities observed.** The
-question the field answers is *where does the evidence come from*, and evidence
-about a US regulatory boundary is US evidence however widely dispersed the
-firms that trip over it.
+question is where the evidence comes from. Evidence about a US regulatory
+boundary is US evidence, whatever the domicile of the firms it affects.
 
-`P80` is the worked example, and the reason this paragraph exists. It studies
+`P80` is the worked example. It studies
 multinational firms operating near newly protected biodiversity areas, and the
 protected areas are all in the United States — so the note describes global
 firms while the scope is coded `US`. Both are correct and they are not in
@@ -247,7 +244,7 @@ retrieved. Mutually exclusive, evaluated in order.
 | *(untiered)* | everything else | 93 |
 
 Papers releasing code against named raw sources (`code = Y`, `data = Raw Data`,
-8 papers) are deliberately untiered: the code exists, but the panel it runs on
+8 papers) are deliberately untiered: the code exists but the analysis panel
 does not, so there is no retrievable asset to curate. They remain in the
 catalogue and score 0.75.
 
