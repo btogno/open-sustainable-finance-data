@@ -49,8 +49,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -104,8 +104,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -159,8 +159,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -209,8 +209,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -264,7 +264,7 @@
     "code_score": 1.0,
     "code_link": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13219&file=jofi13219-sup-0002-ReplicationCode.zip",
     "openness_score": 1.0,
-    "openness_tier": "fully open",
+    "openness_band": "fully open",
     "curation_tier": "Tier 1",
     "could_be_open": ""
   },
@@ -317,8 +317,8 @@
     "code_score": 1.0,
     "code_link": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13272&file=jofi13272-sup-0002-ReplicationCode.zip",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "Partial"
   },
   {
@@ -368,8 +368,8 @@
     "code_score": 1.0,
     "code_link": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13402&file=jofi13402-sup-0002-ReplicationCode.zip",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "Partial"
   },
   {
@@ -418,7 +418,7 @@
     "code_score": 1.0,
     "code_link": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13416&file=jofi13416-sup-0002-ReplicationCode.zip",
     "openness_score": 0.875,
-    "openness_tier": "mostly open",
+    "openness_band": "mostly open",
     "curation_tier": "Tier 2",
     "could_be_open": "Partial"
   },
@@ -473,8 +473,8 @@
     "code_score": 1.0,
     "code_link": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13412&file=jofi13412-sup-0002-ReplicationCode.zip",
     "openness_score": 0.75,
-    "openness_tier": "mostly open",
-    "curation_tier": "",
+    "openness_band": "mostly open",
+    "curation_tier": "Tier 4",
     "could_be_open": "Partial"
   },
   {
@@ -527,8 +527,8 @@
     "code_score": 1.0,
     "code_link": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13498&file=jofi13498-sup-0002-ReplicationCode.zip",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "N"
   },
   {
@@ -578,8 +578,8 @@
     "code_score": 1.0,
     "code_link": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13499&file=jofi13499-sup-0002-ReplicationCode.zip",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "N"
   },
   {
@@ -630,8 +630,8 @@
     "code_score": 1.0,
     "code_link": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.70029&file=jofi70029-sup-0002-Replication-Code.zip",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "N"
   },
   {
@@ -680,7 +680,7 @@
     "code_score": 0.5,
     "code_link": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.70004&file=jofi70004-sup-0002-ReplicationCode.zip",
     "openness_score": 0.625,
-    "openness_tier": "partly open",
+    "openness_band": "partly open",
     "curation_tier": "Tier 3",
     "could_be_open": "Partial"
   },
@@ -737,8 +737,8 @@
     "code_score": 1.0,
     "code_link": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.70008&file=jofi70008-sup-0001-ReplicationCode.zip",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "Partial"
   },
   {
@@ -787,8 +787,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "Partial"
   },
   {
@@ -839,8 +839,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -891,8 +891,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -942,8 +942,8 @@
     "code_score": 0.25,
     "code_link": "jfinancialeconomics@gmail.com",
     "openness_score": 0.125,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -993,8 +993,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -1042,8 +1042,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -1093,8 +1093,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -1141,8 +1141,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Y"
   },
   {
@@ -1192,8 +1192,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "Partial"
   },
   {
@@ -1246,8 +1246,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -1296,8 +1296,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -1349,8 +1349,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "Partial"
   },
   {
@@ -1403,8 +1403,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -1452,8 +1452,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -1502,8 +1502,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -1553,8 +1553,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -1604,8 +1604,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -1653,8 +1653,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -1705,8 +1705,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "Partial"
   },
   {
@@ -1760,8 +1760,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -1812,8 +1812,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -1863,8 +1863,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -1916,8 +1916,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Y"
   },
   {
@@ -1968,8 +1968,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -2020,8 +2020,8 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/dnskbdnmsz/1",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "N"
   },
   {
@@ -2073,8 +2073,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -2126,8 +2126,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -2177,8 +2177,8 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/7pbjvjsbvb/2",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "N"
   },
   {
@@ -2226,7 +2226,7 @@
     "code_score": 1.0,
     "code_link": "https://zenodo.org/records/13282899",
     "openness_score": 1.0,
-    "openness_tier": "fully open",
+    "openness_band": "fully open",
     "curation_tier": "Tier 1",
     "could_be_open": ""
   },
@@ -2275,8 +2275,8 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/y3g8bx3vb4/1",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "Partial"
   },
   {
@@ -2326,7 +2326,7 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/d5gxv5tc8b/2",
     "openness_score": 1.0,
-    "openness_tier": "fully open",
+    "openness_band": "fully open",
     "curation_tier": "Tier 1",
     "could_be_open": ""
   },
@@ -2378,8 +2378,8 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/gzp97wdddc/1",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "N"
   },
   {
@@ -2430,8 +2430,8 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/79fm698pyx/1",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "N"
   },
   {
@@ -2479,8 +2479,8 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/hpgmk6ctwh/2",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "N"
   },
   {
@@ -2528,7 +2528,7 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/5pzr9t645v/2",
     "openness_score": 0.875,
-    "openness_tier": "mostly open",
+    "openness_band": "mostly open",
     "curation_tier": "Tier 2",
     "could_be_open": "Partial"
   },
@@ -2582,7 +2582,7 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5LX4LD",
     "openness_score": 0.875,
-    "openness_tier": "mostly open",
+    "openness_band": "mostly open",
     "curation_tier": "Tier 2",
     "could_be_open": "Partial"
   },
@@ -2634,8 +2634,8 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/vpp2jysgyh/2",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "Partial"
   },
   {
@@ -2685,8 +2685,8 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/zhrnypkcyb/2",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "N"
   },
   {
@@ -2737,7 +2737,7 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/y5p3vdzzwr/1",
     "openness_score": 0.875,
-    "openness_tier": "mostly open",
+    "openness_band": "mostly open",
     "curation_tier": "Tier 2",
     "could_be_open": "Partial"
   },
@@ -2786,8 +2786,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "Partial"
   },
   {
@@ -2835,8 +2835,8 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/5vhyvhfmh3/1",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "Partial"
   },
   {
@@ -2886,8 +2886,8 @@
     "code_score": 1.0,
     "code_link": "https://data.mendeley.com/datasets/b5f9rp823c/2",
     "openness_score": 0.75,
-    "openness_tier": "mostly open",
-    "curation_tier": "",
+    "openness_band": "mostly open",
+    "curation_tier": "Tier 4",
     "could_be_open": "Partial"
   },
   {
@@ -2943,8 +2943,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -2996,8 +2996,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.125,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 6",
     "could_be_open": "N"
   },
   {
@@ -3046,8 +3046,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -3098,8 +3098,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -3149,8 +3149,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -3200,8 +3200,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.125,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -3259,8 +3259,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -3310,8 +3310,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -3369,8 +3369,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -3418,8 +3418,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "Partial"
   },
   {
@@ -3471,8 +3471,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -3523,8 +3523,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -3577,8 +3577,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -3633,8 +3633,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -3685,8 +3685,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -3737,8 +3737,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "Partial"
   },
   {
@@ -3790,8 +3790,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -3840,8 +3840,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.125,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -3892,8 +3892,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.125,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -3944,8 +3944,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -4001,8 +4001,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -4049,7 +4049,7 @@
     "code_score": 1.0,
     "code_link": "https://researchbox.org/5014",
     "openness_score": 1.0,
-    "openness_tier": "fully open",
+    "openness_band": "fully open",
     "curation_tier": "Tier 1",
     "could_be_open": "Y"
   },
@@ -4101,8 +4101,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -4153,7 +4153,7 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
+    "openness_band": "partly open",
     "curation_tier": "Tier 3",
     "could_be_open": "Partial"
   },
@@ -4206,7 +4206,7 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
+    "openness_band": "partly open",
     "curation_tier": "Tier 3",
     "could_be_open": "Y"
   },
@@ -4259,7 +4259,7 @@
     "code_score": 1.0,
     "code_link": "https://github.com/tengtedliu/financial_value_of_nature_mangrove",
     "openness_score": 1.0,
-    "openness_tier": "fully open",
+    "openness_band": "fully open",
     "curation_tier": "Tier 1",
     "could_be_open": "Y"
   },
@@ -4309,8 +4309,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "Partial"
   },
   {
@@ -4364,8 +4364,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "Y"
   },
   {
@@ -4419,8 +4419,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.125,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 6",
     "could_be_open": "Y"
   },
   {
@@ -4472,8 +4472,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -4524,8 +4524,8 @@
     "code_score": 0.5,
     "code_link": "climate bert: https://www.chatclimate.ai/climatebert",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -4576,8 +4576,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -4626,8 +4626,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -4675,8 +4675,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -4728,7 +4728,7 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
+    "openness_band": "partly open",
     "curation_tier": "Tier 3",
     "could_be_open": "Y"
   },
@@ -4780,8 +4780,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -4831,8 +4831,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -4883,8 +4883,8 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PNHXF6",
     "openness_score": 0.75,
-    "openness_tier": "mostly open",
-    "curation_tier": "",
+    "openness_band": "mostly open",
+    "curation_tier": "Tier 4",
     "could_be_open": "Partial"
   },
   {
@@ -4935,8 +4935,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -4986,8 +4986,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -5040,8 +5040,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.0,
-    "openness_tier": "closed",
-    "curation_tier": "",
+    "openness_band": "closed",
+    "curation_tier": "Tier 7",
     "could_be_open": "N"
   },
   {
@@ -5090,8 +5090,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -5143,8 +5143,8 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/1W1NPW",
     "openness_score": 0.75,
-    "openness_tier": "mostly open",
-    "curation_tier": "",
+    "openness_band": "mostly open",
+    "curation_tier": "Tier 4",
     "could_be_open": "Partial"
   },
   {
@@ -5196,8 +5196,8 @@
     "code_score": 0.0,
     "code_link": "",
     "openness_score": 0.25,
-    "openness_tier": "minimally open",
-    "curation_tier": "",
+    "openness_band": "minimally open",
+    "curation_tier": "Tier 6",
     "could_be_open": "Partial"
   },
   {
@@ -5244,7 +5244,7 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UTMICU",
     "openness_score": 1.0,
-    "openness_tier": "fully open",
+    "openness_band": "fully open",
     "curation_tier": "Tier 1",
     "could_be_open": "Y"
   },
@@ -5297,8 +5297,8 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W5HTWA",
     "openness_score": 0.75,
-    "openness_tier": "mostly open",
-    "curation_tier": "",
+    "openness_band": "mostly open",
+    "curation_tier": "Tier 4",
     "could_be_open": "Partial"
   },
   {
@@ -5351,8 +5351,8 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/RR86M2",
     "openness_score": 0.75,
-    "openness_tier": "mostly open",
-    "curation_tier": "",
+    "openness_band": "mostly open",
+    "curation_tier": "Tier 4",
     "could_be_open": "Partial"
   },
   {
@@ -5401,8 +5401,8 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/file.xhtml?fileId=7622069&version=1.0",
     "openness_score": 0.75,
-    "openness_tier": "mostly open",
-    "curation_tier": "",
+    "openness_band": "mostly open",
+    "curation_tier": "Tier 4",
     "could_be_open": "Partial"
   },
   {
@@ -5453,7 +5453,7 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/9NWRW8",
     "openness_score": 0.875,
-    "openness_tier": "mostly open",
+    "openness_band": "mostly open",
     "curation_tier": "Tier 2",
     "could_be_open": "Partial"
   },
@@ -5503,8 +5503,8 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ABVAYZ",
     "openness_score": 0.75,
-    "openness_tier": "mostly open",
-    "curation_tier": "",
+    "openness_band": "mostly open",
+    "curation_tier": "Tier 4",
     "could_be_open": "Y"
   },
   {
@@ -5556,8 +5556,8 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/9DROKJ",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "Partial"
   },
   {
@@ -5610,8 +5610,8 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/FTPRYX",
     "openness_score": 0.5,
-    "openness_tier": "partly open",
-    "curation_tier": "",
+    "openness_band": "partly open",
+    "curation_tier": "Tier 5",
     "could_be_open": "N"
   },
   {
@@ -5662,7 +5662,7 @@
     "code_score": 1.0,
     "code_link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MBBSGV",
     "openness_score": 0.875,
-    "openness_tier": "mostly open",
+    "openness_band": "mostly open",
     "curation_tier": "Tier 2",
     "could_be_open": "Partial"
   }

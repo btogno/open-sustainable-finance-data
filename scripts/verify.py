@@ -91,6 +91,28 @@ def main():
     check("fully open == count of Tier 1", fully_open,
           sum(1 for r in derived if r["curation_tier"] == "Tier 1"))
 
+    TIERS = [f"Tier {i}" for i in range(1, 8)]
+    tier_n = collections.Counter(r["curation_tier"] for r in derived)
+    check("the tiers partition the corpus", sum(tier_n[t] for t in TIERS), 109)
+    check("no paper is untiered", sorted(
+        r["paper_id"] for r in derived if r["curation_tier"] not in TIERS), [])
+    # Each tier's rule, restated independently of derive.py.
+    d_of = lambda r: r["data_availability"]
+    c_of = lambda r: r["code_availability"]
+    RULES = {
+        "Tier 1": lambda r: d_of(r) == "Y" and c_of(r) == "Y",
+        "Tier 2": lambda r: d_of(r) == "Partial" and c_of(r) == "Y",
+        "Tier 3": lambda r: d_of(r) in ("Y", "Partial") and c_of(r) != "Y",
+        "Tier 4": lambda r: d_of(r) == "Raw Data" and c_of(r) == "Y",
+        "Tier 5": lambda r: d_of(r) == "N" and c_of(r) == "Y",
+        "Tier 6": lambda r: d_of(r) in ("Raw Data", "On Demand") and c_of(r) != "Y",
+        "Tier 7": lambda r: d_of(r) == "N" and c_of(r) != "Y",
+    }
+    for t in TIERS:
+        check(f"{t} membership matches its rule",
+              sorted(r["paper_id"] for r in derived if r["curation_tier"] == t),
+              sorted(r["paper_id"] for r in derived if RULES[t](r)))
+
     print("\n3. The openness asymmetry")
     code_only = sum(
         1 for r in raw

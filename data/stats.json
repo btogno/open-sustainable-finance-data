@@ -1,6 +1,6 @@
 {
   "n": 109,
-  "built_on": "2026-08-23",
+  "built_on": "2026-08-25",
   "journals": {
     "Journal of Finance": 14,
     "Journal of Financial Economics": 42,
@@ -54,9 +54,13 @@
     "Country-Year": 2
   },
   "tiers": {
+    "Tier 7": 35,
     "Tier 1": 6,
+    "Tier 5": 17,
     "Tier 2": 6,
-    "Tier 3": 4
+    "Tier 4": 8,
+    "Tier 3": 4,
+    "Tier 6": 33
   },
   "data_mean": 0.3073394495412844,
   "code_mean": 0.35091743119266056,
@@ -223,22 +227,22 @@
     "Biodiversity & Nature": {
       "OTH": 1,
       "ECON": 10,
-      "NLP": 3,
       "SURV": 2,
+      "NLP": 3,
       "SAT": 2,
       "ML": 1,
       "EXP": 1
     },
     "Climate Physical Risk": {
-      "NLP": 4,
       "ECON": 26,
+      "NLP": 4,
       "SAT": 12,
       "OTH": 1,
       "SURV": 1
     },
     "Climate Transition Risk & Corporate Emissions": {
-      "NLP": 7,
       "ECON": 39,
+      "NLP": 7,
       "OTH": 5,
       "SURV": 3,
       "SAT": 2,

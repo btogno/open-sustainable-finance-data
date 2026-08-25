@@ -79,12 +79,17 @@ public, but the constructed panel is not.
 | `On Demand` | 0.25 | Available from the authors on request. |
 | `N` | 0.00 | No code. |
 
-### `openness_score` and `openness_tier`
+### `openness_score` and `openness_band`
 
 `openness_score` is the unweighted mean of the two scores, on [0, 1].
-`openness_tier` is a label for reading convenience — `fully open` is reserved
-for `data = Y` **and** `code = Y`, never awarded on score alone, because code
+`openness_band` is a coarse label for it — `fully open` · `mostly open` ·
+`partly open` · `minimally open` · `closed`. `fully open` is reserved for
+`data = Y` **and** `code = Y`, never awarded on score alone, because code
 released against no data cannot be run.
+
+`openness_band` and `curation_tier` (§7) are different classifications and the
+names are kept apart deliberately. The band summarises the score; the tier
+states what a reader can recover.
 
 Treating these ordinal levels as cardinal in order to average them is a
 convenience. It supports ranking, but not measurement of a latent quantity.
@@ -233,20 +238,36 @@ the time it is read.
 
 ## 7. Curation tiers
 
-`curation_tier` ranks the sixteen papers from which something can actually be
-retrieved. Mutually exclusive, evaluated in order.
+`curation_tier` ranks every paper by what a reader can recover from it. The
+seven tiers are mutually exclusive, are evaluated in order, and cover all 109
+entries: no paper is untiered.
 
-| Tier | Rule | n |
-|---|---|---|
-| `Tier 1` | `data = Y` and `code = Y` | 6 |
-| `Tier 2` | `code = Y` and `data = Partial` | 6 |
-| `Tier 3` | `data ∈ {Y, Partial}` and `code ≠ Y` | 4 |
-| *(untiered)* | everything else | 93 |
+| Tier | Rule | n | What can be recovered |
+|---|---|---|---|
+| `Tier 1` | `data = Y` and `code = Y` | 6 | Panel and code. Rerunnable as published. |
+| `Tier 2` | `code = Y` and `data = Partial` | 6 | Code, and part of the panel. |
+| `Tier 3` | `data ∈ {Y, Partial}` and `code ≠ Y` | 4 | A panel, but not the analysis code. |
+| `Tier 4` | `code = Y` and `data = Raw Data` | 8 | No panel; the code names the public sources and shows what was done to them. |
+| `Tier 5` | `code = Y` and `data = N` | 17 | No panel and no public inputs; the code documents the pipeline. |
+| `Tier 6` | `data ∈ {Raw Data, On Demand}` and `code ≠ Y` | 33 | Provenance only. Rebuilding means reconstructing every cleaning decision. |
+| `Tier 7` | `data = N` and `code ≠ Y` | 35 | Nothing. |
 
-Papers releasing code against named raw sources (`code = Y`, `data = Raw Data`,
-8 papers) are deliberately untiered: the code exists but the analysis panel
-does not, so there is no retrievable asset to curate. They remain in the
-catalogue and score 0.75.
+The ladder groups into three. **Tiers 1 to 3** have something downloadable.
+**Tiers 4 to 6** have nothing downloadable but do record how the analysis was
+built, whether in code or in named sources. **Tier 7** records neither.
+
+Tiers 4 and 5 are worth separating from the rest because the openness score
+alone understates them. Neither releases an analysis panel, so neither can be
+rerun; but the released code names the inputs and shows the transformations
+applied to them, which is most of what a reader needs in order to build the
+same thing from their own subscription. Tier 5 in particular is usually a
+licensing outcome rather than a disclosure choice: the authors published
+everything they were able to publish.
+
+Tier 6 is the largest reconstructable group and the one where the cost falls
+entirely on the reader. The sources are named and public, so the data is
+obtainable in principle; what is missing is every decision made between the raw
+source and the estimation sample.
 
 ---
 
@@ -284,7 +305,7 @@ overwritten by a later `make check-links` run without someone looking again.
 Computed by `scripts/derive.py` and present only in the derived table:
 `topic_codes`, `clusters`, `method_codes`, `source_codes`,
 `licensing_exposure`, `licensing_code`, `data_score`, `code_score`,
-`openness_score`, `openness_tier`, `curation_tier`, `coverage`,
+`openness_score`, `openness_band`, `curation_tier`, `coverage`,
 `coverage_window_years`, `lag_years`.
 
 `source_codes` and `licensing_code` exist so that a paper's inputs and its

@@ -1,6 +1,6 @@
 # Statistics
 
-Recomputed from the frozen corpus on 2026-08-23. Every figure the README or the thesis cites is derived here, so the two cannot drift apart.
+Recomputed from the frozen corpus on 2026-08-25. Every figure the README or the thesis cites is derived here, so the two cannot drift apart.
 
 ## Corpus
 
@@ -17,6 +17,22 @@ Recomputed from the frozen corpus on 2026-08-23. Every figure the README or the 
 - Code availability: N 69 · Y 37 · Partial 2 · On Demand 1
 - The asymmetry runs one way: **31** papers release code without releasing data, against **3** the other way. **17** publish replication code against no public data at all — code that cannot be executed.
 - Score distribution: 0.00: 34 · 0.12: 6 · 0.25: 27 · 0.50: 21 · 0.62: 1 · 0.75: 8 · 0.88: 6 · 1.00: 6
+
+## Curation tiers
+
+Every paper carries exactly one tier, ranked by what a reader can recover. The rules are in [CODEBOOK.md](CODEBOOK.md) §7.
+
+| Tier | n | Share |
+|---|---|---|
+| Tier 1 | 6 | 5.5 % |
+| Tier 2 | 6 | 5.5 % |
+| Tier 3 | 4 | 3.7 % |
+| Tier 4 | 8 | 7.3 % |
+| Tier 5 | 17 | 15.6 % |
+| Tier 6 | 33 | 30.3 % |
+| Tier 7 | 35 | 32.1 % |
+
+Tiers 1 to 3 are the 16 entries with something downloadable, 14.7 % of the corpus. Tiers 4 and 5 add 25 papers that release code without a panel: not rerunnable, but the pipeline is documented.
 
 ## Licensing exposure
 

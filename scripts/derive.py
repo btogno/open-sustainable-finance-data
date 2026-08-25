@@ -143,7 +143,9 @@ LICENSING_CODE = {
 }
 
 
-OPENNESS_TIER = [
+# Coarse label for the openness score, kept distinct in name from
+# `curation_tier` (§7 of the codebook), which is a different classification.
+OPENNESS_BAND = [
     # (lower bound inclusive, label)
     (1.00, "fully open"),
     (0.75, "mostly open"),
@@ -182,10 +184,10 @@ def licensing_exposure(row):
     return "neither"
 
 
-def openness_tier(score, data_lvl, code_lvl):
+def openness_band(score, data_lvl, code_lvl):
     if data_lvl == "Y" and code_lvl == "Y":
         return "fully open"
-    for lo, label in OPENNESS_TIER:
+    for lo, label in OPENNESS_BAND:
         if score >= lo:
             return label if label != "fully open" else "mostly open"
     return "closed"
@@ -194,14 +196,30 @@ def openness_tier(score, data_lvl, code_lvl):
 def curation_tier(data_lvl, code_lvl):
     """Curation tiers as defined in the thesis §6.3.
 
-    Tier 1  fully open           data = Y   and code = Y
-    Tier 2  full code, partial data   code = Y   and data = Partial
-    Tier 3  data available, code incomplete   data in (Y, Partial) and code != Y
+    Seven tiers, ordered by what a reader can actually recover. They are
+    mutually exclusive, evaluated in order, and together they cover all 109
+    papers: every entry carries exactly one tier.
 
-    Tiers are mutually exclusive and are evaluated in order. Papers releasing
-    code against named raw sources (code = Y, data = Raw Data) are deliberately
-    outside the tiers: the code exists but the analysis panel does not, so the
-    entry cannot be curated as a retrievable asset.
+    Something is downloadable
+      Tier 1  data = Y                and code = Y        fully open
+      Tier 2  data = Partial          and code = Y        code, panel in part
+      Tier 3  data in (Y, Partial)    and code  < Y       panel, no full code
+
+    Nothing is downloadable, but the pipeline is documented
+      Tier 4  data = Raw Data         and code = Y        code names the inputs
+      Tier 5  data = N                and code = Y        code documents a
+                                                          pipeline whose inputs
+                                                          are licensed
+      Tier 6  data in (Raw Data,      and code  < Y       provenance recorded,
+              On Demand)                                  nothing released
+
+    Nothing is recoverable
+      Tier 7  data = N                and code  < Y       closed
+
+    Tiers 4 and 5 are the analytically interesting pair. Neither releases an
+    analysis panel, so neither can be rerun, but the released code records where
+    the inputs came from and what was done to them. That is worth more to a
+    reader than the openness score alone suggests.
     """
     if data_lvl == "Y" and code_lvl == "Y":
         return "Tier 1"
@@ -209,7 +227,13 @@ def curation_tier(data_lvl, code_lvl):
         return "Tier 2"
     if data_lvl in ("Y", "Partial") and code_lvl != "Y":
         return "Tier 3"
-    return ""
+    if code_lvl == "Y" and data_lvl == "Raw Data":
+        return "Tier 4"
+    if code_lvl == "Y" and data_lvl == "N":
+        return "Tier 5"
+    if data_lvl in ("Raw Data", "On Demand"):
+        return "Tier 6"
+    return "Tier 7"
 
 
 def load():
@@ -285,7 +309,7 @@ def derive(rows):
                 "code_score": cs,
                 "code_link": r["Code Access Link / Repository"].strip(),
                 "openness_score": openness,
-                "openness_tier": openness_tier(openness, data_lvl, code_lvl),
+                "openness_band": openness_band(openness, data_lvl, code_lvl),
                 "curation_tier": curation_tier(data_lvl, code_lvl),
                 "could_be_open": r["Could be open-source (Y/N/Partial)"].strip(),
             }

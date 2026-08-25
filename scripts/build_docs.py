@@ -73,12 +73,36 @@ PRIMARY_TO_CODE = {
     "Other": "OTH",
 }
 
-TIER_BADGE = {
-    "Tier 1": "`T1`",
-    "Tier 2": "`T2`",
-    "Tier 3": "`T3`",
-    "": "",
-}
+TIER_BADGE = {f"Tier {i}": f"`T{i}`" for i in range(1, 8)}
+TIER_BADGE[""] = ""
+
+# The ladder, in order, with the rule and what a reader can do with an entry.
+# Rules are enforced in curation_tier() in derive.py; these are the readable
+# statements of the same thing.
+TIER_LADDER = [
+    ("Tier 1", "`data = Y` and `code = Y`",
+     "Panel and code both released. Rerunnable as published."),
+    ("Tier 2", "`data = Partial` and `code = Y`",
+     "Code released against a partially released panel. Reproducible in part, "
+     "and the cheapest entries to move into Tier 1."),
+    ("Tier 3", "`data` is `Y` or `Partial`, `code` is not `Y`",
+     "A panel is released but the analysis code is not. The result can be "
+     "re-estimated, not reproduced exactly."),
+    ("Tier 4", "`data = Raw Data` and `code = Y`",
+     "No panel, but the code names the public sources it was built from and "
+     "shows what was done to them."),
+    ("Tier 5", "`data = N` and `code = Y`",
+     "No panel and no public inputs, but the released code documents the "
+     "pipeline. Usually the inputs are licensed rather than withheld."),
+    ("Tier 6", "`data` is `Raw Data` or `On Demand`, `code` is not `Y`",
+     "Provenance is recorded and nothing is released. Rebuilding means "
+     "reconstructing every cleaning decision."),
+    ("Tier 7", "`data = N` and `code` is not `Y`",
+     "Neither the data nor the method is recoverable."),
+]
+
+# Tiers 1-3 are listed paper by paper in the README; 4-7 are summarised.
+TIER_DETAIL = ("Tier 1", "Tier 2", "Tier 3")
 
 
 def load():
@@ -114,7 +138,7 @@ def stats(recs, links):
     s["data_mean"] = mean([r["data_score"] for r in recs])
     s["code_mean"] = mean([r["code_score"] for r in recs])
     s["open_mean"] = mean([r["openness_score"] for r in recs])
-    s["fully_open"] = sum(1 for r in recs if r["openness_tier"] == "fully open")
+    s["fully_open"] = sum(1 for r in recs if r["openness_band"] == "fully open")
     s["fully_closed"] = sum(1 for r in recs if r["openness_score"] == 0.0)
     s["score_hist"] = collections.Counter(r["openness_score"] for r in recs)
 
@@ -137,7 +161,7 @@ def stats(recs, links):
             "data": mean([r["data_score"] for r in g]),
             "code": mean([r["code_score"] for r in g]),
             "open": mean([r["openness_score"] for r in g]),
-            "fully_open": sum(1 for r in g if r["openness_tier"] == "fully open"),
+            "fully_open": sum(1 for r in g if r["openness_band"] == "fully open"),
         }
     s["any_licensed"] = sum(
         1 for r in recs if r["licensing_exposure"] in ("licensed only", "licensed and public")
@@ -152,7 +176,7 @@ def stats(recs, links):
             "data": mean([r["data_score"] for r in g]),
             "code": mean([r["code_score"] for r in g]),
             "open": mean([r["openness_score"] for r in g]),
-            "fully_open": sum(1 for r in g if r["openness_tier"] == "fully open"),
+            "fully_open": sum(1 for r in g if r["openness_band"] == "fully open"),
             "median_lag": st.median(lags) if lags else None,
             "median_end": st.median([r["dataset_end_year"] for r in g
                                      if r["dataset_end_year"]]),
@@ -275,7 +299,8 @@ def catalogue(recs, links, s):
 "**Availability.** `D:` data — `OPEN` constructed panel released · `PART` "
         "partly released · `RAW` public raw sources named, nothing released · "
         "`REQ` on request · `—` none. `C:` replication code, same scale. The "
-        "score is the mean of the two; `T1`–`T3` marks the curation tier.",
+        "score is the mean of the two; `T1`–`T7` marks the curation tier, "
+        "defined in [CODEBOOK.md](CODEBOOK.md).",
         "",
         "**Topics.** `BIO` biodiversity · `PHY` physical risk · `TRN` transition "
         "risk · `EMI` corporate emissions · `GRB` green bonds · `DIS` ESG "
@@ -456,6 +481,26 @@ def stats_md(s):
         "- Score distribution: "
         + " · ".join(f"{fmt(k)}: {v}" for k, v in sorted(s["score_hist"].items())),
         "",
+        "## Curation tiers",
+        "",
+        "Every paper carries exactly one tier, ranked by what a reader can "
+        "recover. The rules are in [CODEBOOK.md](CODEBOOK.md) §7.",
+        "",
+        "| Tier | n | Share |",
+        "|---|---|---|",
+    ]
+    for t, _rule, _blurb in TIER_LADDER:
+        v = s["tiers"].get(t, 0)
+        o.append(f"| {t} | {v} | {fmt(100*v/s['n'], 1)} % |")
+    downloadable = sum(s["tiers"].get(t, 0) for t in TIER_DETAIL)
+    code_no_panel = s["tiers"].get("Tier 4", 0) + s["tiers"].get("Tier 5", 0)
+    o += [
+        "",
+        f"Tiers 1 to 3 are the {downloadable} entries with something "
+        f"downloadable, {fmt(100*downloadable/s['n'], 1)} % of the corpus. Tiers 4 "
+        f"and 5 add {code_no_panel} papers that release code without a panel: not "
+        "rerunnable, but the pipeline is documented.",
+        "",
         "## Licensing exposure",
         "",
         f"**{s['any_licensed']}** of {s['n']} papers "
@@ -603,8 +648,8 @@ def readme_tiers(recs, s, links):
         "| ID | Study | Topics | Coverage | Geo | Data | Code | Access |",
         "|---|---|---|---|---|---|---|---|",
     ]
-    tiered = [r for r in recs if r["curation_tier"]]
-    order = {"Tier 1": 0, "Tier 2": 1, "Tier 3": 2}
+    tiered = [r for r in recs if r["curation_tier"] in TIER_DETAIL]
+    order = {t: i for i, t in enumerate(TIER_DETAIL)}
     for r in sorted(tiered, key=lambda r: (order[r["curation_tier"]], r["paper_id"])):
         u = urls.get(r["paper_id"], {})
         du, cu = u.get("data_link", ""), u.get("code_link", "")
@@ -619,18 +664,28 @@ def readme_tiers(recs, s, links):
             f"{DATA_BADGE[r['data_availability']]} | {CODE_BADGE[r['code_availability']]} | "
             f"{' · '.join(cell) or '—'} |"
         )
-    out = []
-    for t, title, blurb in (
-        ("Tier 1", "Tier 1 — fully open",
-         "Constructed panel and replication code both released. These are the "
-         "entries a reader can actually rerun."),
-        ("Tier 2", "Tier 2 — full code, partial data",
-         "Code released against a partially released panel: reproducible in part, "
-         "and the cheapest entries to move into Tier 1."),
-        ("Tier 3", "Tier 3 — data available, code incomplete",
-         "A panel is released but the analysis code is not, so the result can be "
-         "re-estimated but not reproduced exactly."),
-    ):
+    counts = collections.Counter(r["curation_tier"] for r in recs)
+    out = [
+        "| Tier | Rule | n | What a reader can do |",
+        "|---|---|---|---|",
+    ]
+    for t, rule, blurb in TIER_LADDER:
+        out.append(f"| **{TIER_BADGE[t]}** | {rule} | {counts.get(t, 0)} | {blurb} |")
+    out += [
+        "",
+        f"Tiers 1 to 3 are the {sum(counts.get(t, 0) for t in TIER_DETAIL)} entries "
+        "with something downloadable, and are listed in full below. Tiers 4 to 7 "
+        f"are the remaining {sum(counts.get(t, 0) for t in ('Tier 4','Tier 5','Tier 6','Tier 7'))}; "
+        "they are in [the catalogue](docs/CATALOGUE.md), which carries the tier "
+        "on every row.",
+        "",
+    ]
+    for t, _rule, blurb in TIER_LADDER:
+        if t not in TIER_DETAIL:
+            continue
+        title = f"{t} — " + {"Tier 1": "fully open",
+                             "Tier 2": "full code, partial data",
+                             "Tier 3": "data available, code incomplete"}[t]
         g = [r for r in tiered if r["curation_tier"] == t]
         out += [f"#### {title} ({len(g)})", "", blurb, ""]
         out.append(rows[0])
